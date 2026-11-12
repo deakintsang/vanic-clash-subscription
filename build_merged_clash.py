@@ -12,9 +12,23 @@ OUT = pathlib.Path(__file__).parent / "vanic_merged.yaml"
 
 RENAME = {"insecure": "skip-cert-verify", "tls-enabled": "tls"}
 
+
+def as_bool(value):
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, str):
+        lowered = value.lower()
+        if lowered in ("1", "true", "yes"):
+            return True
+        if lowered in ("0", "false", "no"):
+            return False
+    return value
+
+
 def fetch(name):
     with urllib.request.urlopen(f"{REPO}/{name}", timeout=30) as r:
         return yaml.safe_load(r.read().decode())
+
 
 def normalize(p):
     out = dict(p)
@@ -23,10 +37,22 @@ def normalize(p):
     for old, new in RENAME.items():
         if old in out:
             out[new] = out.pop(old)
+
+    # Some upstream VMess entries encode TLS as an object, while Clash/FlClash
+    # expects proxy.tls to be a bool. Preserve the supported server name field.
+    tls = out.get("tls")
+    if isinstance(tls, dict):
+        tls_options = tls
+        out["tls"] = as_bool(tls_options.get("enabled", True))
+        server_name = tls_options.get("server_name") or tls_options.get("servername")
+        if server_name and not out.get("servername"):
+            out["servername"] = server_name
+
     for k in ("skip-cert-verify", "tls", "udp"):
-        if k in out and isinstance(out[k], str) and out[k] in ("0", "1", "true", "false"):
-            out[k] = out[k] in ("1", "true")
+        if k in out:
+            out[k] = as_bool(out[k])
     return out
+
 
 def main():
     raw = {}
@@ -84,6 +110,7 @@ def main():
     for p in deduped:
         types[p.get("type", "?")] = types.get(p["type"], 0) + 1
     print("types:", types)
+
 
 if __name__ == "__main__":
     main()
