@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-12 06:23:43
-# 节点: 341 (去重前 366)  策略组: 7
+# 生成时间: 2026-11-12 06:30:49
+# 节点: 360 (去重前 366)  策略组: 8
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -161,6 +161,21 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: us-lax.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-4 | 8EB
+  server: 104.16.240.177
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
 - type: vless
   name: 🇨🇦 CA-5 | 8EB
   server: 104.17.125.98
@@ -536,6 +551,21 @@ proxies:
     headers:
       Host: us-lax.862400.xyz
 - type: vless
+  name: 🇯🇵 JP-4 | 8EB
+  server: 13.230.247.88
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
   name: 🇯🇵 JP-5 | 8EB
   server: 162.4.194.35
   port: 443
@@ -599,6 +629,21 @@ proxies:
   name: 🇰🇷 KR-1 | 8EB
   server: 123.111.169.70
   port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇳🇱 NL-2 | 8EB
+  server: 188.164.248.143
+  port: 443
   uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
   udp: true
   tls: true
@@ -849,6 +894,21 @@ proxies:
     path: /announcement?ed=2048
     headers:
       Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-11 | 8EB
+  server: 179.255.140.28
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
 - type: vless
   name: 🇺🇸 US-12 | 8EB
   server: 15.204.106.24
@@ -1132,9 +1192,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-usp-arm1.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-usp-arm1.283400.xyz
 - type: vless
   name: 🇺🇸 US-6 | 9PB
   server: hjunno7v.20261108-usp-arm1-node.283400.xyz
@@ -1158,7 +1218,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-usp-arm1.283400.xyz
+  servername: 20261108-usp-arm1.283400.xyz
 - type: vless
   name: 🇺🇸 US-8 | 9PB
   server: y0zlhhvl.zf-cdn-01.283400.xyz
@@ -1213,9 +1273,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-uk-arm1.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-uk-arm1.283400.xyz
 - type: vless
   name: 🇬🇧 GB-2 | 9PB
   server: 3v1t8klb.20261108-uk-arm1-node.283400.xyz
@@ -1239,7 +1299,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-uk-arm1.283400.xyz
+  servername: 20261108-uk-arm1.283400.xyz
 - type: vless
   name: 🇬🇧 GB-4 | 9PB
   server: 6t3mkabz.zf-cdn-01.283400.xyz
@@ -1294,9 +1354,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-de-arm1.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-de-arm1.283400.xyz
 - type: vless
   name: 🇩🇪 DE-2 | 9PB
   server: uooo53rt.20261108-de-arm1-node.283400.xyz
@@ -1320,7 +1380,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-de-arm1.283400.xyz
+  servername: 20261108-de-arm1.283400.xyz
 - type: vless
   name: 🇩🇪 DE-4 | 9PB
   server: zcbb0tyy.zf-cdn-01.283400.xyz
@@ -1375,9 +1435,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-usp-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇺🇸 US-12 | 9PB
   server: rljzphm6.20261108-usp-amd1-node.283400.xyz
@@ -1401,7 +1461,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-usp-amd1-node.283400.xyz
+  servername: 20261108-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇺🇸 US-14 | 9PB
   server: 6ko3zs34.zf-cdn-01.283400.xyz
@@ -1456,9 +1516,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-uk-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-uk-amd1-node.283400.xyz
 - type: vless
   name: 🇬🇧 GB-8 | 9PB
   server: k9897vtg.20261108-uk-amd1-node.283400.xyz
@@ -1482,7 +1542,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-uk-amd1-node.283400.xyz
+  servername: 20261108-uk-amd1-node.283400.xyz
 - type: vless
   name: 🇬🇧 GB-10 | 9PB
   server: fm7tlful.zf-cdn-01.283400.xyz
@@ -1537,9 +1597,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-de-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-de-amd1-node.283400.xyz
 - type: vless
   name: 🇩🇪 DE-8 | 9PB
   server: 6vo8zcvq.20261108-de-amd1-node.283400.xyz
@@ -1563,7 +1623,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-de-amd1-node.283400.xyz
+  servername: 20261108-de-amd1-node.283400.xyz
 - type: vless
   name: 🇩🇪 DE-10 | 9PB
   server: 63ndbt7f.zf-cdn-01.283400.xyz
@@ -1666,9 +1726,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-uk-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-uk-amd2-node.283400.xyz
 - type: vless
   name: 🇫🇷 FR-2 | 9PB
   server: wanwfbu7.20261108-uk-amd2-node.283400.xyz
@@ -1692,7 +1752,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-uk-amd2-node.283400.xyz
+  servername: 20261108-uk-amd2-node.283400.xyz
 - type: vless
   name: 🇫🇷 FR-4 | 9PB
   server: eiyayv5g.zf-cdn-01.283400.xyz
@@ -1747,9 +1807,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-usp-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-usp-amd2-node.283400.xyz
 - type: vless
   name: 🇵🇱 PL-2 | 9PB
   server: 7pqp7tl5.20261108-usp-amd2-node.283400.xyz
@@ -1773,7 +1833,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-usp-amd2-node.283400.xyz
+  servername: 20261108-usp-amd2-node.283400.xyz
 - type: vless
   name: 🇵🇱 PL-4 | 9PB
   server: o9pt64ax.zf-cdn-01.283400.xyz
@@ -1828,9 +1888,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261108-de-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261108-de-amd2-node.283400.xyz
 - type: vless
   name: 🇸🇪 SE-2 | 9PB
   server: 4j5powwz.20261108-de-amd2-node.283400.xyz
@@ -1854,7 +1914,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261108-de-amd2-node.283400.xyz
+  servername: 20261108-de-amd2-node.283400.xyz
 - type: vless
   name: 🇸🇪 SE-4 | 9PB
   server: 7v7acff3.zf-cdn-01.283400.xyz
@@ -1909,9 +1969,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20260923-sg-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20260923-sg-arm1-node.283400.xyz
 - type: vless
   name: 🇸🇬 SG-2 | 9PB
   server: a16csaqo.20260923-sg-arm1-node.283400.xyz
@@ -1935,7 +1995,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20260923-sg-arm1-node.283400.xyz
+  servername: 20260923-sg-arm1-node.283400.xyz
 - type: vless
   name: 🇸🇬 SG-4 | 9PB
   server: 1hq3hwnh.zf-cdn-01.283400.xyz
@@ -1990,9 +2050,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-il-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-il-arm1-node.283400.xyz
 - type: vless
   name: 🇮🇱 IL-2 | 9PB
   server: rxk0uit3.20261015-il-arm1-node.283400.xyz
@@ -2016,7 +2076,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-il-arm1-node.283400.xyz
+  servername: 20261015-il-arm1-node.283400.xyz
 - type: vless
   name: 🇮🇱 IL-4 | 9PB
   server: cfunkx4u.zf-cdn-01.283400.xyz
@@ -2071,9 +2131,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-fr-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-fr-arm1-node.283400.xyz
 - type: vless
   name: 🇫🇷 FR-8 | 9PB
   server: midy36la.20261015-fr-arm1-node.283400.xyz
@@ -2097,7 +2157,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-fr-arm1-node.283400.xyz
+  servername: 20261015-fr-arm1-node.283400.xyz
 - type: vless
   name: 🇫🇷 FR-10 | 9PB
   server: 3orqkfke.zf-cdn-01.283400.xyz
@@ -2152,9 +2212,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-it-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-it-arm1-node.283400.xyz
 - type: vless
   name: 🇮🇹 IT-2 | 9PB
   server: t18nwvpb.20261015-it-arm1-node.283400.xyz
@@ -2178,7 +2238,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-it-arm1-node.283400.xyz
+  servername: 20261015-it-arm1-node.283400.xyz
 - type: vless
   name: 🇮🇹 IT-4 | 9PB
   server: xh4wc7jx.zf-cdn-01.283400.xyz
@@ -2233,9 +2293,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261016-jp-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261016-jp-arm1-node.283400.xyz
 - type: vless
   name: 🇯🇵 JP-2 | 9PB
   server: h1fjcs0e.20261016-jp-arm1-node.283400.xyz
@@ -2259,7 +2319,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261016-jp-arm1-node.283400.xyz
+  servername: 20261016-jp-arm1-node.283400.xyz
 - type: vless
   name: 🇯🇵 JP-4 | 9PB
   server: w509ed39.zf-cdn-01.283400.xyz
@@ -2314,9 +2374,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261031-usc-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261031-usc-arm1-node.283400.xyz
 - type: vless
   name: 🇺🇸 US-18 | 9PB
   server: yoxku9a0.20261031-usc-arm1-node.283400.xyz
@@ -2340,7 +2400,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261031-usc-arm1-node.283400.xyz
+  servername: 20261031-usc-arm1-node.283400.xyz
 - type: vless
   name: 🇺🇸 US-20 | 9PB
   server: 7h84r44i.zf-cdn-01.283400.xyz
@@ -2395,9 +2455,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261031-ae-arm1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261031-ae-arm1-node.283400.xyz
 - type: vless
   name: 🇦🇪 AE-2 | 9PB
   server: l7xj7qaz.20261031-ae-arm1-node.283400.xyz
@@ -2421,7 +2481,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261031-ae-arm1-node.283400.xyz
+  servername: 20261031-ae-arm1-node.283400.xyz
 - type: vless
   name: 🇦🇪 AE-4 | 9PB
   server: iqvcv3u3.zf-cdn-01.283400.xyz
@@ -2476,9 +2536,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20260927-usp-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20260927-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇹🇷 TR-2 | 9PB
   server: ucgf0wfg.20260927-usp-amd1-node.283400.xyz
@@ -2502,7 +2562,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20260927-usp-amd1-node.283400.xyz
+  servername: 20260927-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇹🇷 TR-4 | 9PB
   server: 3z26vux1.zf-cdn-01.283400.xyz
@@ -2557,9 +2617,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20260927-usp-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20260927-usp-amd2-node.283400.xyz
 - type: vless
   name: 🇺🇦 UA-2 | 9PB
   server: 9wrfs8hw.20260927-usp-amd2-node.283400.xyz
@@ -2583,7 +2643,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20260927-usp-amd2-node.283400.xyz
+  servername: 20260927-usp-amd2-node.283400.xyz
 - type: vless
   name: 🇺🇦 UA-4 | 9PB
   server: eeurmkv8.zf-cdn-01.283400.xyz
@@ -2638,9 +2698,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-il-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-il-amd1-node.283400.xyz
 - type: vless
   name: 🇧🇷 BR-2 | 9PB
   server: jt3xknkb.20261015-il-amd1-node.283400.xyz
@@ -2664,7 +2724,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-il-amd1-node.283400.xyz
+  servername: 20261015-il-amd1-node.283400.xyz
 - type: vless
   name: 🇧🇷 BR-4 | 9PB
   server: 8caf74ww.zf-cdn-01.283400.xyz
@@ -2719,9 +2779,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-il-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-il-amd2-node.283400.xyz
 - type: vless
   name: 🇮🇩 ID-2 | 9PB
   server: effjle1z.20261015-il-amd2-node.283400.xyz
@@ -2745,7 +2805,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-il-amd2-node.283400.xyz
+  servername: 20261015-il-amd2-node.283400.xyz
 - type: vless
   name: 🇮🇩 ID-4 | 9PB
   server: z8nyq4th.zf-cdn-01.283400.xyz
@@ -2800,9 +2860,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-uk-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-uk-amd1-node.283400.xyz
 - type: vless
   name: 🇹🇭 TH-2 | 9PB
   server: nr1vvifq.20261015-uk-amd1-node.283400.xyz
@@ -2826,7 +2886,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-uk-amd1-node.283400.xyz
+  servername: 20261015-uk-amd1-node.283400.xyz
 - type: vless
   name: 🇹🇭 TH-4 | 9PB
   server: au0ktvay.zf-cdn-01.283400.xyz
@@ -2881,9 +2941,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-uk-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-uk-amd2-node.283400.xyz
 - type: vless
   name: 🇰🇿 KZ-2 | 9PB
   server: 03nhif9u.20261015-uk-amd2-node.283400.xyz
@@ -2907,7 +2967,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-uk-amd2-node.283400.xyz
+  servername: 20261015-uk-amd2-node.283400.xyz
 - type: vless
   name: 🇰🇿 KZ-4 | 9PB
   server: e8u3r6kd.zf-cdn-01.283400.xyz
@@ -2962,9 +3022,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-fr-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-fr-amd1-node.283400.xyz
 - type: vless
   name: 🇲🇰 MK-2 | 9PB
   server: g6du9pll.20261015-fr-amd1-node.283400.xyz
@@ -2988,7 +3048,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-fr-amd1-node.283400.xyz
+  servername: 20261015-fr-amd1-node.283400.xyz
 - type: vless
   name: 🇲🇰 MK-4 | 9PB
   server: 4kguf5bt.zf-cdn-01.283400.xyz
@@ -3043,9 +3103,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-fr-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-fr-amd2-node.283400.xyz
 - type: vless
   name: 🇦🇿 AZ-2 | 9PB
   server: s5ph6iry.20261015-fr-amd2-node.283400.xyz
@@ -3069,7 +3129,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-fr-amd2-node.283400.xyz
+  servername: 20261015-fr-amd2-node.283400.xyz
 - type: vless
   name: 🇦🇿 AZ-4 | 9PB
   server: 3uuu1c8x.zf-cdn-01.283400.xyz
@@ -3124,9 +3184,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-de-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-de-amd1-node.283400.xyz
 - type: vless
   name: 🇮🇶 IQ-2 | 9PB
   server: odgb4qym.20261015-de-amd1-node.283400.xyz
@@ -3150,7 +3210,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-de-amd1-node.283400.xyz
+  servername: 20261015-de-amd1-node.283400.xyz
 - type: vless
   name: 🇮🇶 IQ-4 | 9PB
   server: wg6epokk.zf-cdn-01.283400.xyz
@@ -3205,9 +3265,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-de-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-de-amd2-node.283400.xyz
 - type: vless
   name: 🇳🇬 NG-2 | 9PB
   server: 8vs82q1x.20261015-de-amd2-node.283400.xyz
@@ -3231,7 +3291,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-de-amd2-node.283400.xyz
+  servername: 20261015-de-amd2-node.283400.xyz
 - type: vless
   name: 🇳🇬 NG-4 | 9PB
   server: c3fvoqlz.zf-cdn-01.283400.xyz
@@ -3286,9 +3346,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-it-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-it-amd1-node.283400.xyz
 - type: vless
   name: 🇳🇱 NL-2 | 9PB
   server: sfge4e6v.20261015-it-amd1-node.283400.xyz
@@ -3312,7 +3372,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-it-amd1-node.283400.xyz
+  servername: 20261015-it-amd1-node.283400.xyz
 - type: vless
   name: 🇳🇱 NL-4 | 9PB
   server: nlyy0zvh.zf-cdn-01.283400.xyz
@@ -3367,9 +3427,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-it-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-it-amd2-node.283400.xyz
 - type: vless
   name: 🇵🇪 PE-2 | 9PB
   server: cvna59tj.20261015-it-amd2-node.283400.xyz
@@ -3393,7 +3453,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-it-amd2-node.283400.xyz
+  servername: 20261015-it-amd2-node.283400.xyz
 - type: vless
   name: 🇵🇪 PE-4 | 9PB
   server: ausltoq8.zf-cdn-01.283400.xyz
@@ -3448,9 +3508,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-ae-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-ae-amd1-node.283400.xyz
 - type: vless
   name: 🇷🇴 RO-2 | 9PB
   server: cd1pjdxf.20261015-ae-amd1-node.283400.xyz
@@ -3474,7 +3534,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-ae-amd1-node.283400.xyz
+  servername: 20261015-ae-amd1-node.283400.xyz
 - type: vless
   name: 🇷🇴 RO-4 | 9PB
   server: xcr7h4oe.zf-cdn-01.283400.xyz
@@ -3529,9 +3589,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261015-ae-amd2-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261015-ae-amd2-node.283400.xyz
 - type: vless
   name: 🇸🇮 SI-2 | 9PB
   server: hmy92win.20261015-ae-amd2-node.283400.xyz
@@ -3555,7 +3615,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261015-ae-amd2-node.283400.xyz
+  servername: 20261015-ae-amd2-node.283400.xyz
 - type: vless
   name: 🇸🇮 SI-4 | 9PB
   server: mqo3cex9.zf-cdn-01.283400.xyz
@@ -3610,9 +3670,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261016-jp-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261016-jp-amd1-node.283400.xyz
 - type: vless
   name: 🇯🇵 JP-8 | 9PB
   server: xqvfex2z.20261016-jp-amd1-node.283400.xyz
@@ -3636,7 +3696,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261016-jp-amd1-node.283400.xyz
+  servername: 20261016-jp-amd1-node.283400.xyz
 - type: vless
   name: 🇯🇵 JP-10 | 9PB
   server: 3vt75tdv.zf-cdn-01.283400.xyz
@@ -3691,9 +3751,9 @@ proxies:
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
-  sni: 20261016-usp-amd1-node.283400.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+  servername: 20261016-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇰🇬 KG-2 | 9PB
   server: tt04yql2.20261016-usp-amd1-node.283400.xyz
@@ -3717,7 +3777,7 @@ proxies:
   udp: true
   ports: 30000-40000
   mport: 30000-40000
-  sni: 20261016-usp-amd1-node.283400.xyz
+  servername: 20261016-usp-amd1-node.283400.xyz
 - type: vless
   name: 🇰🇬 KG-4 | 9PB
   server: 8tdqt1gh.zf-cdn-01.283400.xyz
@@ -3774,6 +3834,21 @@ proxies:
   password: BeaUf9c0AEWH40Pu
   cipher: aes-256-gcm
   delay: 786
+- name: 🇮🇹 IT-1 | Lifetime
+  server: 202.50.253.45
+  port: 19999
+  type: ss
+  country: 🇳🇿 NZ
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  delay: 1414
+- name: 🇮🇹 IT-2 | Lifetime
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  delay: 1608
 - cipher: aes-256-gcm
   name: 🇮🇹 IT-3 | Lifetime
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -3798,6 +3873,14 @@ proxies:
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
   delay: 1349
+- cipher: aes-256-gcm
+  name: 🇮🇹 IT-6 | Lifetime
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.54
+  type: ss
+  udp: true
+  delay: 587
 - name: 🇮🇹 IT-7 | Lifetime
   server: 202.50.253.18
   port: 19999
@@ -3805,6 +3888,30 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   delay: 600
+- cipher: aes-256-gcm
+  name: 🇮🇹 IT-8 | Lifetime
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.27
+  type: ss
+  udp: true
+  delay: 1596
+- name: 🇮🇹 IT-9 | Lifetime
+  server: 202.50.253.99
+  port: 19999
+  type: ss
+  country: 🇳🇿 NZ
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  delay: 561
+- cipher: aes-256-gcm
+  name: 🇮🇹 IT-10 | Lifetime
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.90
+  type: ss
+  udp: true
+  delay: 605
 - name: 🇨🇳 CN-1 | Lifetime
   server: 39.108.113.127
   type: vmess
@@ -3818,6 +3925,19 @@ proxies:
   ws-opts:
     path: /
   delay: 151
+- name: 🇨🇳 CN-2 | Lifetime
+  server: 39.108.113.127
+  type: vmess
+  country: 🇨🇳CN
+  port: 10086
+  uuid: 74e07df3-f82a-4791-987f-247c3c395866
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+  delay: 158
 - name: 🇨🇳 CN-3 | Lifetime
   server: 156.239.224.107
   type: vmess
@@ -4321,7 +4441,6 @@ proxies:
   password: humanity
   skip-cert-verify: false
   security: tls
-  sni: www.calmlunch.com
   servername: www.calmlunch.com
   network: ws
   ws-opts:
@@ -4349,6 +4468,23 @@ proxies:
 - type: vless
   name: 🇸🇬 SG-2 | Mix
   server: 206.238.239.20
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+- type: vless
+  name: 🇺🇸 US-4 | Mix
+  server: 198.202.24.142
   port: 2083
   uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
   udp: true
@@ -4422,6 +4558,19 @@ proxies:
     public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
   network: tcp
 - type: vless
+  name: 🇺🇸 US-7 | Mix
+  server: 209.94.90.201
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vless
   name: 🇸🇬 SG-3 | Mix
   server: 206.238.239.245
   port: 2083
@@ -4477,6 +4626,13 @@ proxies:
     public-key: _J2iVrDDgPShx9YYjTxVc_HrL3mrBcP8K-TyyyvHQlU
     short-id: a1b2c3d4e5f60718
   network: tcp
+- type: ss
+  name: 🇮🇹 IT-2 | Mix
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇺🇸 US-9 | Mix
   server: 155.117.232.61
@@ -4520,8 +4676,8 @@ proxies:
   port: 443
   password: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
-  sni: fr2-cl3.happy-glonaris.top
   skip-cert-verify: true
+  servername: fr2-cl3.happy-glonaris.top
 - type: vless
   name: 🇷🇺 RU-3 | Mix
   server: ru3.radiolumens.uk
@@ -4547,7 +4703,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   skip-cert-verify: true
   security: tls
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
   servername: exploreeducationsectoropportunitiestodayandadvancecareers.com
   network: tcp
 - type: vless
@@ -4565,6 +4720,13 @@ proxies:
     public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
     short-id: 4a7b1c8d
   network: tcp
+- type: ss
+  name: 🇮🇹 IT-8 | Mix
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇷🇺 RU-5 | Mix
   server: se3.h1cloud.net
@@ -4579,6 +4741,13 @@ proxies:
     public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
     short-id: 9608a9c65d315d52
   network: tcp
+- type: ss
+  name: 🇮🇹 IT-9 | Mix
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇩🇪 DE-2 | Mix
   server: de.puflino.com
@@ -4594,6 +4763,13 @@ proxies:
     public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
     short-id: ba4b2afa9e7193ea
   network: tcp
+- type: ss
+  name: 🇮🇹 IT-10 | Mix
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇺🇸 US-10 | Mix
   server: node-usa.blok-signalon.top
@@ -4676,8 +4852,8 @@ proxies:
   port: 443
   password: 4b1be712-774c-4b65-8491-a3339e124a70
   udp: true
-  sni: fr2-cl3.happy-glonaris.top
   skip-cert-verify: true
+  servername: fr2-cl3.happy-glonaris.top
 - type: trojan
   name: 🇺🇸 US-11 | Mix
   server: 66.163.122.7
@@ -4685,7 +4861,6 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   skip-cert-verify: false
   security: tls
-  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
   servername: www.searchnationwidecareerchangehelperandguidancetoday.com
   network: tcp
 - type: vless
@@ -4724,6 +4899,26 @@ proxies:
     grpc-service-name: grpc-nl-stream
   serviceName: grpc-nl-stream
   mode: gun
+- type: ss
+  name: 🇯🇵 JP-1 | Mix
+  server: 154.36.158.197
+  port: 8388
+  cipher: aes-256-gcm
+  password: BeaUf9c0AEWH40Pu
+  udp: true
+- type: vless
+  name: 🇺🇸 US-12 | Mix
+  server: 209.94.90.47
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
 - type: vless
   name: 🇸🇬 SG-4 | Mix
   server: 206.238.237.25
@@ -4761,6 +4956,7 @@ proxy-groups:
   - 🇨🇦 CA-1 | 8EB
   - 🇨🇦 CA-2 | 8EB
   - 🇨🇦 CA-3 | 8EB
+  - 🇨🇦 CA-4 | 8EB
   - 🇨🇦 CA-5 | 8EB
   - 🇨🇦 CA-6 | 8EB
   - 🇨🇦 CA-7 | 8EB
@@ -4787,11 +4983,13 @@ proxy-groups:
   - 🇯🇵 JP-1 | 8EB
   - 🇯🇵 JP-2 | 8EB
   - 🇯🇵 JP-3 | 8EB
+  - 🇯🇵 JP-4 | 8EB
   - 🇯🇵 JP-5 | 8EB
   - 🇯🇵 JP-6 | 8EB
   - 🇯🇵 JP-7 | 8EB
   - 🇯🇵 JP-8 | 8EB
   - 🇰🇷 KR-1 | 8EB
+  - 🇳🇱 NL-2 | 8EB
   - 🇸🇬 SG-1 | 8EB
   - 🇸🇬 SG-2 | 8EB
   - 🇸🇬 SG-3 | 8EB
@@ -4808,6 +5006,7 @@ proxy-groups:
   - 🇺🇸 US-8 | 8EB
   - 🇺🇸 US-9 | 8EB
   - 🇺🇸 US-10 | 8EB
+  - 🇺🇸 US-11 | 8EB
   - 🇺🇸 US-12 | 8EB
   - 🇺🇸 US-13 | 8EB
   - 🇺🇸 US-14 | 8EB
@@ -5024,11 +5223,18 @@ proxy-groups:
   - 🇰🇬 KG-5 | 9PB
   - 🇰🇬 KG-6 | 9PB
   - 🇯🇵 JP-1 | Lifetime
+  - 🇮🇹 IT-1 | Lifetime
+  - 🇮🇹 IT-2 | Lifetime
   - 🇮🇹 IT-3 | Lifetime
   - 🇮🇹 IT-4 | Lifetime
   - 🇮🇹 IT-5 | Lifetime
+  - 🇮🇹 IT-6 | Lifetime
   - 🇮🇹 IT-7 | Lifetime
+  - 🇮🇹 IT-8 | Lifetime
+  - 🇮🇹 IT-9 | Lifetime
+  - 🇮🇹 IT-10 | Lifetime
   - 🇨🇳 CN-1 | Lifetime
+  - 🇨🇳 CN-2 | Lifetime
   - 🇨🇳 CN-3 | Lifetime
   - 🇨🇳 CN-1 | Sub3
   - 🇭🇰 HK-1 | Sub3
@@ -5065,14 +5271,17 @@ proxy-groups:
   - 🇺🇸 US-2 | Mix
   - 🇺🇸 US-3 | Mix
   - 🇸🇬 SG-2 | Mix
+  - 🇺🇸 US-4 | Mix
   - 🇨🇾 CY-1 | Mix
   - 🇺🇸 US-5 | Mix
   - 🇺🇸 US-6 | Mix
   - 🇰🇿 KZ-1 | Mix
+  - 🇺🇸 US-7 | Mix
   - 🇸🇬 SG-3 | Mix
   - 🇺🇸 US-8 | Mix
   - 🇷🇺 RU-2 | Mix
   - 🇧🇾 BY-1 | Mix
+  - 🇮🇹 IT-2 | Mix
   - 🇺🇸 US-9 | Mix
   - 🇬🇷 GR-1 | Mix
   - 🇩🇪 DE-1 | Mix
@@ -5080,8 +5289,11 @@ proxy-groups:
   - 🇷🇺 RU-3 | Mix
   - 🇮🇱 IL-1 | Mix
   - 🇷🇺 RU-4 | Mix
+  - 🇮🇹 IT-8 | Mix
   - 🇷🇺 RU-5 | Mix
+  - 🇮🇹 IT-9 | Mix
   - 🇩🇪 DE-2 | Mix
+  - 🇮🇹 IT-10 | Mix
   - 🇺🇸 US-10 | Mix
   - 🇮🇱 IL-2 | Mix
   - 🇸🇪 SE-1 | Mix
@@ -5091,6 +5303,8 @@ proxy-groups:
   - 🇺🇸 US-11 | Mix
   - 🇳🇱 NL-1 | Mix
   - 🇳🇱 NL-2 | Mix
+  - 🇯🇵 JP-1 | Mix
+  - 🇺🇸 US-12 | Mix
   - 🇸🇬 SG-4 | Mix
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -5108,6 +5322,7 @@ proxy-groups:
   - 🇨🇦 CA-1 | 8EB
   - 🇨🇦 CA-2 | 8EB
   - 🇨🇦 CA-3 | 8EB
+  - 🇨🇦 CA-4 | 8EB
   - 🇨🇦 CA-5 | 8EB
   - 🇨🇦 CA-6 | 8EB
   - 🇨🇦 CA-7 | 8EB
@@ -5134,11 +5349,13 @@ proxy-groups:
   - 🇯🇵 JP-1 | 8EB
   - 🇯🇵 JP-2 | 8EB
   - 🇯🇵 JP-3 | 8EB
+  - 🇯🇵 JP-4 | 8EB
   - 🇯🇵 JP-5 | 8EB
   - 🇯🇵 JP-6 | 8EB
   - 🇯🇵 JP-7 | 8EB
   - 🇯🇵 JP-8 | 8EB
   - 🇰🇷 KR-1 | 8EB
+  - 🇳🇱 NL-2 | 8EB
   - 🇸🇬 SG-1 | 8EB
   - 🇸🇬 SG-2 | 8EB
   - 🇸🇬 SG-3 | 8EB
@@ -5155,6 +5372,7 @@ proxy-groups:
   - 🇺🇸 US-8 | 8EB
   - 🇺🇸 US-9 | 8EB
   - 🇺🇸 US-10 | 8EB
+  - 🇺🇸 US-11 | 8EB
   - 🇺🇸 US-12 | 8EB
   - 🇺🇸 US-13 | 8EB
   - 🇺🇸 US-14 | 8EB
@@ -5383,11 +5601,18 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇯🇵 JP-1 | Lifetime
+  - 🇮🇹 IT-1 | Lifetime
+  - 🇮🇹 IT-2 | Lifetime
   - 🇮🇹 IT-3 | Lifetime
   - 🇮🇹 IT-4 | Lifetime
   - 🇮🇹 IT-5 | Lifetime
+  - 🇮🇹 IT-6 | Lifetime
   - 🇮🇹 IT-7 | Lifetime
+  - 🇮🇹 IT-8 | Lifetime
+  - 🇮🇹 IT-9 | Lifetime
+  - 🇮🇹 IT-10 | Lifetime
   - 🇨🇳 CN-1 | Lifetime
+  - 🇨🇳 CN-2 | Lifetime
   - 🇨🇳 CN-3 | Lifetime
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -5433,25 +5658,78 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
+- name: 📦 MIX
+  type: url-test
+  proxies:
+  - 🇷🇺 RU-1 | Mix
+  - 🇺🇸 US-1 | Mix
+  - 🇺🇸 US-13 | 8EB
+  - 🇸🇬 SG-1 | Mix
+  - 🇺🇸 US-2 | Mix
+  - 🇺🇸 US-3 | Mix
+  - 🇸🇬 SG-2 | Mix
+  - 🇺🇸 US-4 | Mix
+  - 🇨🇾 CY-1 | Mix
+  - 🇺🇸 US-5 | Mix
+  - 🇺🇸 US-6 | Mix
+  - 🇰🇿 KZ-1 | Mix
+  - 🇺🇸 US-7 | Mix
+  - 🇸🇬 SG-3 | Mix
+  - 🇺🇸 US-8 | Mix
+  - 🇷🇺 RU-2 | Mix
+  - 🇧🇾 BY-1 | Mix
+  - 🇮🇹 IT-2 | Mix
+  - 🇺🇸 US-9 | Mix
+  - 🇬🇷 GR-1 | Mix
+  - 🇩🇪 DE-1 | Mix
+  - 🇪🇸 ES-1 | 8EB
+  - 🇺🇸 US-16 | 8EB
+  - 🇫🇷 FR-1 | Mix
+  - 🇷🇺 RU-3 | Mix
+  - 🇮🇱 IL-1 | Mix
+  - 🇷🇺 RU-4 | Mix
+  - 🇪🇸 ES-2 | 8EB
+  - 🇺🇸 US-18 | 8EB
+  - 🇺🇸 US-20 | 8EB
+  - 🇮🇹 IT-8 | Mix
+  - 🇷🇺 RU-5 | Mix
+  - 🇮🇹 IT-9 | Mix
+  - 🇩🇪 DE-2 | Mix
+  - 🇮🇹 IT-10 | Mix
+  - 🇺🇸 US-10 | Mix
+  - 🇮🇱 IL-2 | Mix
+  - 🇸🇪 SE-1 | Mix
+  - 🇮🇱 IL-3 | Mix
+  - 🇷🇺 RU-6 | Mix
+  - 🇫🇷 FR-2 | Mix
+  - 🇺🇸 US-11 | Mix
+  - 🇳🇱 NL-1 | Mix
+  - 🇳🇱 NL-2 | Mix
+  - 🇯🇵 JP-1 | Mix
+  - 🇺🇸 US-12 | Mix
+  - 🇸🇬 SG-4 | Mix
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
 rules:
-- DOMAIN-SUFFIX,services.googleapis.cn,选择线路
-- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,选择线路
+- DOMAIN-SUFFIX,services.googleapis.cn,🌍 全线路选择
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌍 全线路选择
 - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
 - DOMAIN,safebrowsing.googleapis.com,DIRECT
-- DOMAIN,developer.apple.com,选择线路
-- DOMAIN-SUFFIX,digicert.com,选择线路
-- DOMAIN,ocsp.apple.com,选择线路
-- DOMAIN,ocsp.comodoca.com,选择线路
-- DOMAIN,ocsp.usertrust.com,选择线路
-- DOMAIN,ocsp.sectigo.com,选择线路
-- DOMAIN,ocsp.verisign.net,选择线路
-- DOMAIN-SUFFIX,apple-dns.net,选择线路
-- DOMAIN,testflight.apple.com,选择线路
-- DOMAIN,sandbox.itunes.apple.com,选择线路
-- DOMAIN,itunes.apple.com,选择线路
-- DOMAIN-SUFFIX,apps.apple.com,选择线路
-- DOMAIN-SUFFIX,blobstore.apple.com,选择线路
-- DOMAIN,cvws.icloud-content.com,选择线路
+- DOMAIN,developer.apple.com,🌍 全线路选择
+- DOMAIN-SUFFIX,digicert.com,🌍 全线路选择
+- DOMAIN,ocsp.apple.com,🌍 全线路选择
+- DOMAIN,ocsp.comodoca.com,🌍 全线路选择
+- DOMAIN,ocsp.usertrust.com,🌍 全线路选择
+- DOMAIN,ocsp.sectigo.com,🌍 全线路选择
+- DOMAIN,ocsp.verisign.net,🌍 全线路选择
+- DOMAIN-SUFFIX,apple-dns.net,🌍 全线路选择
+- DOMAIN,testflight.apple.com,🌍 全线路选择
+- DOMAIN,sandbox.itunes.apple.com,🌍 全线路选择
+- DOMAIN,itunes.apple.com,🌍 全线路选择
+- DOMAIN-SUFFIX,apps.apple.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blobstore.apple.com,🌍 全线路选择
+- DOMAIN,cvws.icloud-content.com,🌍 全线路选择
 - DOMAIN-SUFFIX,mzstatic.com,DIRECT
 - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
 - DOMAIN-SUFFIX,icloud.com,DIRECT
@@ -5593,20 +5871,20 @@ rules:
 - DOMAIN-SUFFIX,zhimg.com,DIRECT
 - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
 - DOMAIN-SUFFIX,zoho.com,DIRECT
-- DOMAIN-KEYWORD,amazon,选择线路
-- DOMAIN-KEYWORD,google,选择线路
-- DOMAIN-KEYWORD,gmail,选择线路
-- DOMAIN-KEYWORD,youtube,选择线路
-- DOMAIN-KEYWORD,facebook,选择线路
-- DOMAIN-SUFFIX,fb.me,选择线路
-- DOMAIN-SUFFIX,fbcdn.net,选择线路
-- DOMAIN-KEYWORD,twitter,选择线路
-- DOMAIN-KEYWORD,instagram,选择线路
-- DOMAIN-KEYWORD,dropbox,选择线路
-- DOMAIN-SUFFIX,twimg.com,选择线路
-- DOMAIN-KEYWORD,blogspot,选择线路
-- DOMAIN-SUFFIX,youtu.be,选择线路
-- DOMAIN-KEYWORD,whatsapp,选择线路
+- DOMAIN-KEYWORD,amazon,🌍 全线路选择
+- DOMAIN-KEYWORD,google,🌍 全线路选择
+- DOMAIN-KEYWORD,gmail,🌍 全线路选择
+- DOMAIN-KEYWORD,youtube,🌍 全线路选择
+- DOMAIN-KEYWORD,facebook,🌍 全线路选择
+- DOMAIN-SUFFIX,fb.me,🌍 全线路选择
+- DOMAIN-SUFFIX,fbcdn.net,🌍 全线路选择
+- DOMAIN-KEYWORD,twitter,🌍 全线路选择
+- DOMAIN-KEYWORD,instagram,🌍 全线路选择
+- DOMAIN-KEYWORD,dropbox,🌍 全线路选择
+- DOMAIN-SUFFIX,twimg.com,🌍 全线路选择
+- DOMAIN-KEYWORD,blogspot,🌍 全线路选择
+- DOMAIN-SUFFIX,youtu.be,🌍 全线路选择
+- DOMAIN-KEYWORD,whatsapp,🌍 全线路选择
 - DOMAIN-KEYWORD,admarvel,REJECT
 - DOMAIN-KEYWORD,admaster,REJECT
 - DOMAIN-KEYWORD,adsage,REJECT
@@ -5634,304 +5912,304 @@ rules:
 - DOMAIN-SUFFIX,vungle.com,REJECT
 - DOMAIN-KEYWORD,wlmonitor,REJECT
 - DOMAIN-KEYWORD,zjtoolbar,REJECT
-- DOMAIN-SUFFIX,9to5mac.com,选择线路
-- DOMAIN-SUFFIX,abpchina.org,选择线路
-- DOMAIN-SUFFIX,adblockplus.org,选择线路
-- DOMAIN-SUFFIX,adobe.com,选择线路
-- DOMAIN-SUFFIX,akamaized.net,选择线路
-- DOMAIN-SUFFIX,alfredapp.com,选择线路
-- DOMAIN-SUFFIX,amplitude.com,选择线路
-- DOMAIN-SUFFIX,ampproject.org,选择线路
-- DOMAIN-SUFFIX,android.com,选择线路
-- DOMAIN-SUFFIX,angularjs.org,选择线路
-- DOMAIN-SUFFIX,aolcdn.com,选择线路
-- DOMAIN-SUFFIX,apkpure.com,选择线路
-- DOMAIN-SUFFIX,appledaily.com,选择线路
-- DOMAIN-SUFFIX,appshopper.com,选择线路
-- DOMAIN-SUFFIX,appspot.com,选择线路
-- DOMAIN-SUFFIX,arcgis.com,选择线路
-- DOMAIN-SUFFIX,archive.org,选择线路
-- DOMAIN-SUFFIX,armorgames.com,选择线路
-- DOMAIN-SUFFIX,aspnetcdn.com,选择线路
-- DOMAIN-SUFFIX,att.com,选择线路
-- DOMAIN-SUFFIX,awsstatic.com,选择线路
-- DOMAIN-SUFFIX,azureedge.net,选择线路
-- DOMAIN-SUFFIX,azurewebsites.net,选择线路
-- DOMAIN-SUFFIX,bing.com,选择线路
-- DOMAIN-SUFFIX,bintray.com,选择线路
-- DOMAIN-SUFFIX,bit.com,选择线路
-- DOMAIN-SUFFIX,bit.ly,选择线路
-- DOMAIN-SUFFIX,bitbucket.org,选择线路
-- DOMAIN-SUFFIX,bjango.com,选择线路
-- DOMAIN-SUFFIX,bkrtx.com,选择线路
-- DOMAIN-SUFFIX,blog.com,选择线路
-- DOMAIN-SUFFIX,blogcdn.com,选择线路
-- DOMAIN-SUFFIX,blogger.com,选择线路
-- DOMAIN-SUFFIX,blogsmithmedia.com,选择线路
-- DOMAIN-SUFFIX,blogspot.com,选择线路
-- DOMAIN-SUFFIX,blogspot.hk,选择线路
-- DOMAIN-SUFFIX,bloomberg.com,选择线路
-- DOMAIN-SUFFIX,box.com,选择线路
-- DOMAIN-SUFFIX,box.net,选择线路
-- DOMAIN-SUFFIX,cachefly.net,选择线路
-- DOMAIN-SUFFIX,chromium.org,选择线路
-- DOMAIN-SUFFIX,cl.ly,选择线路
-- DOMAIN-SUFFIX,cloudflare.com,选择线路
-- DOMAIN-SUFFIX,cloudfront.net,选择线路
-- DOMAIN-SUFFIX,cloudmagic.com,选择线路
-- DOMAIN-SUFFIX,cmail19.com,选择线路
-- DOMAIN-SUFFIX,cnet.com,选择线路
-- DOMAIN-SUFFIX,cocoapods.org,选择线路
-- DOMAIN-SUFFIX,comodoca.com,选择线路
-- DOMAIN-SUFFIX,crashlytics.com,选择线路
-- DOMAIN-SUFFIX,culturedcode.com,选择线路
-- DOMAIN-SUFFIX,d.pr,选择线路
-- DOMAIN-SUFFIX,danilo.to,选择线路
-- DOMAIN-SUFFIX,dayone.me,选择线路
-- DOMAIN-SUFFIX,db.tt,选择线路
-- DOMAIN-SUFFIX,deskconnect.com,选择线路
-- DOMAIN-SUFFIX,disq.us,选择线路
-- DOMAIN-SUFFIX,disqus.com,选择线路
-- DOMAIN-SUFFIX,disquscdn.com,选择线路
-- DOMAIN-SUFFIX,dnsimple.com,选择线路
-- DOMAIN-SUFFIX,docker.com,选择线路
-- DOMAIN-SUFFIX,dribbble.com,选择线路
-- DOMAIN-SUFFIX,droplr.com,选择线路
-- DOMAIN-SUFFIX,duckduckgo.com,选择线路
-- DOMAIN-SUFFIX,dueapp.com,选择线路
-- DOMAIN-SUFFIX,dytt8.net,选择线路
-- DOMAIN-SUFFIX,edgecastcdn.net,选择线路
-- DOMAIN-SUFFIX,edgekey.net,选择线路
-- DOMAIN-SUFFIX,edgesuite.net,选择线路
-- DOMAIN-SUFFIX,engadget.com,选择线路
-- DOMAIN-SUFFIX,entrust.net,选择线路
-- DOMAIN-SUFFIX,eurekavpt.com,选择线路
-- DOMAIN-SUFFIX,evernote.com,选择线路
-- DOMAIN-SUFFIX,fabric.io,选择线路
-- DOMAIN-SUFFIX,fast.com,选择线路
-- DOMAIN-SUFFIX,fastly.net,选择线路
-- DOMAIN-SUFFIX,fc2.com,选择线路
-- DOMAIN-SUFFIX,feedburner.com,选择线路
-- DOMAIN-SUFFIX,feedly.com,选择线路
-- DOMAIN-SUFFIX,feedsportal.com,选择线路
-- DOMAIN-SUFFIX,fiftythree.com,选择线路
-- DOMAIN-SUFFIX,firebaseio.com,选择线路
-- DOMAIN-SUFFIX,flexibits.com,选择线路
-- DOMAIN-SUFFIX,flickr.com,选择线路
-- DOMAIN-SUFFIX,flipboard.com,选择线路
-- DOMAIN-SUFFIX,g.co,选择线路
-- DOMAIN-SUFFIX,gabia.net,选择线路
-- DOMAIN-SUFFIX,geni.us,选择线路
-- DOMAIN-SUFFIX,gfx.ms,选择线路
-- DOMAIN-SUFFIX,ggpht.com,选择线路
-- DOMAIN-SUFFIX,ghostnoteapp.com,选择线路
-- DOMAIN-SUFFIX,git.io,选择线路
-- DOMAIN-KEYWORD,github,选择线路
-- DOMAIN-SUFFIX,globalsign.com,选择线路
-- DOMAIN-SUFFIX,gmodules.com,选择线路
-- DOMAIN-SUFFIX,godaddy.com,选择线路
-- DOMAIN-SUFFIX,golang.org,选择线路
-- DOMAIN-SUFFIX,gongm.in,选择线路
-- DOMAIN-SUFFIX,goo.gl,选择线路
-- DOMAIN-SUFFIX,goodreaders.com,选择线路
-- DOMAIN-SUFFIX,goodreads.com,选择线路
-- DOMAIN-SUFFIX,gravatar.com,选择线路
-- DOMAIN-SUFFIX,gstatic.com,选择线路
-- DOMAIN-SUFFIX,gvt0.com,选择线路
-- DOMAIN-SUFFIX,hockeyapp.net,选择线路
-- DOMAIN-SUFFIX,hotmail.com,选择线路
-- DOMAIN-SUFFIX,icons8.com,选择线路
-- DOMAIN-SUFFIX,ifixit.com,选择线路
-- DOMAIN-SUFFIX,ift.tt,选择线路
-- DOMAIN-SUFFIX,ifttt.com,选择线路
-- DOMAIN-SUFFIX,iherb.com,选择线路
-- DOMAIN-SUFFIX,imageshack.us,选择线路
-- DOMAIN-SUFFIX,img.ly,选择线路
-- DOMAIN-SUFFIX,imgur.com,选择线路
-- DOMAIN-SUFFIX,imore.com,选择线路
-- DOMAIN-SUFFIX,instapaper.com,选择线路
-- DOMAIN-SUFFIX,ipn.li,选择线路
-- DOMAIN-SUFFIX,is.gd,选择线路
-- DOMAIN-SUFFIX,issuu.com,选择线路
-- DOMAIN-SUFFIX,itgonglun.com,选择线路
-- DOMAIN-SUFFIX,itun.es,选择线路
-- DOMAIN-SUFFIX,ixquick.com,选择线路
-- DOMAIN-SUFFIX,j.mp,选择线路
-- DOMAIN-SUFFIX,js.revsci.net,选择线路
-- DOMAIN-SUFFIX,jshint.com,选择线路
-- DOMAIN-SUFFIX,jtvnw.net,选择线路
-- DOMAIN-SUFFIX,justgetflux.com,选择线路
-- DOMAIN-SUFFIX,kat.cr,选择线路
-- DOMAIN-SUFFIX,klip.me,选择线路
-- DOMAIN-SUFFIX,libsyn.com,选择线路
-- DOMAIN-SUFFIX,linkedin.com,选择线路
-- DOMAIN-SUFFIX,line-apps.com,选择线路
-- DOMAIN-SUFFIX,linode.com,选择线路
-- DOMAIN-SUFFIX,lithium.com,选择线路
-- DOMAIN-SUFFIX,littlehj.com,选择线路
-- DOMAIN-SUFFIX,live.com,选择线路
-- DOMAIN-SUFFIX,live.net,选择线路
-- DOMAIN-SUFFIX,livefilestore.com,选择线路
-- DOMAIN-SUFFIX,llnwd.net,选择线路
-- DOMAIN-SUFFIX,macid.co,选择线路
-- DOMAIN-SUFFIX,macromedia.com,选择线路
-- DOMAIN-SUFFIX,macrumors.com,选择线路
-- DOMAIN-SUFFIX,mashable.com,选择线路
-- DOMAIN-SUFFIX,mathjax.org,选择线路
-- DOMAIN-SUFFIX,medium.com,选择线路
-- DOMAIN-SUFFIX,mega.co.nz,选择线路
-- DOMAIN-SUFFIX,mega.nz,选择线路
-- DOMAIN-SUFFIX,megaupload.com,选择线路
-- DOMAIN-SUFFIX,microsofttranslator.com,选择线路
-- DOMAIN-SUFFIX,mindnode.com,选择线路
-- DOMAIN-SUFFIX,mobile01.com,选择线路
-- DOMAIN-SUFFIX,modmyi.com,选择线路
-- DOMAIN-SUFFIX,msedge.net,选择线路
-- DOMAIN-SUFFIX,myfontastic.com,选择线路
-- DOMAIN-SUFFIX,name.com,选择线路
-- DOMAIN-SUFFIX,nextmedia.com,选择线路
-- DOMAIN-SUFFIX,nsstatic.net,选择线路
-- DOMAIN-SUFFIX,nssurge.com,选择线路
-- DOMAIN-SUFFIX,nyt.com,选择线路
-- DOMAIN-SUFFIX,nytimes.com,选择线路
-- DOMAIN-SUFFIX,omnigroup.com,选择线路
-- DOMAIN-SUFFIX,onedrive.com,选择线路
-- DOMAIN-SUFFIX,onenote.com,选择线路
-- DOMAIN-SUFFIX,ooyala.com,选择线路
-- DOMAIN-SUFFIX,openvpn.net,选择线路
-- DOMAIN-SUFFIX,openwrt.org,选择线路
-- DOMAIN-SUFFIX,orkut.com,选择线路
-- DOMAIN-SUFFIX,osxdaily.com,选择线路
-- DOMAIN-SUFFIX,outlook.com,选择线路
-- DOMAIN-SUFFIX,ow.ly,选择线路
-- DOMAIN-SUFFIX,paddleapi.com,选择线路
-- DOMAIN-SUFFIX,parallels.com,选择线路
-- DOMAIN-SUFFIX,parse.com,选择线路
-- DOMAIN-SUFFIX,pdfexpert.com,选择线路
-- DOMAIN-SUFFIX,periscope.tv,选择线路
-- DOMAIN-SUFFIX,pinboard.in,选择线路
-- DOMAIN-SUFFIX,pinterest.com,选择线路
-- DOMAIN-SUFFIX,pixelmator.com,选择线路
-- DOMAIN-SUFFIX,pixiv.net,选择线路
-- DOMAIN-SUFFIX,playpcesor.com,选择线路
-- DOMAIN-SUFFIX,playstation.com,选择线路
-- DOMAIN-SUFFIX,playstation.com.hk,选择线路
-- DOMAIN-SUFFIX,playstation.net,选择线路
-- DOMAIN-SUFFIX,playstationnetwork.com,选择线路
-- DOMAIN-SUFFIX,pushwoosh.com,选择线路
-- DOMAIN-SUFFIX,rime.im,选择线路
-- DOMAIN-SUFFIX,servebom.com,选择线路
-- DOMAIN-SUFFIX,sfx.ms,选择线路
-- DOMAIN-SUFFIX,shadowsocks.org,选择线路
-- DOMAIN-SUFFIX,sharethis.com,选择线路
-- DOMAIN-SUFFIX,shazam.com,选择线路
-- DOMAIN-SUFFIX,skype.com,选择线路
-- DOMAIN-SUFFIX,smartdns选择线路.com,选择线路
-- DOMAIN-SUFFIX,smartmailcloud.com,选择线路
-- DOMAIN-SUFFIX,sndcdn.com,选择线路
-- DOMAIN-SUFFIX,sony.com,选择线路
-- DOMAIN-SUFFIX,soundcloud.com,选择线路
-- DOMAIN-SUFFIX,sourceforge.net,选择线路
-- DOMAIN-SUFFIX,spotify.com,选择线路
-- DOMAIN-SUFFIX,squarespace.com,选择线路
-- DOMAIN-SUFFIX,sstatic.net,选择线路
-- DOMAIN-SUFFIX,st.luluku.pw,选择线路
-- DOMAIN-SUFFIX,stackoverflow.com,选择线路
-- DOMAIN-SUFFIX,startpage.com,选择线路
-- DOMAIN-SUFFIX,staticflickr.com,选择线路
-- DOMAIN-SUFFIX,steamcommunity.com,选择线路
-- DOMAIN-SUFFIX,symauth.com,选择线路
-- DOMAIN-SUFFIX,symcb.com,选择线路
-- DOMAIN-SUFFIX,symcd.com,选择线路
-- DOMAIN-SUFFIX,tapbots.com,选择线路
-- DOMAIN-SUFFIX,tapbots.net,选择线路
-- DOMAIN-SUFFIX,tdesktop.com,选择线路
-- DOMAIN-SUFFIX,techcrunch.com,选择线路
-- DOMAIN-SUFFIX,techsmith.com,选择线路
-- DOMAIN-SUFFIX,thepiratebay.org,选择线路
-- DOMAIN-SUFFIX,theverge.com,选择线路
-- DOMAIN-SUFFIX,time.com,选择线路
-- DOMAIN-SUFFIX,timeinc.net,选择线路
-- DOMAIN-SUFFIX,tiny.cc,选择线路
-- DOMAIN-SUFFIX,tinypic.com,选择线路
-- DOMAIN-SUFFIX,tmblr.co,选择线路
-- DOMAIN-SUFFIX,todoist.com,选择线路
-- DOMAIN-SUFFIX,trello.com,选择线路
-- DOMAIN-SUFFIX,trustasiassl.com,选择线路
-- DOMAIN-SUFFIX,tumblr.co,选择线路
-- DOMAIN-SUFFIX,tumblr.com,选择线路
-- DOMAIN-SUFFIX,tweetdeck.com,选择线路
-- DOMAIN-SUFFIX,tweetmarker.net,选择线路
-- DOMAIN-SUFFIX,twitch.tv,选择线路
-- DOMAIN-SUFFIX,txmblr.com,选择线路
-- DOMAIN-SUFFIX,typekit.net,选择线路
-- DOMAIN-SUFFIX,ubertags.com,选择线路
-- DOMAIN-SUFFIX,ublock.org,选择线路
-- DOMAIN-SUFFIX,ubnt.com,选择线路
-- DOMAIN-SUFFIX,ulyssesapp.com,选择线路
-- DOMAIN-SUFFIX,urchin.com,选择线路
-- DOMAIN-SUFFIX,usertrust.com,选择线路
-- DOMAIN-SUFFIX,v.gd,选择线路
-- DOMAIN-SUFFIX,v2ex.com,选择线路
-- DOMAIN-SUFFIX,vimeo.com,选择线路
-- DOMAIN-SUFFIX,vimeocdn.com,选择线路
-- DOMAIN-SUFFIX,vine.co,选择线路
-- DOMAIN-SUFFIX,vivaldi.com,选择线路
-- DOMAIN-SUFFIX,vox-cdn.com,选择线路
-- DOMAIN-SUFFIX,vsco.co,选择线路
-- DOMAIN-SUFFIX,vultr.com,选择线路
-- DOMAIN-SUFFIX,w.org,选择线路
-- DOMAIN-SUFFIX,w3schools.com,选择线路
-- DOMAIN-SUFFIX,webtype.com,选择线路
-- DOMAIN-SUFFIX,wikiwand.com,选择线路
-- DOMAIN-SUFFIX,wikileaks.org,选择线路
-- DOMAIN-SUFFIX,wikimedia.org,选择线路
-- DOMAIN-SUFFIX,wikipedia.com,选择线路
-- DOMAIN-SUFFIX,wikipedia.org,选择线路
-- DOMAIN-SUFFIX,windows.com,选择线路
-- DOMAIN-SUFFIX,windows.net,选择线路
-- DOMAIN-SUFFIX,wire.com,选择线路
-- DOMAIN-SUFFIX,wordpress.com,选择线路
-- DOMAIN-SUFFIX,workflowy.com,选择线路
-- DOMAIN-SUFFIX,wp.com,选择线路
-- DOMAIN-SUFFIX,wsj.com,选择线路
-- DOMAIN-SUFFIX,wsj.net,选择线路
-- DOMAIN-SUFFIX,xda-developers.com,选择线路
-- DOMAIN-SUFFIX,xeeno.com,选择线路
-- DOMAIN-SUFFIX,xiti.com,选择线路
-- DOMAIN-SUFFIX,yahoo.com,选择线路
-- DOMAIN-SUFFIX,yimg.com,选择线路
-- DOMAIN-SUFFIX,ying.com,选择线路
-- DOMAIN-SUFFIX,yoyo.org,选择线路
-- DOMAIN-SUFFIX,ytimg.com,选择线路
-- DOMAIN-SUFFIX,telegra.ph,选择线路
-- DOMAIN-SUFFIX,telegram.org,选择线路
-- IP-CIDR,91.108.4.0/22,选择线路,no-resolve
-- IP-CIDR,91.108.8.0/21,选择线路,no-resolve
-- IP-CIDR,91.108.16.0/22,选择线路,no-resolve
-- IP-CIDR,91.108.56.0/22,选择线路,no-resolve
-- IP-CIDR,149.154.160.0/20,选择线路,no-resolve
-- IP-CIDR6,2001:67c:4e8::/48,选择线路,no-resolve
-- IP-CIDR6,2001:b28:f23d::/48,选择线路,no-resolve
-- IP-CIDR6,2001:b28:f23f::/48,选择线路,no-resolve
-- IP-CIDR,120.232.181.162/32,选择线路,no-resolve
-- IP-CIDR,120.241.147.226/32,选择线路,no-resolve
-- IP-CIDR,120.253.253.226/32,选择线路,no-resolve
-- IP-CIDR,120.253.255.162/32,选择线路,no-resolve
-- IP-CIDR,120.253.255.34/32,选择线路,no-resolve
-- IP-CIDR,120.253.255.98/32,选择线路,no-resolve
-- IP-CIDR,180.163.150.162/32,选择线路,no-resolve
-- IP-CIDR,180.163.150.34/32,选择线路,no-resolve
-- IP-CIDR,180.163.151.162/32,选择线路,no-resolve
-- IP-CIDR,180.163.151.34/32,选择线路,no-resolve
-- IP-CIDR,203.208.39.0/24,选择线路,no-resolve
-- IP-CIDR,203.208.40.0/24,选择线路,no-resolve
-- IP-CIDR,203.208.41.0/24,选择线路,no-resolve
-- IP-CIDR,203.208.43.0/24,选择线路,no-resolve
-- IP-CIDR,203.208.50.0/24,选择线路,no-resolve
-- IP-CIDR,220.181.174.162/32,选择线路,no-resolve
-- IP-CIDR,220.181.174.226/32,选择线路,no-resolve
-- IP-CIDR,220.181.174.34/32,选择线路,no-resolve
+- DOMAIN-SUFFIX,9to5mac.com,🌍 全线路选择
+- DOMAIN-SUFFIX,abpchina.org,🌍 全线路选择
+- DOMAIN-SUFFIX,adblockplus.org,🌍 全线路选择
+- DOMAIN-SUFFIX,adobe.com,🌍 全线路选择
+- DOMAIN-SUFFIX,akamaized.net,🌍 全线路选择
+- DOMAIN-SUFFIX,alfredapp.com,🌍 全线路选择
+- DOMAIN-SUFFIX,amplitude.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ampproject.org,🌍 全线路选择
+- DOMAIN-SUFFIX,android.com,🌍 全线路选择
+- DOMAIN-SUFFIX,angularjs.org,🌍 全线路选择
+- DOMAIN-SUFFIX,aolcdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,apkpure.com,🌍 全线路选择
+- DOMAIN-SUFFIX,appledaily.com,🌍 全线路选择
+- DOMAIN-SUFFIX,appshopper.com,🌍 全线路选择
+- DOMAIN-SUFFIX,appspot.com,🌍 全线路选择
+- DOMAIN-SUFFIX,arcgis.com,🌍 全线路选择
+- DOMAIN-SUFFIX,archive.org,🌍 全线路选择
+- DOMAIN-SUFFIX,armorgames.com,🌍 全线路选择
+- DOMAIN-SUFFIX,aspnetcdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,att.com,🌍 全线路选择
+- DOMAIN-SUFFIX,awsstatic.com,🌍 全线路选择
+- DOMAIN-SUFFIX,azureedge.net,🌍 全线路选择
+- DOMAIN-SUFFIX,azurewebsites.net,🌍 全线路选择
+- DOMAIN-SUFFIX,bing.com,🌍 全线路选择
+- DOMAIN-SUFFIX,bintray.com,🌍 全线路选择
+- DOMAIN-SUFFIX,bit.com,🌍 全线路选择
+- DOMAIN-SUFFIX,bit.ly,🌍 全线路选择
+- DOMAIN-SUFFIX,bitbucket.org,🌍 全线路选择
+- DOMAIN-SUFFIX,bjango.com,🌍 全线路选择
+- DOMAIN-SUFFIX,bkrtx.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blog.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blogcdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blogger.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blogsmithmedia.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blogspot.com,🌍 全线路选择
+- DOMAIN-SUFFIX,blogspot.hk,🌍 全线路选择
+- DOMAIN-SUFFIX,bloomberg.com,🌍 全线路选择
+- DOMAIN-SUFFIX,box.com,🌍 全线路选择
+- DOMAIN-SUFFIX,box.net,🌍 全线路选择
+- DOMAIN-SUFFIX,cachefly.net,🌍 全线路选择
+- DOMAIN-SUFFIX,chromium.org,🌍 全线路选择
+- DOMAIN-SUFFIX,cl.ly,🌍 全线路选择
+- DOMAIN-SUFFIX,cloudflare.com,🌍 全线路选择
+- DOMAIN-SUFFIX,cloudfront.net,🌍 全线路选择
+- DOMAIN-SUFFIX,cloudmagic.com,🌍 全线路选择
+- DOMAIN-SUFFIX,cmail19.com,🌍 全线路选择
+- DOMAIN-SUFFIX,cnet.com,🌍 全线路选择
+- DOMAIN-SUFFIX,cocoapods.org,🌍 全线路选择
+- DOMAIN-SUFFIX,comodoca.com,🌍 全线路选择
+- DOMAIN-SUFFIX,crashlytics.com,🌍 全线路选择
+- DOMAIN-SUFFIX,culturedcode.com,🌍 全线路选择
+- DOMAIN-SUFFIX,d.pr,🌍 全线路选择
+- DOMAIN-SUFFIX,danilo.to,🌍 全线路选择
+- DOMAIN-SUFFIX,dayone.me,🌍 全线路选择
+- DOMAIN-SUFFIX,db.tt,🌍 全线路选择
+- DOMAIN-SUFFIX,deskconnect.com,🌍 全线路选择
+- DOMAIN-SUFFIX,disq.us,🌍 全线路选择
+- DOMAIN-SUFFIX,disqus.com,🌍 全线路选择
+- DOMAIN-SUFFIX,disquscdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,dnsimple.com,🌍 全线路选择
+- DOMAIN-SUFFIX,docker.com,🌍 全线路选择
+- DOMAIN-SUFFIX,dribbble.com,🌍 全线路选择
+- DOMAIN-SUFFIX,droplr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,duckduckgo.com,🌍 全线路选择
+- DOMAIN-SUFFIX,dueapp.com,🌍 全线路选择
+- DOMAIN-SUFFIX,dytt8.net,🌍 全线路选择
+- DOMAIN-SUFFIX,edgecastcdn.net,🌍 全线路选择
+- DOMAIN-SUFFIX,edgekey.net,🌍 全线路选择
+- DOMAIN-SUFFIX,edgesuite.net,🌍 全线路选择
+- DOMAIN-SUFFIX,engadget.com,🌍 全线路选择
+- DOMAIN-SUFFIX,entrust.net,🌍 全线路选择
+- DOMAIN-SUFFIX,eurekavpt.com,🌍 全线路选择
+- DOMAIN-SUFFIX,evernote.com,🌍 全线路选择
+- DOMAIN-SUFFIX,fabric.io,🌍 全线路选择
+- DOMAIN-SUFFIX,fast.com,🌍 全线路选择
+- DOMAIN-SUFFIX,fastly.net,🌍 全线路选择
+- DOMAIN-SUFFIX,fc2.com,🌍 全线路选择
+- DOMAIN-SUFFIX,feedburner.com,🌍 全线路选择
+- DOMAIN-SUFFIX,feedly.com,🌍 全线路选择
+- DOMAIN-SUFFIX,feedsportal.com,🌍 全线路选择
+- DOMAIN-SUFFIX,fiftythree.com,🌍 全线路选择
+- DOMAIN-SUFFIX,firebaseio.com,🌍 全线路选择
+- DOMAIN-SUFFIX,flexibits.com,🌍 全线路选择
+- DOMAIN-SUFFIX,flickr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,flipboard.com,🌍 全线路选择
+- DOMAIN-SUFFIX,g.co,🌍 全线路选择
+- DOMAIN-SUFFIX,gabia.net,🌍 全线路选择
+- DOMAIN-SUFFIX,geni.us,🌍 全线路选择
+- DOMAIN-SUFFIX,gfx.ms,🌍 全线路选择
+- DOMAIN-SUFFIX,ggpht.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ghostnoteapp.com,🌍 全线路选择
+- DOMAIN-SUFFIX,git.io,🌍 全线路选择
+- DOMAIN-KEYWORD,github,🌍 全线路选择
+- DOMAIN-SUFFIX,globalsign.com,🌍 全线路选择
+- DOMAIN-SUFFIX,gmodules.com,🌍 全线路选择
+- DOMAIN-SUFFIX,godaddy.com,🌍 全线路选择
+- DOMAIN-SUFFIX,golang.org,🌍 全线路选择
+- DOMAIN-SUFFIX,gongm.in,🌍 全线路选择
+- DOMAIN-SUFFIX,goo.gl,🌍 全线路选择
+- DOMAIN-SUFFIX,goodreaders.com,🌍 全线路选择
+- DOMAIN-SUFFIX,goodreads.com,🌍 全线路选择
+- DOMAIN-SUFFIX,gravatar.com,🌍 全线路选择
+- DOMAIN-SUFFIX,gstatic.com,🌍 全线路选择
+- DOMAIN-SUFFIX,gvt0.com,🌍 全线路选择
+- DOMAIN-SUFFIX,hockeyapp.net,🌍 全线路选择
+- DOMAIN-SUFFIX,hotmail.com,🌍 全线路选择
+- DOMAIN-SUFFIX,icons8.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ifixit.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ift.tt,🌍 全线路选择
+- DOMAIN-SUFFIX,ifttt.com,🌍 全线路选择
+- DOMAIN-SUFFIX,iherb.com,🌍 全线路选择
+- DOMAIN-SUFFIX,imageshack.us,🌍 全线路选择
+- DOMAIN-SUFFIX,img.ly,🌍 全线路选择
+- DOMAIN-SUFFIX,imgur.com,🌍 全线路选择
+- DOMAIN-SUFFIX,imore.com,🌍 全线路选择
+- DOMAIN-SUFFIX,instapaper.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ipn.li,🌍 全线路选择
+- DOMAIN-SUFFIX,is.gd,🌍 全线路选择
+- DOMAIN-SUFFIX,issuu.com,🌍 全线路选择
+- DOMAIN-SUFFIX,itgonglun.com,🌍 全线路选择
+- DOMAIN-SUFFIX,itun.es,🌍 全线路选择
+- DOMAIN-SUFFIX,ixquick.com,🌍 全线路选择
+- DOMAIN-SUFFIX,j.mp,🌍 全线路选择
+- DOMAIN-SUFFIX,js.revsci.net,🌍 全线路选择
+- DOMAIN-SUFFIX,jshint.com,🌍 全线路选择
+- DOMAIN-SUFFIX,jtvnw.net,🌍 全线路选择
+- DOMAIN-SUFFIX,justgetflux.com,🌍 全线路选择
+- DOMAIN-SUFFIX,kat.cr,🌍 全线路选择
+- DOMAIN-SUFFIX,klip.me,🌍 全线路选择
+- DOMAIN-SUFFIX,libsyn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,linkedin.com,🌍 全线路选择
+- DOMAIN-SUFFIX,line-apps.com,🌍 全线路选择
+- DOMAIN-SUFFIX,linode.com,🌍 全线路选择
+- DOMAIN-SUFFIX,lithium.com,🌍 全线路选择
+- DOMAIN-SUFFIX,littlehj.com,🌍 全线路选择
+- DOMAIN-SUFFIX,live.com,🌍 全线路选择
+- DOMAIN-SUFFIX,live.net,🌍 全线路选择
+- DOMAIN-SUFFIX,livefilestore.com,🌍 全线路选择
+- DOMAIN-SUFFIX,llnwd.net,🌍 全线路选择
+- DOMAIN-SUFFIX,macid.co,🌍 全线路选择
+- DOMAIN-SUFFIX,macromedia.com,🌍 全线路选择
+- DOMAIN-SUFFIX,macrumors.com,🌍 全线路选择
+- DOMAIN-SUFFIX,mashable.com,🌍 全线路选择
+- DOMAIN-SUFFIX,mathjax.org,🌍 全线路选择
+- DOMAIN-SUFFIX,medium.com,🌍 全线路选择
+- DOMAIN-SUFFIX,mega.co.nz,🌍 全线路选择
+- DOMAIN-SUFFIX,mega.nz,🌍 全线路选择
+- DOMAIN-SUFFIX,megaupload.com,🌍 全线路选择
+- DOMAIN-SUFFIX,microsofttranslator.com,🌍 全线路选择
+- DOMAIN-SUFFIX,mindnode.com,🌍 全线路选择
+- DOMAIN-SUFFIX,mobile01.com,🌍 全线路选择
+- DOMAIN-SUFFIX,modmyi.com,🌍 全线路选择
+- DOMAIN-SUFFIX,msedge.net,🌍 全线路选择
+- DOMAIN-SUFFIX,myfontastic.com,🌍 全线路选择
+- DOMAIN-SUFFIX,name.com,🌍 全线路选择
+- DOMAIN-SUFFIX,nextmedia.com,🌍 全线路选择
+- DOMAIN-SUFFIX,nsstatic.net,🌍 全线路选择
+- DOMAIN-SUFFIX,nssurge.com,🌍 全线路选择
+- DOMAIN-SUFFIX,nyt.com,🌍 全线路选择
+- DOMAIN-SUFFIX,nytimes.com,🌍 全线路选择
+- DOMAIN-SUFFIX,omnigroup.com,🌍 全线路选择
+- DOMAIN-SUFFIX,onedrive.com,🌍 全线路选择
+- DOMAIN-SUFFIX,onenote.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ooyala.com,🌍 全线路选择
+- DOMAIN-SUFFIX,openvpn.net,🌍 全线路选择
+- DOMAIN-SUFFIX,openwrt.org,🌍 全线路选择
+- DOMAIN-SUFFIX,orkut.com,🌍 全线路选择
+- DOMAIN-SUFFIX,osxdaily.com,🌍 全线路选择
+- DOMAIN-SUFFIX,outlook.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ow.ly,🌍 全线路选择
+- DOMAIN-SUFFIX,paddleapi.com,🌍 全线路选择
+- DOMAIN-SUFFIX,parallels.com,🌍 全线路选择
+- DOMAIN-SUFFIX,parse.com,🌍 全线路选择
+- DOMAIN-SUFFIX,pdfexpert.com,🌍 全线路选择
+- DOMAIN-SUFFIX,periscope.tv,🌍 全线路选择
+- DOMAIN-SUFFIX,pinboard.in,🌍 全线路选择
+- DOMAIN-SUFFIX,pinterest.com,🌍 全线路选择
+- DOMAIN-SUFFIX,pixelmator.com,🌍 全线路选择
+- DOMAIN-SUFFIX,pixiv.net,🌍 全线路选择
+- DOMAIN-SUFFIX,playpcesor.com,🌍 全线路选择
+- DOMAIN-SUFFIX,playstation.com,🌍 全线路选择
+- DOMAIN-SUFFIX,playstation.com.hk,🌍 全线路选择
+- DOMAIN-SUFFIX,playstation.net,🌍 全线路选择
+- DOMAIN-SUFFIX,playstationnetwork.com,🌍 全线路选择
+- DOMAIN-SUFFIX,pushwoosh.com,🌍 全线路选择
+- DOMAIN-SUFFIX,rime.im,🌍 全线路选择
+- DOMAIN-SUFFIX,servebom.com,🌍 全线路选择
+- DOMAIN-SUFFIX,sfx.ms,🌍 全线路选择
+- DOMAIN-SUFFIX,shadowsocks.org,🌍 全线路选择
+- DOMAIN-SUFFIX,sharethis.com,🌍 全线路选择
+- DOMAIN-SUFFIX,shazam.com,🌍 全线路选择
+- DOMAIN-SUFFIX,skype.com,🌍 全线路选择
+- DOMAIN-SUFFIX,smartdns选择线路.com,🌍 全线路选择
+- DOMAIN-SUFFIX,smartmailcloud.com,🌍 全线路选择
+- DOMAIN-SUFFIX,sndcdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,sony.com,🌍 全线路选择
+- DOMAIN-SUFFIX,soundcloud.com,🌍 全线路选择
+- DOMAIN-SUFFIX,sourceforge.net,🌍 全线路选择
+- DOMAIN-SUFFIX,spotify.com,🌍 全线路选择
+- DOMAIN-SUFFIX,squarespace.com,🌍 全线路选择
+- DOMAIN-SUFFIX,sstatic.net,🌍 全线路选择
+- DOMAIN-SUFFIX,st.luluku.pw,🌍 全线路选择
+- DOMAIN-SUFFIX,stackoverflow.com,🌍 全线路选择
+- DOMAIN-SUFFIX,startpage.com,🌍 全线路选择
+- DOMAIN-SUFFIX,staticflickr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,steamcommunity.com,🌍 全线路选择
+- DOMAIN-SUFFIX,symauth.com,🌍 全线路选择
+- DOMAIN-SUFFIX,symcb.com,🌍 全线路选择
+- DOMAIN-SUFFIX,symcd.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tapbots.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tapbots.net,🌍 全线路选择
+- DOMAIN-SUFFIX,tdesktop.com,🌍 全线路选择
+- DOMAIN-SUFFIX,techcrunch.com,🌍 全线路选择
+- DOMAIN-SUFFIX,techsmith.com,🌍 全线路选择
+- DOMAIN-SUFFIX,thepiratebay.org,🌍 全线路选择
+- DOMAIN-SUFFIX,theverge.com,🌍 全线路选择
+- DOMAIN-SUFFIX,time.com,🌍 全线路选择
+- DOMAIN-SUFFIX,timeinc.net,🌍 全线路选择
+- DOMAIN-SUFFIX,tiny.cc,🌍 全线路选择
+- DOMAIN-SUFFIX,tinypic.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tmblr.co,🌍 全线路选择
+- DOMAIN-SUFFIX,todoist.com,🌍 全线路选择
+- DOMAIN-SUFFIX,trello.com,🌍 全线路选择
+- DOMAIN-SUFFIX,trustasiassl.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tumblr.co,🌍 全线路选择
+- DOMAIN-SUFFIX,tumblr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tweetdeck.com,🌍 全线路选择
+- DOMAIN-SUFFIX,tweetmarker.net,🌍 全线路选择
+- DOMAIN-SUFFIX,twitch.tv,🌍 全线路选择
+- DOMAIN-SUFFIX,txmblr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,typekit.net,🌍 全线路选择
+- DOMAIN-SUFFIX,ubertags.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ublock.org,🌍 全线路选择
+- DOMAIN-SUFFIX,ubnt.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ulyssesapp.com,🌍 全线路选择
+- DOMAIN-SUFFIX,urchin.com,🌍 全线路选择
+- DOMAIN-SUFFIX,usertrust.com,🌍 全线路选择
+- DOMAIN-SUFFIX,v.gd,🌍 全线路选择
+- DOMAIN-SUFFIX,v2ex.com,🌍 全线路选择
+- DOMAIN-SUFFIX,vimeo.com,🌍 全线路选择
+- DOMAIN-SUFFIX,vimeocdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,vine.co,🌍 全线路选择
+- DOMAIN-SUFFIX,vivaldi.com,🌍 全线路选择
+- DOMAIN-SUFFIX,vox-cdn.com,🌍 全线路选择
+- DOMAIN-SUFFIX,vsco.co,🌍 全线路选择
+- DOMAIN-SUFFIX,vultr.com,🌍 全线路选择
+- DOMAIN-SUFFIX,w.org,🌍 全线路选择
+- DOMAIN-SUFFIX,w3schools.com,🌍 全线路选择
+- DOMAIN-SUFFIX,webtype.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wikiwand.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wikileaks.org,🌍 全线路选择
+- DOMAIN-SUFFIX,wikimedia.org,🌍 全线路选择
+- DOMAIN-SUFFIX,wikipedia.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wikipedia.org,🌍 全线路选择
+- DOMAIN-SUFFIX,windows.com,🌍 全线路选择
+- DOMAIN-SUFFIX,windows.net,🌍 全线路选择
+- DOMAIN-SUFFIX,wire.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wordpress.com,🌍 全线路选择
+- DOMAIN-SUFFIX,workflowy.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wp.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wsj.com,🌍 全线路选择
+- DOMAIN-SUFFIX,wsj.net,🌍 全线路选择
+- DOMAIN-SUFFIX,xda-developers.com,🌍 全线路选择
+- DOMAIN-SUFFIX,xeeno.com,🌍 全线路选择
+- DOMAIN-SUFFIX,xiti.com,🌍 全线路选择
+- DOMAIN-SUFFIX,yahoo.com,🌍 全线路选择
+- DOMAIN-SUFFIX,yimg.com,🌍 全线路选择
+- DOMAIN-SUFFIX,ying.com,🌍 全线路选择
+- DOMAIN-SUFFIX,yoyo.org,🌍 全线路选择
+- DOMAIN-SUFFIX,ytimg.com,🌍 全线路选择
+- DOMAIN-SUFFIX,telegra.ph,🌍 全线路选择
+- DOMAIN-SUFFIX,telegram.org,🌍 全线路选择
+- IP-CIDR,91.108.4.0/22,🌍 全线路选择,no-resolve
+- IP-CIDR,91.108.8.0/21,🌍 全线路选择,no-resolve
+- IP-CIDR,91.108.16.0/22,🌍 全线路选择,no-resolve
+- IP-CIDR,91.108.56.0/22,🌍 全线路选择,no-resolve
+- IP-CIDR,149.154.160.0/20,🌍 全线路选择,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,🌍 全线路选择,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,🌍 全线路选择,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,🌍 全线路选择,no-resolve
+- IP-CIDR,120.232.181.162/32,🌍 全线路选择,no-resolve
+- IP-CIDR,120.241.147.226/32,🌍 全线路选择,no-resolve
+- IP-CIDR,120.253.253.226/32,🌍 全线路选择,no-resolve
+- IP-CIDR,120.253.255.162/32,🌍 全线路选择,no-resolve
+- IP-CIDR,120.253.255.34/32,🌍 全线路选择,no-resolve
+- IP-CIDR,120.253.255.98/32,🌍 全线路选择,no-resolve
+- IP-CIDR,180.163.150.162/32,🌍 全线路选择,no-resolve
+- IP-CIDR,180.163.150.34/32,🌍 全线路选择,no-resolve
+- IP-CIDR,180.163.151.162/32,🌍 全线路选择,no-resolve
+- IP-CIDR,180.163.151.34/32,🌍 全线路选择,no-resolve
+- IP-CIDR,203.208.39.0/24,🌍 全线路选择,no-resolve
+- IP-CIDR,203.208.40.0/24,🌍 全线路选择,no-resolve
+- IP-CIDR,203.208.41.0/24,🌍 全线路选择,no-resolve
+- IP-CIDR,203.208.43.0/24,🌍 全线路选择,no-resolve
+- IP-CIDR,203.208.50.0/24,🌍 全线路选择,no-resolve
+- IP-CIDR,220.181.174.162/32,🌍 全线路选择,no-resolve
+- IP-CIDR,220.181.174.226/32,🌍 全线路选择,no-resolve
+- IP-CIDR,220.181.174.34/32,🌍 全线路选择,no-resolve
 - DOMAIN,injections.adguard.org,DIRECT
 - DOMAIN,local.adguard.org,DIRECT
 - DOMAIN-SUFFIX,local,DIRECT
@@ -5946,4 +6224,4 @@ rules:
 - DOMAIN-SUFFIX,cn,DIRECT
 - DOMAIN-KEYWORD,-cn,DIRECT
 - GEOIP,CN,DIRECT
-- MATCH,选择线路
+- MATCH,🌍 全线路选择
