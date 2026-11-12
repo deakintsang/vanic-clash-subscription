@@ -1,6 +1,6 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-12 06:31:42
+# 生成时间: 2026-11-12 07:21:26
 # 节点: 360 (去重前 366)  策略组: 8
 port: 7890
 socks-port: 7891
@@ -5310,7 +5310,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
 - name: 📦 8EB
-  type: url-test
+  type: select
   proxies:
   - 🇦🇹 AT-1 | 8EB
   - 🇺🇸 US-1 | 8EB
@@ -5384,11 +5384,8 @@ proxy-groups:
   - 🇺🇸 US-20 | 8EB
   - 🇺🇸 US-21 | 8EB
   - 🇻🇳 VN-1 | 8EB
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 - name: 📦 9PB
-  type: url-test
+  type: select
   proxies:
   - 🇺🇸 US-1 | 9PB
   - 🇭🇰 HK-1 | 9PB
@@ -5594,11 +5591,8 @@ proxy-groups:
   - 🇰🇬 KG-4 | 9PB
   - 🇰🇬 KG-5 | 9PB
   - 🇰🇬 KG-6 | 9PB
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 - name: 📦 Lifetime
-  type: url-test
+  type: select
   proxies:
   - 🇯🇵 JP-1 | Lifetime
   - 🇮🇹 IT-1 | Lifetime
@@ -5614,11 +5608,8 @@ proxy-groups:
   - 🇨🇳 CN-1 | Lifetime
   - 🇨🇳 CN-2 | Lifetime
   - 🇨🇳 CN-3 | Lifetime
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 - name: 📦 Sub3
-  type: url-test
+  type: select
   proxies:
   - 🇨🇳 CN-1 | Sub3
   - 🇭🇰 HK-1 | Sub3
@@ -5639,11 +5630,8 @@ proxy-groups:
   - 🇰🇷 KR-2 | Sub3
   - 🇲🇾 MY-1 | Sub3
   - 🇩🇪 DE-1 | Sub3
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 - name: 📦 Filter
-  type: url-test
+  type: select
   proxies:
   - 🇺🇸 US-1 | Filter
   - 🇨🇦 CA-1 | Filter
@@ -5655,11 +5643,8 @@ proxy-groups:
   - 🇬🇧 GB-3 | Filter
   - 🇩🇪 DE-1 | Filter
   - 🇩🇪 DE-2 | Filter
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 - name: 📦 MIX
-  type: url-test
+  type: select
   proxies:
   - 🇷🇺 RU-1 | Mix
   - 🇺🇸 US-1 | Mix
@@ -5708,9 +5693,6 @@ proxy-groups:
   - 🇯🇵 JP-1 | Mix
   - 🇺🇸 US-12 | Mix
   - 🇸🇬 SG-4 | Mix
-  url: https://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
 rules:
 - DOMAIN-SUFFIX,services.googleapis.cn,🌍 全线路选择
 - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🌍 全线路选择
