@@ -1,6 +1,6 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-12 06:09:58
+# 生成时间: 2026-11-12 06:22:04
 # 节点: 341 (去重前 366)  策略组: 7
 port: 7890
 socks-port: 7891
@@ -4308,13 +4308,12 @@ proxies:
   cipher: auto
   network: ws
   udp: true
-  tls:
-    enabled: true
-    server_name: sg-transit-3.nebulacloud.win
+  tls: true
   ws-opts:
     path: /ca/getData
     headers:
       Host: sg-transit-3.nebulacloud.win
+  servername: sg-transit-3.nebulacloud.win
 - type: trojan
   name: 🇺🇸 US-2 | Mix
   server: 141.193.213.172
