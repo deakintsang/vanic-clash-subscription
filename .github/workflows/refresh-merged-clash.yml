@@ -1,0 +1,48 @@
+name: refresh-merged-clash
+
+on:
+  schedule:
+    - cron: "13 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "build_merged_clash.py"
+      - ".github/workflows/refresh-merged-clash.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Build merged Clash config
+        run: python3 build_merged_clash.py
+
+      - name: Validate generated YAML
+        run: python3 -c "import yaml; d=yaml.safe_load(open('vanic_merged.yaml', encoding='utf-8')); assert d.get('proxies') and d.get('proxy-groups') and d.get('rules') is not None; print('YAML valid; nodes=', len(d['proxies']))"
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q -E "vanic_merged\.yaml"; then
+            git add vanic_merged.yaml
+            git commit -m "chore: refresh merged Clash config" || true
+            git push
+            echo "Pushed update"
+          else
+            echo "No content change"
+          fi
