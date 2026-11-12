@@ -227,7 +227,8 @@ def main():
     ]
 
     for filename in FILES:
-        # Remove duplicate references while preserving order.
+        # Source groups are manual selects, so choosing 8EB/MIX etc. will not
+        # automatically switch the selected proxy. Only AUTO_GROUP performs tests.
         names = list(dict.fromkeys(source_names[filename]))
         if not names:
             continue
@@ -235,11 +236,8 @@ def main():
         available_groups.append(group_name)
         groups.append({
             "name": group_name,
-            "type": "url-test",
+            "type": "select",
             "proxies": names,
-            "url": TEST_URL,
-            "interval": 300,
-            "tolerance": 50,
         })
 
     groups.insert(0, {
