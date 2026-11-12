@@ -1,0 +1,5950 @@
+# 合并 Vanic24/VPN 订阅（含 MIX）
+# 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
+# 生成时间: 2026-11-12 06:08:49
+# 节点: 341 (去重前 366)  策略组: 7
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+external-controller: 127.0.0.1:9090
+proxies:
+- type: vless
+  name: 🇦🇹 AT-1 | 8EB
+  server: 152.53.100.50
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-1 | 8EB
+  server: bestcf.030101.xyz
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇳🇱 NL-1 | 8EB
+  server: 188.164.248.143
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-2 | 8EB
+  server: 162.159.197.1
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇺🇸 US-3 | 8EB
+  server: 104.16.240.177
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇨🇳 CN-1 | 8EB
+  server: proxy.aliproxy.cc.cd
+  port: 6666
+  uuid: b1bd8ca8-817a-47b4-935e-5fa502f3ccf0
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Ur8yUWNKpZ60t2Vrf9YjbzUSA4uP-dcluSVPWNg2Kn8
+    short-id: ab1f4b270774308f
+  network: tcp
+  spx: /
+- type: vless
+  name: 🇧🇷 BR-1 | 8EB
+  server: 43.174.195.1
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-1 | 8EB
+  server: 104.17.145.145
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-2 | 8EB
+  server: 172.66.0.118
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-3 | 8EB
+  server: 104.26.14.111
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-5 | 8EB
+  server: 104.17.125.98
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-6 | 8EB
+  server: 104.17.145.43
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-7 | 8EB
+  server: 104.17.187.57
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-8 | 8EB
+  server: saas.sin.fan
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇨🇦 CA-9 | 8EB
+  server: 162.159.198.1
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇨🇱 CL-1 | 8EB
+  server: 64.176.4.154
+  port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇩🇪 DE-1 | 8EB
+  server: 193.23.211.139
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇩🇪 DE-2 | 8EB
+  server: 5.45.99.44
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇩🇪 DE-3 | 8EB
+  server: 195.201.31.167
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇩🇪 DE-4 | 8EB
+  server: 159.195.71.13
+  port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇪🇪 EE-1 | 8EB
+  server: 95.85.245.120
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: ss
+  name: 🇪🇸 ES-1 | 8EB
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-2 | 8EB
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇪🇸 ES-3 | 8EB
+  server: 185.237.234.67
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇪🇸 ES-4 | 8EB
+  server: 185.236.25.93
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇬🇧 GB-1 | 8EB
+  server: 143.110.161.220
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇬🇧 GB-2 | 8EB
+  server: 178.62.53.238
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇬🇧 GB-3 | 8EB
+  server: 206.189.118.129
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇭🇰 HK-1 | 8EB
+  server: 154.16.183.151
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇭🇰 HK-2 | 8EB
+  server: 154.16.183.190
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇭🇰 HK-3 | 8EB
+  server: 23.156.153.40
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇭🇰 HK-4 | 8EB
+  server: 83.147.60.79
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇮🇪 IE-1 | 8EB
+  server: 5.157.30.28
+  port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-1 | 8EB
+  server: 43.167.224.16
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-2 | 8EB
+  server: 13.114.101.22
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-3 | 8EB
+  server: 13.230.247.88
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-5 | 8EB
+  server: 162.4.194.35
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-6 | 8EB
+  server: 172.104.120.92
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-7 | 8EB
+  server: 200.180.163.38
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇯🇵 JP-8 | 8EB
+  server: 35.78.169.69
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇰🇷 KR-1 | 8EB
+  server: 123.111.169.70
+  port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-1 | 8EB
+  server: 139.162.26.8
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-2 | 8EB
+  server: 139.162.33.165
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-3 | 8EB
+  server: 139.162.46.201
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-4 | 8EB
+  server: 139.162.61.198
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-5 | 8EB
+  server: 172.104.59.228
+  port: 8443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-6 | 8EB
+  server: 172.236.132.46
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-7 | 8EB
+  server: 195.172.138.225
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇸🇬 SG-8 | 8EB
+  server: 43.170.38.62
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇹🇼 TW-1 | 8EB
+  server: 140.235.39.19
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇺🇸 US-4 | 8EB
+  server: 185.221.22.142
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇺🇸 US-5 | 8EB
+  server: panel.apexkey.store
+  port: 2053
+  uuid: cdb7fa1d-6e7a-467c-da9c-da363c7bf779
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DEFJSLdILrvauMpwtpvFZddadpt3rNtv03Dui2EkmRk
+    short-id: '68'
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-6 | 8EB
+  server: 179.253.225.172
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-7 | 8EB
+  server: 179.253.235.33
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇺🇸 US-8 | 8EB
+  server: 179.255.103.187
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-9 | 8EB
+  server: 179.255.132.123
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-10 | 8EB
+  server: 179.255.140.28
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-12 | 8EB
+  server: 15.204.106.24
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: ss
+  name: 🇺🇸 US-13 | 8EB
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇺🇸 US-14 | 8EB
+  server: 188.255.156.209
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-15 | 8EB
+  server: 188.255.156.218
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: ss
+  name: 🇺🇸 US-16 | 8EB
+  server: 202.50.253.54
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇺🇸 US-17 | 8EB
+  server: 77.73.8.67
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: ss
+  name: 🇺🇸 US-18 | 8EB
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇺🇸 US-19 | 8EB
+  server: 8.217.117.88
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: ss
+  name: 🇺🇸 US-20 | 8EB
+  server: 202.50.253.99
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇺🇸 US-21 | 8EB
+  server: 179.255.132.76
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us-lax.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: us-lax.862400.xyz
+- type: vless
+  name: 🇻🇳 VN-1 | 8EB
+  server: 103.199.18.84
+  port: 443
+  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: eu-central.862400.xyz
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /announcement?ed=2048
+    headers:
+      Host: eu-central.862400.xyz
+- type: vless
+  name: 🇺🇸 US-1 | 9PB
+  server: 3d8d2nob.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: hk.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: hk.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇭🇰 HK-1 | 9PB
+  server: pemd4d8c.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: hk.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: hk.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇭🇰 HK-2 | 9PB
+  server: e5phv13f.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: hk.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: hk.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-2 | 9PB
+  server: ark423tn.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-af01e9-us.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-af01e9-us.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-3 | 9PB
+  server: cicvzx7i.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-af01e9-us.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-af01e9-us.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-4 | 9PB
+  server: ivivn14q.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-af01e9-us.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-af01e9-us.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇨🇦 CA-1 | 9PB
+  server: ip0mu9hz.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-8ce91c-ca.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-8ce91c-ca.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇨🇦 CA-2 | 9PB
+  server: d3nf4g77.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-8ce91c-ca.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-8ce91c-ca.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇨🇦 CA-3 | 9PB
+  server: c70rwi28.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-8ce91c-ca.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-8ce91c-ca.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇺🇸 US-5 | 9PB
+  server: h43o99pj.20261108-usp-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-usp-arm1.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇺🇸 US-6 | 9PB
+  server: hjunno7v.20261108-usp-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇺🇸 US-7 | 9PB
+  server: n1ye6b1q.20261108-usp-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-usp-arm1.283400.xyz
+- type: vless
+  name: 🇺🇸 US-8 | 9PB
+  server: y0zlhhvl.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-9 | 9PB
+  server: rgyy6kg5.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-10 | 9PB
+  server: kx4rlolk.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇬🇧 GB-1 | 9PB
+  server: scru57go.20261108-uk-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-uk-arm1.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇬🇧 GB-2 | 9PB
+  server: 3v1t8klb.20261108-uk-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇬🇧 GB-3 | 9PB
+  server: jhcl36ye.20261108-uk-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-uk-arm1.283400.xyz
+- type: vless
+  name: 🇬🇧 GB-4 | 9PB
+  server: 6t3mkabz.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇬🇧 GB-5 | 9PB
+  server: 963kjw3n.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇬🇧 GB-6 | 9PB
+  server: kxqs7ds8.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇩🇪 DE-1 | 9PB
+  server: oy7oj95h.20261108-de-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-de-arm1.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇩🇪 DE-2 | 9PB
+  server: uooo53rt.20261108-de-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇩🇪 DE-3 | 9PB
+  server: ejj02g3y.20261108-de-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-de-arm1.283400.xyz
+- type: vless
+  name: 🇩🇪 DE-4 | 9PB
+  server: zcbb0tyy.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇩🇪 DE-5 | 9PB
+  server: owur9wrc.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇩🇪 DE-6 | 9PB
+  server: 1i654bz5.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇺🇸 US-11 | 9PB
+  server: qx05ljom.20261108-usp-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-usp-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇺🇸 US-12 | 9PB
+  server: rljzphm6.20261108-usp-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇺🇸 US-13 | 9PB
+  server: vnlxysh3.20261108-usp-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-usp-amd1-node.283400.xyz
+- type: vless
+  name: 🇺🇸 US-14 | 9PB
+  server: 6ko3zs34.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-15 | 9PB
+  server: cr1fs0st.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-16 | 9PB
+  server: 439jzcu5.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇬🇧 GB-7 | 9PB
+  server: z94tmk8i.20261108-uk-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-uk-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇬🇧 GB-8 | 9PB
+  server: k9897vtg.20261108-uk-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇬🇧 GB-9 | 9PB
+  server: 202fn37s.20261108-uk-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-uk-amd1-node.283400.xyz
+- type: vless
+  name: 🇬🇧 GB-10 | 9PB
+  server: fm7tlful.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇬🇧 GB-11 | 9PB
+  server: ry6lafvj.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇬🇧 GB-12 | 9PB
+  server: js6ksoqb.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇩🇪 DE-7 | 9PB
+  server: xr94xhud.20261108-de-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-de-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇩🇪 DE-8 | 9PB
+  server: 6vo8zcvq.20261108-de-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇩🇪 DE-9 | 9PB
+  server: btvbkn7e.20261108-de-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-de-amd1-node.283400.xyz
+- type: vless
+  name: 🇩🇪 DE-10 | 9PB
+  server: 63ndbt7f.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇩🇪 DE-11 | 9PB
+  server: 2syi42c8.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇩🇪 DE-12 | 9PB
+  server: lfg41dok.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇪🇸 ES-1 | 9PB
+  server: bwnlgii1.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-20f7cc-es.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-20f7cc-es.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇪🇸 ES-2 | 9PB
+  server: yeqhj3jd.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-20f7cc-es.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-20f7cc-es.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇪🇸 ES-3 | 9PB
+  server: 19pgmfcb.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-20f7cc-es.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-20f7cc-es.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇫🇷 FR-1 | 9PB
+  server: 6gorrrz1.20261108-uk-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-uk-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇫🇷 FR-2 | 9PB
+  server: wanwfbu7.20261108-uk-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇫🇷 FR-3 | 9PB
+  server: gfvs6a83.20261108-uk-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-uk-amd2-node.283400.xyz
+- type: vless
+  name: 🇫🇷 FR-4 | 9PB
+  server: eiyayv5g.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇫🇷 FR-5 | 9PB
+  server: t5inqqv8.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇫🇷 FR-6 | 9PB
+  server: 8k487jfw.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇵🇱 PL-1 | 9PB
+  server: kf840rm6.20261108-usp-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-usp-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇵🇱 PL-2 | 9PB
+  server: 7pqp7tl5.20261108-usp-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇵🇱 PL-3 | 9PB
+  server: ot92n1jj.20261108-usp-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-usp-amd2-node.283400.xyz
+- type: vless
+  name: 🇵🇱 PL-4 | 9PB
+  server: o9pt64ax.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇵🇱 PL-5 | 9PB
+  server: nobuug5a.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇵🇱 PL-6 | 9PB
+  server: yxxu19p1.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇸🇪 SE-1 | 9PB
+  server: 1jv46qbg.20261108-de-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261108-de-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇸🇪 SE-2 | 9PB
+  server: 4j5powwz.20261108-de-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇸🇪 SE-3 | 9PB
+  server: p0zj46fg.20261108-de-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261108-de-amd2-node.283400.xyz
+- type: vless
+  name: 🇸🇪 SE-4 | 9PB
+  server: 7v7acff3.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇪 SE-5 | 9PB
+  server: l7v49po5.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇪 SE-6 | 9PB
+  server: p1l91y3q.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇸🇬 SG-1 | 9PB
+  server: g7xoipog.20260923-sg-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20260923-sg-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇸🇬 SG-2 | 9PB
+  server: a16csaqo.20260923-sg-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇸🇬 SG-3 | 9PB
+  server: dijkp3k9.20260923-sg-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20260923-sg-arm1-node.283400.xyz
+- type: vless
+  name: 🇸🇬 SG-4 | 9PB
+  server: 1hq3hwnh.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260923-sg-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260923-sg-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇬 SG-5 | 9PB
+  server: yq0al9cn.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260923-sg-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260923-sg-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇬 SG-6 | 9PB
+  server: upu65xq4.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260923-sg-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260923-sg-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇮🇱 IL-1 | 9PB
+  server: 6f85l612.20261015-il-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-il-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇮🇱 IL-2 | 9PB
+  server: rxk0uit3.20261015-il-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇮🇱 IL-3 | 9PB
+  server: xsaf7azv.20261015-il-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-il-arm1-node.283400.xyz
+- type: vless
+  name: 🇮🇱 IL-4 | 9PB
+  server: cfunkx4u.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇱 IL-5 | 9PB
+  server: d8c442nu.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇱 IL-6 | 9PB
+  server: 3b2t6ued.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇫🇷 FR-7 | 9PB
+  server: 72300l06.20261015-fr-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-fr-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇫🇷 FR-8 | 9PB
+  server: midy36la.20261015-fr-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇫🇷 FR-9 | 9PB
+  server: endqxix1.20261015-fr-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-fr-arm1-node.283400.xyz
+- type: vless
+  name: 🇫🇷 FR-10 | 9PB
+  server: 3orqkfke.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇫🇷 FR-11 | 9PB
+  server: t0etmd0p.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇫🇷 FR-12 | 9PB
+  server: nvg2d4a0.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇮🇹 IT-1 | 9PB
+  server: 4miakis8.20261015-it-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-it-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇮🇹 IT-2 | 9PB
+  server: t18nwvpb.20261015-it-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇮🇹 IT-3 | 9PB
+  server: gl8vj8al.20261015-it-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-it-arm1-node.283400.xyz
+- type: vless
+  name: 🇮🇹 IT-4 | 9PB
+  server: xh4wc7jx.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇹 IT-5 | 9PB
+  server: hs3wlfnx.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇹 IT-6 | 9PB
+  server: o6pfu9mc.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇯🇵 JP-1 | 9PB
+  server: ssaa2c9w.20261016-jp-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261016-jp-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇯🇵 JP-2 | 9PB
+  server: h1fjcs0e.20261016-jp-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇯🇵 JP-3 | 9PB
+  server: rhsfe731.20261016-jp-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261016-jp-arm1-node.283400.xyz
+- type: vless
+  name: 🇯🇵 JP-4 | 9PB
+  server: w509ed39.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇯🇵 JP-5 | 9PB
+  server: gzii0pbw.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇯🇵 JP-6 | 9PB
+  server: zxp6p7aj.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇺🇸 US-17 | 9PB
+  server: 3aghn9v7.20261031-usc-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261031-usc-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇺🇸 US-18 | 9PB
+  server: yoxku9a0.20261031-usc-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇺🇸 US-19 | 9PB
+  server: kq98aepr.20261031-usc-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261031-usc-arm1-node.283400.xyz
+- type: vless
+  name: 🇺🇸 US-20 | 9PB
+  server: 7h84r44i.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-usc-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-usc-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-21 | 9PB
+  server: iu9yyqmf.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-usc-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-usc-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-22 | 9PB
+  server: jxa9ygwy.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-usc-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-usc-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇦🇪 AE-1 | 9PB
+  server: 53xtihcu.20261031-ae-arm1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261031-ae-arm1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇦🇪 AE-2 | 9PB
+  server: l7xj7qaz.20261031-ae-arm1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇦🇪 AE-3 | 9PB
+  server: bev9570h.20261031-ae-arm1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261031-ae-arm1-node.283400.xyz
+- type: vless
+  name: 🇦🇪 AE-4 | 9PB
+  server: iqvcv3u3.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-ae-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-ae-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇦🇪 AE-5 | 9PB
+  server: co9ko88w.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-ae-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-ae-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇦🇪 AE-6 | 9PB
+  server: oip7r8pi.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261031-ae-arm1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261031-ae-arm1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇹🇷 TR-1 | 9PB
+  server: tjr4l39h.20260927-usp-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20260927-usp-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇹🇷 TR-2 | 9PB
+  server: ucgf0wfg.20260927-usp-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇹🇷 TR-3 | 9PB
+  server: 1roqzeii.20260927-usp-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20260927-usp-amd1-node.283400.xyz
+- type: vless
+  name: 🇹🇷 TR-4 | 9PB
+  server: 3z26vux1.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇹🇷 TR-5 | 9PB
+  server: 6bvu0wwu.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇹🇷 TR-6 | 9PB
+  server: kumusm52.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇺🇦 UA-1 | 9PB
+  server: npd23ohu.20260927-usp-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20260927-usp-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇺🇦 UA-2 | 9PB
+  server: 9wrfs8hw.20260927-usp-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇺🇦 UA-3 | 9PB
+  server: jtehk3hn.20260927-usp-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20260927-usp-amd2-node.283400.xyz
+- type: vless
+  name: 🇺🇦 UA-4 | 9PB
+  server: eeurmkv8.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇦 UA-5 | 9PB
+  server: 26txa3s7.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇦 UA-6 | 9PB
+  server: m3a9z9fa.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20260927-usp-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20260927-usp-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇧🇷 BR-1 | 9PB
+  server: n1daonn5.20261015-il-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-il-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇧🇷 BR-2 | 9PB
+  server: jt3xknkb.20261015-il-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇧🇷 BR-3 | 9PB
+  server: qcn9mwhf.20261015-il-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-il-amd1-node.283400.xyz
+- type: vless
+  name: 🇧🇷 BR-4 | 9PB
+  server: 8caf74ww.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇧🇷 BR-5 | 9PB
+  server: y8dt7jua.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇧🇷 BR-6 | 9PB
+  server: w8lb4mo6.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇮🇩 ID-1 | 9PB
+  server: i5fxcufo.20261015-il-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-il-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇮🇩 ID-2 | 9PB
+  server: effjle1z.20261015-il-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇮🇩 ID-3 | 9PB
+  server: gpz4e2ty.20261015-il-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-il-amd2-node.283400.xyz
+- type: vless
+  name: 🇮🇩 ID-4 | 9PB
+  server: z8nyq4th.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇩 ID-5 | 9PB
+  server: 5ff8jyew.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇩 ID-6 | 9PB
+  server: bypukro2.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-il-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-il-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇹🇭 TH-1 | 9PB
+  server: h4fzcxl0.20261015-uk-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-uk-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇹🇭 TH-2 | 9PB
+  server: nr1vvifq.20261015-uk-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇹🇭 TH-3 | 9PB
+  server: c1jbqn54.20261015-uk-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-uk-amd1-node.283400.xyz
+- type: vless
+  name: 🇹🇭 TH-4 | 9PB
+  server: au0ktvay.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇹🇭 TH-5 | 9PB
+  server: p0cy4b9r.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇹🇭 TH-6 | 9PB
+  server: 4jei04bo.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇰🇿 KZ-1 | 9PB
+  server: 4vgd4b1a.20261015-uk-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-uk-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇰🇿 KZ-2 | 9PB
+  server: 03nhif9u.20261015-uk-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇰🇿 KZ-3 | 9PB
+  server: jyi4fpzt.20261015-uk-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-uk-amd2-node.283400.xyz
+- type: vless
+  name: 🇰🇿 KZ-4 | 9PB
+  server: e8u3r6kd.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇰🇿 KZ-5 | 9PB
+  server: grt51o4j.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇰🇿 KZ-6 | 9PB
+  server: e8z6ddyk.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-uk-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-uk-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇲🇰 MK-1 | 9PB
+  server: b9l4zirz.20261015-fr-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-fr-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇲🇰 MK-2 | 9PB
+  server: g6du9pll.20261015-fr-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇲🇰 MK-3 | 9PB
+  server: 3jswp6fj.20261015-fr-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-fr-amd1-node.283400.xyz
+- type: vless
+  name: 🇲🇰 MK-4 | 9PB
+  server: 4kguf5bt.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇲🇰 MK-5 | 9PB
+  server: vkhtw4j1.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇲🇰 MK-6 | 9PB
+  server: ek418ktv.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇦🇿 AZ-1 | 9PB
+  server: q90fbhoq.20261015-fr-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-fr-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇦🇿 AZ-2 | 9PB
+  server: s5ph6iry.20261015-fr-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇦🇿 AZ-3 | 9PB
+  server: wryteb6d.20261015-fr-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-fr-amd2-node.283400.xyz
+- type: vless
+  name: 🇦🇿 AZ-4 | 9PB
+  server: 3uuu1c8x.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇦🇿 AZ-5 | 9PB
+  server: 5hv4tts5.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇦🇿 AZ-6 | 9PB
+  server: 9j2og7vy.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-fr-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-fr-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇮🇶 IQ-1 | 9PB
+  server: 5ffbm2qu.20261015-de-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-de-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇮🇶 IQ-2 | 9PB
+  server: odgb4qym.20261015-de-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇮🇶 IQ-3 | 9PB
+  server: flc6ho3h.20261015-de-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-de-amd1-node.283400.xyz
+- type: vless
+  name: 🇮🇶 IQ-4 | 9PB
+  server: wg6epokk.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇶 IQ-5 | 9PB
+  server: h8m6lecr.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇮🇶 IQ-6 | 9PB
+  server: 4l9efutn.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇳🇬 NG-1 | 9PB
+  server: d6t0gw7e.20261015-de-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-de-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇳🇬 NG-2 | 9PB
+  server: 8vs82q1x.20261015-de-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇳🇬 NG-3 | 9PB
+  server: oycc4snq.20261015-de-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-de-amd2-node.283400.xyz
+- type: vless
+  name: 🇳🇬 NG-4 | 9PB
+  server: c3fvoqlz.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇳🇬 NG-5 | 9PB
+  server: udu7vyv4.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇳🇬 NG-6 | 9PB
+  server: u4qj8qrp.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-de-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-de-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇳🇱 NL-1 | 9PB
+  server: xjof3p2e.20261015-it-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-it-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇳🇱 NL-2 | 9PB
+  server: sfge4e6v.20261015-it-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇳🇱 NL-3 | 9PB
+  server: 00pupi4j.20261015-it-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-it-amd1-node.283400.xyz
+- type: vless
+  name: 🇳🇱 NL-4 | 9PB
+  server: nlyy0zvh.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇳🇱 NL-5 | 9PB
+  server: z6bxjont.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇳🇱 NL-6 | 9PB
+  server: qdepx6a7.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇵🇪 PE-1 | 9PB
+  server: xeei4p5g.20261015-it-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-it-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇵🇪 PE-2 | 9PB
+  server: cvna59tj.20261015-it-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇵🇪 PE-3 | 9PB
+  server: s0hlor5b.20261015-it-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-it-amd2-node.283400.xyz
+- type: vless
+  name: 🇵🇪 PE-4 | 9PB
+  server: ausltoq8.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇵🇪 PE-5 | 9PB
+  server: h8sq1dws.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇵🇪 PE-6 | 9PB
+  server: 9i3d30hv.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-it-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-it-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇷🇴 RO-1 | 9PB
+  server: seuy71oz.20261015-ae-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-ae-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇷🇴 RO-2 | 9PB
+  server: cd1pjdxf.20261015-ae-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇷🇴 RO-3 | 9PB
+  server: r6hydt74.20261015-ae-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-ae-amd1-node.283400.xyz
+- type: vless
+  name: 🇷🇴 RO-4 | 9PB
+  server: xcr7h4oe.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇷🇴 RO-5 | 9PB
+  server: i6vlz86j.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇷🇴 RO-6 | 9PB
+  server: zra19k7z.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇸🇮 SI-1 | 9PB
+  server: jb0t9u0o.20261015-ae-amd2-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261015-ae-amd2-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇸🇮 SI-2 | 9PB
+  server: hmy92win.20261015-ae-amd2-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇸🇮 SI-3 | 9PB
+  server: 1v6eu760.20261015-ae-amd2-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261015-ae-amd2-node.283400.xyz
+- type: vless
+  name: 🇸🇮 SI-4 | 9PB
+  server: mqo3cex9.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇮 SI-5 | 9PB
+  server: yy9s4bnu.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇸🇮 SI-6 | 9PB
+  server: layjs1a9.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261015-ae-amd2-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261015-ae-amd2-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇯🇵 JP-7 | 9PB
+  server: pwb819vy.20261016-jp-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261016-jp-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇯🇵 JP-8 | 9PB
+  server: xqvfex2z.20261016-jp-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇯🇵 JP-9 | 9PB
+  server: raemmq47.20261016-jp-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261016-jp-amd1-node.283400.xyz
+- type: vless
+  name: 🇯🇵 JP-10 | 9PB
+  server: 3vt75tdv.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇯🇵 JP-11 | 9PB
+  server: 44vyhdny.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇯🇵 JP-12 | 9PB
+  server: vuzp0iwq.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-jp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-jp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: anytls
+  name: 🇰🇬 KG-1 | 9PB
+  server: 80b0lp3u.20261016-usp-amd1-node.283400.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  sni: 20261016-usp-amd1-node.283400.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- type: vless
+  name: 🇰🇬 KG-2 | 9PB
+  server: tt04yql2.20261016-usp-amd1-node.283400.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: hysteria2
+  name: 🇰🇬 KG-3 | 9PB
+  server: kia9i9g3.20261016-usp-amd1-node.283400.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  ports: 30000-40000
+  mport: 30000-40000
+  sni: 20261016-usp-amd1-node.283400.xyz
+- type: vless
+  name: 🇰🇬 KG-4 | 9PB
+  server: 8tdqt1gh.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇰🇬 KG-5 | 9PB
+  server: 9g1uk7f7.zf-cdn-02.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇰🇬 KG-6 | 9PB
+  server: j6fk1nkq.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261016-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261016-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- name: 🇯🇵 JP-1 | Lifetime
+  server: 154.36.158.197
+  port: 8388
+  type: ss
+  country: 🇺🇸 US
+  password: BeaUf9c0AEWH40Pu
+  cipher: aes-256-gcm
+  delay: 786
+- cipher: aes-256-gcm
+  name: 🇮🇹 IT-3 | Lifetime
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.63
+  type: ss
+  udp: true
+  delay: 600
+- cipher: aes-256-gcm
+  name: 🇮🇹 IT-4 | Lifetime
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.72
+  type: ss
+  udp: true
+  delay: 588
+- name: 🇮🇹 IT-5 | Lifetime
+  server: 202.50.253.81
+  port: 19999
+  type: ss
+  country: 🇳🇿 NZ
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  delay: 1349
+- name: 🇮🇹 IT-7 | Lifetime
+  server: 202.50.253.18
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  delay: 600
+- name: 🇨🇳 CN-1 | Lifetime
+  server: 39.108.113.127
+  type: vmess
+  country: 🇨🇳CN
+  port: 10086
+  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+  delay: 151
+- name: 🇨🇳 CN-3 | Lifetime
+  server: 156.239.224.107
+  type: vmess
+  country: 🇺🇸US
+  port: 57278
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+  delay: 752
+- type: vless
+  name: 🇨🇳 CN-1 | Sub3
+  server: 60.248.219.76
+  port: 443
+  uuid: 3c400197-b3ed-4335-b73e-6f1562413ffb
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: tse1.mm.bing.net
+  network: ws
+  ws-opts:
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: tse1.mm.bing.net
+- type: vless
+  name: 🇭🇰 HK-1 | Sub3
+  server: 141.11.149.174
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-1 | Sub3
+  server: 156.229.164.4
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-1 | Sub3
+  server: 45.202.254.20
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇬🇧 GB-1 | Sub3
+  server: 212.135.38.66
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇰🇷 KR-1 | Sub3
+  server: 158.247.199.164
+  port: 443
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-1 | Sub3
+  server: 176.97.64.118
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-2 | Sub3
+  server: 156.229.165.234
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-2 | Sub3
+  server: 45.207.157.8
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-3 | Sub3
+  server: 154.83.86.85
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-4 | Sub3
+  server: 45.202.248.189
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-3 | Sub3
+  server: 156.229.165.246
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-4 | Sub3
+  server: 38.180.243.134
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇹🇼 TW-1 | Sub3
+  server: 166.0.199.78
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-2 | Sub3
+  server: 45.192.249.71
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-3 | Sub3
+  server: 176.97.73.198
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇰🇷 KR-2 | Sub3
+  server: 158.247.241.102
+  port: 443
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  network: tcp
+- type: vless
+  name: 🇲🇾 MY-1 | Sub3
+  server: 149.33.30.189
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-1 | Sub3
+  server: 149.33.47.172
+  port: 9443
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-1 | Filter
+  server: mqf7e69y.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-af01e9-us.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-af01e9-us.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇨🇦 CA-1 | Filter
+  server: r7pmep0k.zf-cdn-01.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: co-8ce91c-ca.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: co-8ce91c-ca.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-2 | Filter
+  server: wo6hjaqs.20261108-usp-arm1-node.283400.xyz
+  port: 20000
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: vless
+  name: 🇬🇧 GB-1 | Filter
+  server: wcrvft1b.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-arm1.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-arm1.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇺🇸 US-3 | Filter
+  server: 63ts12jy.20261108-usp-amd1-node.283400.xyz
+  port: 20000
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-4 | Filter
+  server: mzeocqn5.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-usp-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-usp-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇬🇧 GB-2 | Filter
+  server: 7jbipm60.20261108-uk-amd1-node.283400.xyz
+  port: 20000
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: vless
+  name: 🇬🇧 GB-3 | Filter
+  server: 7uw1s6v7.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-uk-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-uk-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇩🇪 DE-1 | Filter
+  server: zwso0m31.20261108-de-amd1-node.283400.xyz
+  port: 20000
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.junzelaser.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: B5eeoAJ1JK_QhMX_lWHoZPIP-53_J2BPjvYmimXLryM
+    short-id: e1eaa29a
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-2 | Filter
+  server: tzav19by.zf-cdn-03.283400.xyz
+  port: 443
+  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 20261108-de-amd1-node.283400.xyz
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video-old-skylumo
+    headers:
+      Host: cdn-20261108-de-amd1-node.283400.xyz
+  ech: cloudflare-ech.com+https://doh.pub/dns-query
+- type: vless
+  name: 🇷🇺 RU-1 | Mix
+  server: ru11.oshost.network
+  port: 443
+  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: ru11.oshost.network
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
+    short-id: 97a15f5af85c4a30
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-1 | Mix
+  server: 198.202.24.142
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vmess
+  name: 🇸🇬 SG-1 | Mix
+  server: sg-transit-3.nebulacloud.win
+  port: 30330
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  alterId: 0
+  cipher: auto
+  network: ws
+  udp: true
+  tls:
+    enabled: true
+    server_name: sg-transit-3.nebulacloud.win
+  ws-opts:
+    path: /ca/getData
+    headers:
+      Host: sg-transit-3.nebulacloud.win
+- type: trojan
+  name: 🇺🇸 US-2 | Mix
+  server: 141.193.213.172
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  security: tls
+  sni: www.calmlunch.com
+  servername: www.calmlunch.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  ech: ip.gs+udp://8.8.8.8
+- type: vless
+  name: 🇺🇸 US-3 | Mix
+  server: 209.94.90.201
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+- type: vless
+  name: 🇸🇬 SG-2 | Mix
+  server: 206.238.239.20
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+- type: vless
+  name: 🇨🇾 CY-1 | Mix
+  server: hydra.yokkastars.com
+  port: 40443
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: deepl.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-5 | Mix
+  server: 209.206.51.236
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vless
+  name: 🇺🇸 US-6 | Mix
+  server: 209.94.90.47
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+  alpn:
+  - h2
+  - http/1.1
+  - h3
+- type: vless
+  name: 🇰🇿 KZ-1 | Mix
+  server: 46.8.43.125
+  port: 443
+  uuid: 846cedee-2a52-4a62-a0b9-11850ead6a8b
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: kz-central.v8x2b.lol
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-3 | Mix
+  server: 206.238.239.245
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vless
+  name: 🇺🇸 US-8 | Mix
+  server: 198.202.24.214
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- type: vless
+  name: 🇷🇺 RU-2 | Mix
+  server: 213.159.209.66
+  port: 443
+  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: ru11.oshost.network
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
+    short-id: 97a15f5af85c4a30
+  network: tcp
+- type: vless
+  name: 🇧🇾 BY-1 | Mix
+  server: here-we-go-soocer.keno.su
+  port: 443
+  uuid: 2a66ad35-93ce-4fd2-831f-bcaa63cdac1e
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: here-we-go-soocer.keno.su
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _J2iVrDDgPShx9YYjTxVc_HrL3mrBcP8K-TyyyvHQlU
+    short-id: a1b2c3d4e5f60718
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-9 | Mix
+  server: 155.117.232.61
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: node-usa.blok-signalon.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+  network: tcp
+- type: ss
+  name: 🇬🇷 GR-1 | Mix
+  server: ams1.rvpn.app
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: x2A6AsyZ-rAllz0wbKHzWA
+  udp: true
+- type: vless
+  name: 🇩🇪 DE-1 | Mix
+  server: dorado.yokkastars.com
+  port: 40443
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: deepl.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  network: tcp
+- type: hysteria2
+  name: 🇫🇷 FR-1 | Mix
+  server: 195.177.94.166
+  port: 443
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  sni: fr2-cl3.happy-glonaris.top
+  skip-cert-verify: true
+- type: vless
+  name: 🇷🇺 RU-3 | Mix
+  server: ru3.radiolumens.uk
+  port: 8444
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: ru3.radiolumens.uk
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-uk
+  alpn:
+  - h2
+  - http/1.1
+  serviceName: beru-uk
+  mode: gun
+- type: trojan
+  name: 🇮🇱 IL-1 | Mix
+  server: 64.176.163.182
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  skip-cert-verify: true
+  security: tls
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  servername: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  network: tcp
+- type: vless
+  name: 🇷🇺 RU-4 | Mix
+  server: tau1.freerunet.online
+  port: 443
+  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: tau1.freerunet.online
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
+    short-id: 4a7b1c8d
+  network: tcp
+- type: vless
+  name: 🇷🇺 RU-5 | Mix
+  server: se3.h1cloud.net
+  port: 25387
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
+    short-id: 9608a9c65d315d52
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-2 | Mix
+  server: de.puflino.com
+  port: 443
+  uuid: c7270753-bd18-4696-956d-57dbde1183fe
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: edge-fr.extazy.net
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ygxQyBcJzlLgpSl3MCRDDiFET4TT-3wxa4GdG1obkCY
+    short-id: ba4b2afa9e7193ea
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-10 | Mix
+  server: node-usa.blok-signalon.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: node-usa.blok-signalon.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: aZDDxJRwRH2J4FPtoIr7DmOvpQPh9sbGbvV-NpVpfms
+    short-id: 336c2cff6e3717c4
+  network: tcp
+- type: vless
+  name: 🇮🇱 IL-2 | Mix
+  server: ee.h1cloud.net
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  network: tcp
+- type: vless
+  name: 🇸🇪 SE-1 | Mix
+  server: 136.148.211.243
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: se1-cl3.vless-fiberstasis.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
+    short-id: 11d37dd92940329e
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-se-3
+  serviceName: grpc-se-3
+  mode: gun
+- type: vless
+  name: 🇮🇱 IL-3 | Mix
+  server: 79.182.39.232
+  port: 25895
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: www.samsung.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  network: tcp
+- type: vless
+  name: 🇷🇺 RU-6 | Mix
+  server: 193.233.221.86
+  port: 443
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: capableconjuretarnish.clarionconsult.info
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 2iedjEliJfyf7VYxQjSHRiY0RY9ylwj-GtO4MCfuQhg
+    short-id: a50534e181896415
+  network: tcp
+- type: hysteria2
+  name: 🇫🇷 FR-2 | Mix
+  server: fr2-cl3.happy-glonaris.top
+  port: 443
+  password: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  sni: fr2-cl3.happy-glonaris.top
+  skip-cert-verify: true
+- type: trojan
+  name: 🇺🇸 US-11 | Mix
+  server: 66.163.122.7
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  skip-cert-verify: false
+  security: tls
+  sni: www.searchnationwidecareerchangehelperandguidancetoday.com
+  servername: www.searchnationwidecareerchangehelperandguidancetoday.com
+  network: tcp
+- type: vless
+  name: 🇳🇱 NL-1 | Mix
+  server: nl-all.vless-bitrhythmia.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: nl-all.vless-bitrhythmia.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: WJrP73M7px11xkHKhmEMKnaqUR-DPZnKbR2m_N3TwEE
+    short-id: 724d6cab
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-nl-stream
+  serviceName: grpc-nl-stream
+  mode: multi
+- type: vless
+  name: 🇳🇱 NL-2 | Mix
+  server: 74.0.48.173
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: nl-all.vless-bitrhythmia.top
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: WJrP73M7px11xkHKhmEMKnaqUR-DPZnKbR2m_N3TwEE
+    short-id: 724d6cab
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-nl-stream
+  serviceName: grpc-nl-stream
+  mode: gun
+- type: vless
+  name: 🇸🇬 SG-4 | Mix
+  server: 206.238.237.25
+  port: 2083
+  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: vipfree.dr-ping.ir
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+proxy-groups:
+- name: 🌍 全线路选择
+  type: select
+  proxies:
+  - ⚡️ 全自动测速
+  - 📦 8EB
+  - 📦 9PB
+  - 📦 Lifetime
+  - 📦 Sub3
+  - 📦 Filter
+  - 📦 MIX
+- name: ⚡️ 全自动测速
+  type: url-test
+  proxies:
+  - 🇦🇹 AT-1 | 8EB
+  - 🇺🇸 US-1 | 8EB
+  - 🇳🇱 NL-1 | 8EB
+  - 🇺🇸 US-2 | 8EB
+  - 🇺🇸 US-3 | 8EB
+  - 🇨🇳 CN-1 | 8EB
+  - 🇧🇷 BR-1 | 8EB
+  - 🇨🇦 CA-1 | 8EB
+  - 🇨🇦 CA-2 | 8EB
+  - 🇨🇦 CA-3 | 8EB
+  - 🇨🇦 CA-5 | 8EB
+  - 🇨🇦 CA-6 | 8EB
+  - 🇨🇦 CA-7 | 8EB
+  - 🇨🇦 CA-8 | 8EB
+  - 🇨🇦 CA-9 | 8EB
+  - 🇨🇱 CL-1 | 8EB
+  - 🇩🇪 DE-1 | 8EB
+  - 🇩🇪 DE-2 | 8EB
+  - 🇩🇪 DE-3 | 8EB
+  - 🇩🇪 DE-4 | 8EB
+  - 🇪🇪 EE-1 | 8EB
+  - 🇪🇸 ES-1 | 8EB
+  - 🇪🇸 ES-2 | 8EB
+  - 🇪🇸 ES-3 | 8EB
+  - 🇪🇸 ES-4 | 8EB
+  - 🇬🇧 GB-1 | 8EB
+  - 🇬🇧 GB-2 | 8EB
+  - 🇬🇧 GB-3 | 8EB
+  - 🇭🇰 HK-1 | 8EB
+  - 🇭🇰 HK-2 | 8EB
+  - 🇭🇰 HK-3 | 8EB
+  - 🇭🇰 HK-4 | 8EB
+  - 🇮🇪 IE-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
+  - 🇯🇵 JP-2 | 8EB
+  - 🇯🇵 JP-3 | 8EB
+  - 🇯🇵 JP-5 | 8EB
+  - 🇯🇵 JP-6 | 8EB
+  - 🇯🇵 JP-7 | 8EB
+  - 🇯🇵 JP-8 | 8EB
+  - 🇰🇷 KR-1 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇸🇬 SG-3 | 8EB
+  - 🇸🇬 SG-4 | 8EB
+  - 🇸🇬 SG-5 | 8EB
+  - 🇸🇬 SG-6 | 8EB
+  - 🇸🇬 SG-7 | 8EB
+  - 🇸🇬 SG-8 | 8EB
+  - 🇹🇼 TW-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇺🇸 US-6 | 8EB
+  - 🇺🇸 US-7 | 8EB
+  - 🇺🇸 US-8 | 8EB
+  - 🇺🇸 US-9 | 8EB
+  - 🇺🇸 US-10 | 8EB
+  - 🇺🇸 US-12 | 8EB
+  - 🇺🇸 US-13 | 8EB
+  - 🇺🇸 US-14 | 8EB
+  - 🇺🇸 US-15 | 8EB
+  - 🇺🇸 US-16 | 8EB
+  - 🇺🇸 US-17 | 8EB
+  - 🇺🇸 US-18 | 8EB
+  - 🇺🇸 US-19 | 8EB
+  - 🇺🇸 US-20 | 8EB
+  - 🇺🇸 US-21 | 8EB
+  - 🇻🇳 VN-1 | 8EB
+  - 🇺🇸 US-1 | 9PB
+  - 🇭🇰 HK-1 | 9PB
+  - 🇭🇰 HK-2 | 9PB
+  - 🇺🇸 US-2 | 9PB
+  - 🇺🇸 US-3 | 9PB
+  - 🇺🇸 US-4 | 9PB
+  - 🇨🇦 CA-1 | 9PB
+  - 🇨🇦 CA-2 | 9PB
+  - 🇨🇦 CA-3 | 9PB
+  - 🇺🇸 US-5 | 9PB
+  - 🇺🇸 US-6 | 9PB
+  - 🇺🇸 US-7 | 9PB
+  - 🇺🇸 US-8 | 9PB
+  - 🇺🇸 US-9 | 9PB
+  - 🇺🇸 US-10 | 9PB
+  - 🇬🇧 GB-1 | 9PB
+  - 🇬🇧 GB-2 | 9PB
+  - 🇬🇧 GB-3 | 9PB
+  - 🇬🇧 GB-4 | 9PB
+  - 🇬🇧 GB-5 | 9PB
+  - 🇬🇧 GB-6 | 9PB
+  - 🇩🇪 DE-1 | 9PB
+  - 🇩🇪 DE-2 | 9PB
+  - 🇩🇪 DE-3 | 9PB
+  - 🇩🇪 DE-4 | 9PB
+  - 🇩🇪 DE-5 | 9PB
+  - 🇩🇪 DE-6 | 9PB
+  - 🇺🇸 US-11 | 9PB
+  - 🇺🇸 US-12 | 9PB
+  - 🇺🇸 US-13 | 9PB
+  - 🇺🇸 US-14 | 9PB
+  - 🇺🇸 US-15 | 9PB
+  - 🇺🇸 US-16 | 9PB
+  - 🇬🇧 GB-7 | 9PB
+  - 🇬🇧 GB-8 | 9PB
+  - 🇬🇧 GB-9 | 9PB
+  - 🇬🇧 GB-10 | 9PB
+  - 🇬🇧 GB-11 | 9PB
+  - 🇬🇧 GB-12 | 9PB
+  - 🇩🇪 DE-7 | 9PB
+  - 🇩🇪 DE-8 | 9PB
+  - 🇩🇪 DE-9 | 9PB
+  - 🇩🇪 DE-10 | 9PB
+  - 🇩🇪 DE-11 | 9PB
+  - 🇩🇪 DE-12 | 9PB
+  - 🇪🇸 ES-1 | 9PB
+  - 🇪🇸 ES-2 | 9PB
+  - 🇪🇸 ES-3 | 9PB
+  - 🇫🇷 FR-1 | 9PB
+  - 🇫🇷 FR-2 | 9PB
+  - 🇫🇷 FR-3 | 9PB
+  - 🇫🇷 FR-4 | 9PB
+  - 🇫🇷 FR-5 | 9PB
+  - 🇫🇷 FR-6 | 9PB
+  - 🇵🇱 PL-1 | 9PB
+  - 🇵🇱 PL-2 | 9PB
+  - 🇵🇱 PL-3 | 9PB
+  - 🇵🇱 PL-4 | 9PB
+  - 🇵🇱 PL-5 | 9PB
+  - 🇵🇱 PL-6 | 9PB
+  - 🇸🇪 SE-1 | 9PB
+  - 🇸🇪 SE-2 | 9PB
+  - 🇸🇪 SE-3 | 9PB
+  - 🇸🇪 SE-4 | 9PB
+  - 🇸🇪 SE-5 | 9PB
+  - 🇸🇪 SE-6 | 9PB
+  - 🇸🇬 SG-1 | 9PB
+  - 🇸🇬 SG-2 | 9PB
+  - 🇸🇬 SG-3 | 9PB
+  - 🇸🇬 SG-4 | 9PB
+  - 🇸🇬 SG-5 | 9PB
+  - 🇸🇬 SG-6 | 9PB
+  - 🇮🇱 IL-1 | 9PB
+  - 🇮🇱 IL-2 | 9PB
+  - 🇮🇱 IL-3 | 9PB
+  - 🇮🇱 IL-4 | 9PB
+  - 🇮🇱 IL-5 | 9PB
+  - 🇮🇱 IL-6 | 9PB
+  - 🇫🇷 FR-7 | 9PB
+  - 🇫🇷 FR-8 | 9PB
+  - 🇫🇷 FR-9 | 9PB
+  - 🇫🇷 FR-10 | 9PB
+  - 🇫🇷 FR-11 | 9PB
+  - 🇫🇷 FR-12 | 9PB
+  - 🇮🇹 IT-1 | 9PB
+  - 🇮🇹 IT-2 | 9PB
+  - 🇮🇹 IT-3 | 9PB
+  - 🇮🇹 IT-4 | 9PB
+  - 🇮🇹 IT-5 | 9PB
+  - 🇮🇹 IT-6 | 9PB
+  - 🇯🇵 JP-1 | 9PB
+  - 🇯🇵 JP-2 | 9PB
+  - 🇯🇵 JP-3 | 9PB
+  - 🇯🇵 JP-4 | 9PB
+  - 🇯🇵 JP-5 | 9PB
+  - 🇯🇵 JP-6 | 9PB
+  - 🇺🇸 US-17 | 9PB
+  - 🇺🇸 US-18 | 9PB
+  - 🇺🇸 US-19 | 9PB
+  - 🇺🇸 US-20 | 9PB
+  - 🇺🇸 US-21 | 9PB
+  - 🇺🇸 US-22 | 9PB
+  - 🇦🇪 AE-1 | 9PB
+  - 🇦🇪 AE-2 | 9PB
+  - 🇦🇪 AE-3 | 9PB
+  - 🇦🇪 AE-4 | 9PB
+  - 🇦🇪 AE-5 | 9PB
+  - 🇦🇪 AE-6 | 9PB
+  - 🇹🇷 TR-1 | 9PB
+  - 🇹🇷 TR-2 | 9PB
+  - 🇹🇷 TR-3 | 9PB
+  - 🇹🇷 TR-4 | 9PB
+  - 🇹🇷 TR-5 | 9PB
+  - 🇹🇷 TR-6 | 9PB
+  - 🇺🇦 UA-1 | 9PB
+  - 🇺🇦 UA-2 | 9PB
+  - 🇺🇦 UA-3 | 9PB
+  - 🇺🇦 UA-4 | 9PB
+  - 🇺🇦 UA-5 | 9PB
+  - 🇺🇦 UA-6 | 9PB
+  - 🇧🇷 BR-1 | 9PB
+  - 🇧🇷 BR-2 | 9PB
+  - 🇧🇷 BR-3 | 9PB
+  - 🇧🇷 BR-4 | 9PB
+  - 🇧🇷 BR-5 | 9PB
+  - 🇧🇷 BR-6 | 9PB
+  - 🇮🇩 ID-1 | 9PB
+  - 🇮🇩 ID-2 | 9PB
+  - 🇮🇩 ID-3 | 9PB
+  - 🇮🇩 ID-4 | 9PB
+  - 🇮🇩 ID-5 | 9PB
+  - 🇮🇩 ID-6 | 9PB
+  - 🇹🇭 TH-1 | 9PB
+  - 🇹🇭 TH-2 | 9PB
+  - 🇹🇭 TH-3 | 9PB
+  - 🇹🇭 TH-4 | 9PB
+  - 🇹🇭 TH-5 | 9PB
+  - 🇹🇭 TH-6 | 9PB
+  - 🇰🇿 KZ-1 | 9PB
+  - 🇰🇿 KZ-2 | 9PB
+  - 🇰🇿 KZ-3 | 9PB
+  - 🇰🇿 KZ-4 | 9PB
+  - 🇰🇿 KZ-5 | 9PB
+  - 🇰🇿 KZ-6 | 9PB
+  - 🇲🇰 MK-1 | 9PB
+  - 🇲🇰 MK-2 | 9PB
+  - 🇲🇰 MK-3 | 9PB
+  - 🇲🇰 MK-4 | 9PB
+  - 🇲🇰 MK-5 | 9PB
+  - 🇲🇰 MK-6 | 9PB
+  - 🇦🇿 AZ-1 | 9PB
+  - 🇦🇿 AZ-2 | 9PB
+  - 🇦🇿 AZ-3 | 9PB
+  - 🇦🇿 AZ-4 | 9PB
+  - 🇦🇿 AZ-5 | 9PB
+  - 🇦🇿 AZ-6 | 9PB
+  - 🇮🇶 IQ-1 | 9PB
+  - 🇮🇶 IQ-2 | 9PB
+  - 🇮🇶 IQ-3 | 9PB
+  - 🇮🇶 IQ-4 | 9PB
+  - 🇮🇶 IQ-5 | 9PB
+  - 🇮🇶 IQ-6 | 9PB
+  - 🇳🇬 NG-1 | 9PB
+  - 🇳🇬 NG-2 | 9PB
+  - 🇳🇬 NG-3 | 9PB
+  - 🇳🇬 NG-4 | 9PB
+  - 🇳🇬 NG-5 | 9PB
+  - 🇳🇬 NG-6 | 9PB
+  - 🇳🇱 NL-1 | 9PB
+  - 🇳🇱 NL-2 | 9PB
+  - 🇳🇱 NL-3 | 9PB
+  - 🇳🇱 NL-4 | 9PB
+  - 🇳🇱 NL-5 | 9PB
+  - 🇳🇱 NL-6 | 9PB
+  - 🇵🇪 PE-1 | 9PB
+  - 🇵🇪 PE-2 | 9PB
+  - 🇵🇪 PE-3 | 9PB
+  - 🇵🇪 PE-4 | 9PB
+  - 🇵🇪 PE-5 | 9PB
+  - 🇵🇪 PE-6 | 9PB
+  - 🇷🇴 RO-1 | 9PB
+  - 🇷🇴 RO-2 | 9PB
+  - 🇷🇴 RO-3 | 9PB
+  - 🇷🇴 RO-4 | 9PB
+  - 🇷🇴 RO-5 | 9PB
+  - 🇷🇴 RO-6 | 9PB
+  - 🇸🇮 SI-1 | 9PB
+  - 🇸🇮 SI-2 | 9PB
+  - 🇸🇮 SI-3 | 9PB
+  - 🇸🇮 SI-4 | 9PB
+  - 🇸🇮 SI-5 | 9PB
+  - 🇸🇮 SI-6 | 9PB
+  - 🇯🇵 JP-7 | 9PB
+  - 🇯🇵 JP-8 | 9PB
+  - 🇯🇵 JP-9 | 9PB
+  - 🇯🇵 JP-10 | 9PB
+  - 🇯🇵 JP-11 | 9PB
+  - 🇯🇵 JP-12 | 9PB
+  - 🇰🇬 KG-1 | 9PB
+  - 🇰🇬 KG-2 | 9PB
+  - 🇰🇬 KG-3 | 9PB
+  - 🇰🇬 KG-4 | 9PB
+  - 🇰🇬 KG-5 | 9PB
+  - 🇰🇬 KG-6 | 9PB
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇮🇹 IT-3 | Lifetime
+  - 🇮🇹 IT-4 | Lifetime
+  - 🇮🇹 IT-5 | Lifetime
+  - 🇮🇹 IT-7 | Lifetime
+  - 🇨🇳 CN-1 | Lifetime
+  - 🇨🇳 CN-3 | Lifetime
+  - 🇨🇳 CN-1 | Sub3
+  - 🇭🇰 HK-1 | Sub3
+  - 🇺🇸 US-1 | Sub3
+  - 🇯🇵 JP-1 | Sub3
+  - 🇬🇧 GB-1 | Sub3
+  - 🇰🇷 KR-1 | Sub3
+  - 🇸🇬 SG-1 | Sub3
+  - 🇺🇸 US-2 | Sub3
+  - 🇭🇰 HK-2 | Sub3
+  - 🇭🇰 HK-3 | Sub3
+  - 🇭🇰 HK-4 | Sub3
+  - 🇺🇸 US-3 | Sub3
+  - 🇺🇸 US-4 | Sub3
+  - 🇹🇼 TW-1 | Sub3
+  - 🇯🇵 JP-2 | Sub3
+  - 🇯🇵 JP-3 | Sub3
+  - 🇰🇷 KR-2 | Sub3
+  - 🇲🇾 MY-1 | Sub3
+  - 🇩🇪 DE-1 | Sub3
+  - 🇺🇸 US-1 | Filter
+  - 🇨🇦 CA-1 | Filter
+  - 🇺🇸 US-2 | Filter
+  - 🇬🇧 GB-1 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇺🇸 US-4 | Filter
+  - 🇬🇧 GB-2 | Filter
+  - 🇬🇧 GB-3 | Filter
+  - 🇩🇪 DE-1 | Filter
+  - 🇩🇪 DE-2 | Filter
+  - 🇷🇺 RU-1 | Mix
+  - 🇺🇸 US-1 | Mix
+  - 🇸🇬 SG-1 | Mix
+  - 🇺🇸 US-2 | Mix
+  - 🇺🇸 US-3 | Mix
+  - 🇸🇬 SG-2 | Mix
+  - 🇨🇾 CY-1 | Mix
+  - 🇺🇸 US-5 | Mix
+  - 🇺🇸 US-6 | Mix
+  - 🇰🇿 KZ-1 | Mix
+  - 🇸🇬 SG-3 | Mix
+  - 🇺🇸 US-8 | Mix
+  - 🇷🇺 RU-2 | Mix
+  - 🇧🇾 BY-1 | Mix
+  - 🇺🇸 US-9 | Mix
+  - 🇬🇷 GR-1 | Mix
+  - 🇩🇪 DE-1 | Mix
+  - 🇫🇷 FR-1 | Mix
+  - 🇷🇺 RU-3 | Mix
+  - 🇮🇱 IL-1 | Mix
+  - 🇷🇺 RU-4 | Mix
+  - 🇷🇺 RU-5 | Mix
+  - 🇩🇪 DE-2 | Mix
+  - 🇺🇸 US-10 | Mix
+  - 🇮🇱 IL-2 | Mix
+  - 🇸🇪 SE-1 | Mix
+  - 🇮🇱 IL-3 | Mix
+  - 🇷🇺 RU-6 | Mix
+  - 🇫🇷 FR-2 | Mix
+  - 🇺🇸 US-11 | Mix
+  - 🇳🇱 NL-1 | Mix
+  - 🇳🇱 NL-2 | Mix
+  - 🇸🇬 SG-4 | Mix
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 📦 8EB
+  type: url-test
+  proxies:
+  - 🇦🇹 AT-1 | 8EB
+  - 🇺🇸 US-1 | 8EB
+  - 🇳🇱 NL-1 | 8EB
+  - 🇺🇸 US-2 | 8EB
+  - 🇺🇸 US-3 | 8EB
+  - 🇨🇳 CN-1 | 8EB
+  - 🇧🇷 BR-1 | 8EB
+  - 🇨🇦 CA-1 | 8EB
+  - 🇨🇦 CA-2 | 8EB
+  - 🇨🇦 CA-3 | 8EB
+  - 🇨🇦 CA-5 | 8EB
+  - 🇨🇦 CA-6 | 8EB
+  - 🇨🇦 CA-7 | 8EB
+  - 🇨🇦 CA-8 | 8EB
+  - 🇨🇦 CA-9 | 8EB
+  - 🇨🇱 CL-1 | 8EB
+  - 🇩🇪 DE-1 | 8EB
+  - 🇩🇪 DE-2 | 8EB
+  - 🇩🇪 DE-3 | 8EB
+  - 🇩🇪 DE-4 | 8EB
+  - 🇪🇪 EE-1 | 8EB
+  - 🇪🇸 ES-1 | 8EB
+  - 🇪🇸 ES-2 | 8EB
+  - 🇪🇸 ES-3 | 8EB
+  - 🇪🇸 ES-4 | 8EB
+  - 🇬🇧 GB-1 | 8EB
+  - 🇬🇧 GB-2 | 8EB
+  - 🇬🇧 GB-3 | 8EB
+  - 🇭🇰 HK-1 | 8EB
+  - 🇭🇰 HK-2 | 8EB
+  - 🇭🇰 HK-3 | 8EB
+  - 🇭🇰 HK-4 | 8EB
+  - 🇮🇪 IE-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
+  - 🇯🇵 JP-2 | 8EB
+  - 🇯🇵 JP-3 | 8EB
+  - 🇯🇵 JP-5 | 8EB
+  - 🇯🇵 JP-6 | 8EB
+  - 🇯🇵 JP-7 | 8EB
+  - 🇯🇵 JP-8 | 8EB
+  - 🇰🇷 KR-1 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇸🇬 SG-3 | 8EB
+  - 🇸🇬 SG-4 | 8EB
+  - 🇸🇬 SG-5 | 8EB
+  - 🇸🇬 SG-6 | 8EB
+  - 🇸🇬 SG-7 | 8EB
+  - 🇸🇬 SG-8 | 8EB
+  - 🇹🇼 TW-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇺🇸 US-6 | 8EB
+  - 🇺🇸 US-7 | 8EB
+  - 🇺🇸 US-8 | 8EB
+  - 🇺🇸 US-9 | 8EB
+  - 🇺🇸 US-10 | 8EB
+  - 🇺🇸 US-12 | 8EB
+  - 🇺🇸 US-13 | 8EB
+  - 🇺🇸 US-14 | 8EB
+  - 🇺🇸 US-15 | 8EB
+  - 🇺🇸 US-16 | 8EB
+  - 🇺🇸 US-17 | 8EB
+  - 🇺🇸 US-18 | 8EB
+  - 🇺🇸 US-19 | 8EB
+  - 🇺🇸 US-20 | 8EB
+  - 🇺🇸 US-21 | 8EB
+  - 🇻🇳 VN-1 | 8EB
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 📦 9PB
+  type: url-test
+  proxies:
+  - 🇺🇸 US-1 | 9PB
+  - 🇭🇰 HK-1 | 9PB
+  - 🇭🇰 HK-2 | 9PB
+  - 🇺🇸 US-2 | 9PB
+  - 🇺🇸 US-3 | 9PB
+  - 🇺🇸 US-4 | 9PB
+  - 🇨🇦 CA-1 | 9PB
+  - 🇨🇦 CA-2 | 9PB
+  - 🇨🇦 CA-3 | 9PB
+  - 🇺🇸 US-5 | 9PB
+  - 🇺🇸 US-6 | 9PB
+  - 🇺🇸 US-7 | 9PB
+  - 🇺🇸 US-8 | 9PB
+  - 🇺🇸 US-9 | 9PB
+  - 🇺🇸 US-10 | 9PB
+  - 🇬🇧 GB-1 | 9PB
+  - 🇬🇧 GB-2 | 9PB
+  - 🇬🇧 GB-3 | 9PB
+  - 🇬🇧 GB-4 | 9PB
+  - 🇬🇧 GB-5 | 9PB
+  - 🇬🇧 GB-6 | 9PB
+  - 🇩🇪 DE-1 | 9PB
+  - 🇩🇪 DE-2 | 9PB
+  - 🇩🇪 DE-3 | 9PB
+  - 🇩🇪 DE-4 | 9PB
+  - 🇩🇪 DE-5 | 9PB
+  - 🇩🇪 DE-6 | 9PB
+  - 🇺🇸 US-11 | 9PB
+  - 🇺🇸 US-12 | 9PB
+  - 🇺🇸 US-13 | 9PB
+  - 🇺🇸 US-14 | 9PB
+  - 🇺🇸 US-15 | 9PB
+  - 🇺🇸 US-16 | 9PB
+  - 🇬🇧 GB-7 | 9PB
+  - 🇬🇧 GB-8 | 9PB
+  - 🇬🇧 GB-9 | 9PB
+  - 🇬🇧 GB-10 | 9PB
+  - 🇬🇧 GB-11 | 9PB
+  - 🇬🇧 GB-12 | 9PB
+  - 🇩🇪 DE-7 | 9PB
+  - 🇩🇪 DE-8 | 9PB
+  - 🇩🇪 DE-9 | 9PB
+  - 🇩🇪 DE-10 | 9PB
+  - 🇩🇪 DE-11 | 9PB
+  - 🇩🇪 DE-12 | 9PB
+  - 🇪🇸 ES-1 | 9PB
+  - 🇪🇸 ES-2 | 9PB
+  - 🇪🇸 ES-3 | 9PB
+  - 🇫🇷 FR-1 | 9PB
+  - 🇫🇷 FR-2 | 9PB
+  - 🇫🇷 FR-3 | 9PB
+  - 🇫🇷 FR-4 | 9PB
+  - 🇫🇷 FR-5 | 9PB
+  - 🇫🇷 FR-6 | 9PB
+  - 🇵🇱 PL-1 | 9PB
+  - 🇵🇱 PL-2 | 9PB
+  - 🇵🇱 PL-3 | 9PB
+  - 🇵🇱 PL-4 | 9PB
+  - 🇵🇱 PL-5 | 9PB
+  - 🇵🇱 PL-6 | 9PB
+  - 🇸🇪 SE-1 | 9PB
+  - 🇸🇪 SE-2 | 9PB
+  - 🇸🇪 SE-3 | 9PB
+  - 🇸🇪 SE-4 | 9PB
+  - 🇸🇪 SE-5 | 9PB
+  - 🇸🇪 SE-6 | 9PB
+  - 🇸🇬 SG-1 | 9PB
+  - 🇸🇬 SG-2 | 9PB
+  - 🇸🇬 SG-3 | 9PB
+  - 🇸🇬 SG-4 | 9PB
+  - 🇸🇬 SG-5 | 9PB
+  - 🇸🇬 SG-6 | 9PB
+  - 🇮🇱 IL-1 | 9PB
+  - 🇮🇱 IL-2 | 9PB
+  - 🇮🇱 IL-3 | 9PB
+  - 🇮🇱 IL-4 | 9PB
+  - 🇮🇱 IL-5 | 9PB
+  - 🇮🇱 IL-6 | 9PB
+  - 🇫🇷 FR-7 | 9PB
+  - 🇫🇷 FR-8 | 9PB
+  - 🇫🇷 FR-9 | 9PB
+  - 🇫🇷 FR-10 | 9PB
+  - 🇫🇷 FR-11 | 9PB
+  - 🇫🇷 FR-12 | 9PB
+  - 🇮🇹 IT-1 | 9PB
+  - 🇮🇹 IT-2 | 9PB
+  - 🇮🇹 IT-3 | 9PB
+  - 🇮🇹 IT-4 | 9PB
+  - 🇮🇹 IT-5 | 9PB
+  - 🇮🇹 IT-6 | 9PB
+  - 🇯🇵 JP-1 | 9PB
+  - 🇯🇵 JP-2 | 9PB
+  - 🇯🇵 JP-3 | 9PB
+  - 🇯🇵 JP-4 | 9PB
+  - 🇯🇵 JP-5 | 9PB
+  - 🇯🇵 JP-6 | 9PB
+  - 🇺🇸 US-17 | 9PB
+  - 🇺🇸 US-18 | 9PB
+  - 🇺🇸 US-19 | 9PB
+  - 🇺🇸 US-20 | 9PB
+  - 🇺🇸 US-21 | 9PB
+  - 🇺🇸 US-22 | 9PB
+  - 🇦🇪 AE-1 | 9PB
+  - 🇦🇪 AE-2 | 9PB
+  - 🇦🇪 AE-3 | 9PB
+  - 🇦🇪 AE-4 | 9PB
+  - 🇦🇪 AE-5 | 9PB
+  - 🇦🇪 AE-6 | 9PB
+  - 🇹🇷 TR-1 | 9PB
+  - 🇹🇷 TR-2 | 9PB
+  - 🇹🇷 TR-3 | 9PB
+  - 🇹🇷 TR-4 | 9PB
+  - 🇹🇷 TR-5 | 9PB
+  - 🇹🇷 TR-6 | 9PB
+  - 🇺🇦 UA-1 | 9PB
+  - 🇺🇦 UA-2 | 9PB
+  - 🇺🇦 UA-3 | 9PB
+  - 🇺🇦 UA-4 | 9PB
+  - 🇺🇦 UA-5 | 9PB
+  - 🇺🇦 UA-6 | 9PB
+  - 🇧🇷 BR-1 | 9PB
+  - 🇧🇷 BR-2 | 9PB
+  - 🇧🇷 BR-3 | 9PB
+  - 🇧🇷 BR-4 | 9PB
+  - 🇧🇷 BR-5 | 9PB
+  - 🇧🇷 BR-6 | 9PB
+  - 🇮🇩 ID-1 | 9PB
+  - 🇮🇩 ID-2 | 9PB
+  - 🇮🇩 ID-3 | 9PB
+  - 🇮🇩 ID-4 | 9PB
+  - 🇮🇩 ID-5 | 9PB
+  - 🇮🇩 ID-6 | 9PB
+  - 🇹🇭 TH-1 | 9PB
+  - 🇹🇭 TH-2 | 9PB
+  - 🇹🇭 TH-3 | 9PB
+  - 🇹🇭 TH-4 | 9PB
+  - 🇹🇭 TH-5 | 9PB
+  - 🇹🇭 TH-6 | 9PB
+  - 🇰🇿 KZ-1 | 9PB
+  - 🇰🇿 KZ-2 | 9PB
+  - 🇰🇿 KZ-3 | 9PB
+  - 🇰🇿 KZ-4 | 9PB
+  - 🇰🇿 KZ-5 | 9PB
+  - 🇰🇿 KZ-6 | 9PB
+  - 🇲🇰 MK-1 | 9PB
+  - 🇲🇰 MK-2 | 9PB
+  - 🇲🇰 MK-3 | 9PB
+  - 🇲🇰 MK-4 | 9PB
+  - 🇲🇰 MK-5 | 9PB
+  - 🇲🇰 MK-6 | 9PB
+  - 🇦🇿 AZ-1 | 9PB
+  - 🇦🇿 AZ-2 | 9PB
+  - 🇦🇿 AZ-3 | 9PB
+  - 🇦🇿 AZ-4 | 9PB
+  - 🇦🇿 AZ-5 | 9PB
+  - 🇦🇿 AZ-6 | 9PB
+  - 🇮🇶 IQ-1 | 9PB
+  - 🇮🇶 IQ-2 | 9PB
+  - 🇮🇶 IQ-3 | 9PB
+  - 🇮🇶 IQ-4 | 9PB
+  - 🇮🇶 IQ-5 | 9PB
+  - 🇮🇶 IQ-6 | 9PB
+  - 🇳🇬 NG-1 | 9PB
+  - 🇳🇬 NG-2 | 9PB
+  - 🇳🇬 NG-3 | 9PB
+  - 🇳🇬 NG-4 | 9PB
+  - 🇳🇬 NG-5 | 9PB
+  - 🇳🇬 NG-6 | 9PB
+  - 🇳🇱 NL-1 | 9PB
+  - 🇳🇱 NL-2 | 9PB
+  - 🇳🇱 NL-3 | 9PB
+  - 🇳🇱 NL-4 | 9PB
+  - 🇳🇱 NL-5 | 9PB
+  - 🇳🇱 NL-6 | 9PB
+  - 🇵🇪 PE-1 | 9PB
+  - 🇵🇪 PE-2 | 9PB
+  - 🇵🇪 PE-3 | 9PB
+  - 🇵🇪 PE-4 | 9PB
+  - 🇵🇪 PE-5 | 9PB
+  - 🇵🇪 PE-6 | 9PB
+  - 🇷🇴 RO-1 | 9PB
+  - 🇷🇴 RO-2 | 9PB
+  - 🇷🇴 RO-3 | 9PB
+  - 🇷🇴 RO-4 | 9PB
+  - 🇷🇴 RO-5 | 9PB
+  - 🇷🇴 RO-6 | 9PB
+  - 🇸🇮 SI-1 | 9PB
+  - 🇸🇮 SI-2 | 9PB
+  - 🇸🇮 SI-3 | 9PB
+  - 🇸🇮 SI-4 | 9PB
+  - 🇸🇮 SI-5 | 9PB
+  - 🇸🇮 SI-6 | 9PB
+  - 🇯🇵 JP-7 | 9PB
+  - 🇯🇵 JP-8 | 9PB
+  - 🇯🇵 JP-9 | 9PB
+  - 🇯🇵 JP-10 | 9PB
+  - 🇯🇵 JP-11 | 9PB
+  - 🇯🇵 JP-12 | 9PB
+  - 🇰🇬 KG-1 | 9PB
+  - 🇰🇬 KG-2 | 9PB
+  - 🇰🇬 KG-3 | 9PB
+  - 🇰🇬 KG-4 | 9PB
+  - 🇰🇬 KG-5 | 9PB
+  - 🇰🇬 KG-6 | 9PB
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 📦 Lifetime
+  type: url-test
+  proxies:
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇮🇹 IT-3 | Lifetime
+  - 🇮🇹 IT-4 | Lifetime
+  - 🇮🇹 IT-5 | Lifetime
+  - 🇮🇹 IT-7 | Lifetime
+  - 🇨🇳 CN-1 | Lifetime
+  - 🇨🇳 CN-3 | Lifetime
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 📦 Sub3
+  type: url-test
+  proxies:
+  - 🇨🇳 CN-1 | Sub3
+  - 🇭🇰 HK-1 | Sub3
+  - 🇺🇸 US-1 | Sub3
+  - 🇯🇵 JP-1 | Sub3
+  - 🇬🇧 GB-1 | Sub3
+  - 🇰🇷 KR-1 | Sub3
+  - 🇸🇬 SG-1 | Sub3
+  - 🇺🇸 US-2 | Sub3
+  - 🇭🇰 HK-2 | Sub3
+  - 🇭🇰 HK-3 | Sub3
+  - 🇭🇰 HK-4 | Sub3
+  - 🇺🇸 US-3 | Sub3
+  - 🇺🇸 US-4 | Sub3
+  - 🇹🇼 TW-1 | Sub3
+  - 🇯🇵 JP-2 | Sub3
+  - 🇯🇵 JP-3 | Sub3
+  - 🇰🇷 KR-2 | Sub3
+  - 🇲🇾 MY-1 | Sub3
+  - 🇩🇪 DE-1 | Sub3
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+- name: 📦 Filter
+  type: url-test
+  proxies:
+  - 🇺🇸 US-1 | Filter
+  - 🇨🇦 CA-1 | Filter
+  - 🇺🇸 US-2 | Filter
+  - 🇬🇧 GB-1 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇺🇸 US-4 | Filter
+  - 🇬🇧 GB-2 | Filter
+  - 🇬🇧 GB-3 | Filter
+  - 🇩🇪 DE-1 | Filter
+  - 🇩🇪 DE-2 | Filter
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN-SUFFIX,services.googleapis.cn,选择线路
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,选择线路
+- DOMAIN,safebrowsing.urlsec.qq.com,DIRECT
+- DOMAIN,safebrowsing.googleapis.com,DIRECT
+- DOMAIN,developer.apple.com,选择线路
+- DOMAIN-SUFFIX,digicert.com,选择线路
+- DOMAIN,ocsp.apple.com,选择线路
+- DOMAIN,ocsp.comodoca.com,选择线路
+- DOMAIN,ocsp.usertrust.com,选择线路
+- DOMAIN,ocsp.sectigo.com,选择线路
+- DOMAIN,ocsp.verisign.net,选择线路
+- DOMAIN-SUFFIX,apple-dns.net,选择线路
+- DOMAIN,testflight.apple.com,选择线路
+- DOMAIN,sandbox.itunes.apple.com,选择线路
+- DOMAIN,itunes.apple.com,选择线路
+- DOMAIN-SUFFIX,apps.apple.com,选择线路
+- DOMAIN-SUFFIX,blobstore.apple.com,选择线路
+- DOMAIN,cvws.icloud-content.com,选择线路
+- DOMAIN-SUFFIX,mzstatic.com,DIRECT
+- DOMAIN-SUFFIX,itunes.apple.com,DIRECT
+- DOMAIN-SUFFIX,icloud.com,DIRECT
+- DOMAIN-SUFFIX,icloud-content.com,DIRECT
+- DOMAIN-SUFFIX,me.com,DIRECT
+- DOMAIN-SUFFIX,aaplimg.com,DIRECT
+- DOMAIN-SUFFIX,cdn20.com,DIRECT
+- DOMAIN-SUFFIX,cdn-apple.com,DIRECT
+- DOMAIN-SUFFIX,akadns.net,DIRECT
+- DOMAIN-SUFFIX,akamaiedge.net,DIRECT
+- DOMAIN-SUFFIX,edgekey.net,DIRECT
+- DOMAIN-SUFFIX,mwcloudcdn.com,DIRECT
+- DOMAIN-SUFFIX,mwcname.com,DIRECT
+- DOMAIN-SUFFIX,apple.com,DIRECT
+- DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
+- DOMAIN-SUFFIX,apple-mapkit.com,DIRECT
+- DOMAIN-SUFFIX,126.com,DIRECT
+- DOMAIN-SUFFIX,126.net,DIRECT
+- DOMAIN-SUFFIX,127.net,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,360buyimg.com,DIRECT
+- DOMAIN-SUFFIX,36kr.com,DIRECT
+- DOMAIN-SUFFIX,acfun.tv,DIRECT
+- DOMAIN-SUFFIX,air-matters.com,DIRECT
+- DOMAIN-SUFFIX,aixifan.com,DIRECT
+- DOMAIN-KEYWORD,alicdn,DIRECT
+- DOMAIN-KEYWORD,alipay,DIRECT
+- DOMAIN-KEYWORD,taobao,DIRECT
+- DOMAIN-SUFFIX,amap.com,DIRECT
+- DOMAIN-SUFFIX,autonavi.com,DIRECT
+- DOMAIN-KEYWORD,baidu,DIRECT
+- DOMAIN-SUFFIX,bdimg.com,DIRECT
+- DOMAIN-SUFFIX,bdstatic.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,caiyunapp.com,DIRECT
+- DOMAIN-SUFFIX,clouddn.com,DIRECT
+- DOMAIN-SUFFIX,cnbeta.com,DIRECT
+- DOMAIN-SUFFIX,cnbetacdn.com,DIRECT
+- DOMAIN-SUFFIX,cootekservice.com,DIRECT
+- DOMAIN-SUFFIX,csdn.net,DIRECT
+- DOMAIN-SUFFIX,ctrip.com,DIRECT
+- DOMAIN-SUFFIX,dgtle.com,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,douban.com,DIRECT
+- DOMAIN-SUFFIX,doubanio.com,DIRECT
+- DOMAIN-SUFFIX,duokan.com,DIRECT
+- DOMAIN-SUFFIX,easou.com,DIRECT
+- DOMAIN-SUFFIX,ele.me,DIRECT
+- DOMAIN-SUFFIX,feng.com,DIRECT
+- DOMAIN-SUFFIX,fir.im,DIRECT
+- DOMAIN-SUFFIX,frdic.com,DIRECT
+- DOMAIN-SUFFIX,g-cores.com,DIRECT
+- DOMAIN-SUFFIX,godic.net,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN,cdn.hockeyapp.net,DIRECT
+- DOMAIN-SUFFIX,hongxiu.com,DIRECT
+- DOMAIN-SUFFIX,hxcdn.net,DIRECT
+- DOMAIN-SUFFIX,iciba.com,DIRECT
+- DOMAIN-SUFFIX,ifeng.com,DIRECT
+- DOMAIN-SUFFIX,ifengimg.com,DIRECT
+- DOMAIN-SUFFIX,ipip.net,DIRECT
+- DOMAIN-SUFFIX,iqiyi.com,DIRECT
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,jianshu.com,DIRECT
+- DOMAIN-SUFFIX,knewone.com,DIRECT
+- DOMAIN-SUFFIX,le.com,DIRECT
+- DOMAIN-SUFFIX,lecloud.com,DIRECT
+- DOMAIN-SUFFIX,lemicp.com,DIRECT
+- DOMAIN-SUFFIX,licdn.com,DIRECT
+- DOMAIN-SUFFIX,luoo.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,mi.com,DIRECT
+- DOMAIN-SUFFIX,miaopai.com,DIRECT
+- DOMAIN-SUFFIX,microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftonline.com,DIRECT
+- DOMAIN-SUFFIX,miui.com,DIRECT
+- DOMAIN-SUFFIX,miwifi.com,DIRECT
+- DOMAIN-SUFFIX,mob.com,DIRECT
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-SUFFIX,office.com,DIRECT
+- DOMAIN-SUFFIX,office365.com,DIRECT
+- DOMAIN-KEYWORD,officecdn,DIRECT
+- DOMAIN-SUFFIX,oschina.net,DIRECT
+- DOMAIN-SUFFIX,ppsimg.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,qdaily.com,DIRECT
+- DOMAIN-SUFFIX,qdmm.com,DIRECT
+- DOMAIN-SUFFIX,qhimg.com,DIRECT
+- DOMAIN-SUFFIX,qhres.com,DIRECT
+- DOMAIN-SUFFIX,qidian.com,DIRECT
+- DOMAIN-SUFFIX,qihucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiniu.com,DIRECT
+- DOMAIN-SUFFIX,qiniucdn.com,DIRECT
+- DOMAIN-SUFFIX,qiyipic.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,qqurl.com,DIRECT
+- DOMAIN-SUFFIX,rarbg.to,DIRECT
+- DOMAIN-SUFFIX,ruguoapp.com,DIRECT
+- DOMAIN-SUFFIX,segmentfault.com,DIRECT
+- DOMAIN-SUFFIX,sinaapp.com,DIRECT
+- DOMAIN-SUFFIX,smzdm.com,DIRECT
+- DOMAIN-SUFFIX,snapdrop.net,DIRECT
+- DOMAIN-SUFFIX,sogou.com,DIRECT
+- DOMAIN-SUFFIX,sogoucdn.com,DIRECT
+- DOMAIN-SUFFIX,sohu.com,DIRECT
+- DOMAIN-SUFFIX,soku.com,DIRECT
+- DOMAIN-SUFFIX,speedtest.net,DIRECT
+- DOMAIN-SUFFIX,sspai.com,DIRECT
+- DOMAIN-SUFFIX,suning.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,tianyancha.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tudou.com,DIRECT
+- DOMAIN-SUFFIX,umetrip.com,DIRECT
+- DOMAIN-SUFFIX,upaiyun.com,DIRECT
+- DOMAIN-SUFFIX,upyun.com,DIRECT
+- DOMAIN-SUFFIX,veryzhun.com,DIRECT
+- DOMAIN-SUFFIX,weather.com,DIRECT
+- DOMAIN-SUFFIX,weibo.com,DIRECT
+- DOMAIN-SUFFIX,xiami.com,DIRECT
+- DOMAIN-SUFFIX,xiami.net,DIRECT
+- DOMAIN-SUFFIX,xiaomicp.com,DIRECT
+- DOMAIN-SUFFIX,ximalaya.com,DIRECT
+- DOMAIN-SUFFIX,xmcdn.com,DIRECT
+- DOMAIN-SUFFIX,xunlei.com,DIRECT
+- DOMAIN-SUFFIX,yhd.com,DIRECT
+- DOMAIN-SUFFIX,yihaodianimg.com,DIRECT
+- DOMAIN-SUFFIX,yinxiang.com,DIRECT
+- DOMAIN-SUFFIX,ykimg.com,DIRECT
+- DOMAIN-SUFFIX,youdao.com,DIRECT
+- DOMAIN-SUFFIX,youku.com,DIRECT
+- DOMAIN-SUFFIX,zealer.com,DIRECT
+- DOMAIN-SUFFIX,zhihu.com,DIRECT
+- DOMAIN-SUFFIX,zhimg.com,DIRECT
+- DOMAIN-SUFFIX,zimuzu.tv,DIRECT
+- DOMAIN-SUFFIX,zoho.com,DIRECT
+- DOMAIN-KEYWORD,amazon,选择线路
+- DOMAIN-KEYWORD,google,选择线路
+- DOMAIN-KEYWORD,gmail,选择线路
+- DOMAIN-KEYWORD,youtube,选择线路
+- DOMAIN-KEYWORD,facebook,选择线路
+- DOMAIN-SUFFIX,fb.me,选择线路
+- DOMAIN-SUFFIX,fbcdn.net,选择线路
+- DOMAIN-KEYWORD,twitter,选择线路
+- DOMAIN-KEYWORD,instagram,选择线路
+- DOMAIN-KEYWORD,dropbox,选择线路
+- DOMAIN-SUFFIX,twimg.com,选择线路
+- DOMAIN-KEYWORD,blogspot,选择线路
+- DOMAIN-SUFFIX,youtu.be,选择线路
+- DOMAIN-KEYWORD,whatsapp,选择线路
+- DOMAIN-KEYWORD,admarvel,REJECT
+- DOMAIN-KEYWORD,admaster,REJECT
+- DOMAIN-KEYWORD,adsage,REJECT
+- DOMAIN-KEYWORD,adsmogo,REJECT
+- DOMAIN-KEYWORD,adsrvmedia,REJECT
+- DOMAIN-KEYWORD,adwords,REJECT
+- DOMAIN-KEYWORD,adservice,REJECT
+- DOMAIN-SUFFIX,appsflyer.com,REJECT
+- DOMAIN-KEYWORD,domob,REJECT
+- DOMAIN-SUFFIX,doubleclick.net,REJECT
+- DOMAIN-KEYWORD,duomeng,REJECT
+- DOMAIN-KEYWORD,dwtrack,REJECT
+- DOMAIN-KEYWORD,guanggao,REJECT
+- DOMAIN-KEYWORD,lianmeng,REJECT
+- DOMAIN-SUFFIX,mmstat.com,REJECT
+- DOMAIN-KEYWORD,mopub,REJECT
+- DOMAIN-KEYWORD,omgmta,REJECT
+- DOMAIN-KEYWORD,openx,REJECT
+- DOMAIN-KEYWORD,partnerad,REJECT
+- DOMAIN-KEYWORD,pingfore,REJECT
+- DOMAIN-KEYWORD,supersonicads,REJECT
+- DOMAIN-KEYWORD,uedas,REJECT
+- DOMAIN-KEYWORD,umeng,REJECT
+- DOMAIN-KEYWORD,usage,REJECT
+- DOMAIN-SUFFIX,vungle.com,REJECT
+- DOMAIN-KEYWORD,wlmonitor,REJECT
+- DOMAIN-KEYWORD,zjtoolbar,REJECT
+- DOMAIN-SUFFIX,9to5mac.com,选择线路
+- DOMAIN-SUFFIX,abpchina.org,选择线路
+- DOMAIN-SUFFIX,adblockplus.org,选择线路
+- DOMAIN-SUFFIX,adobe.com,选择线路
+- DOMAIN-SUFFIX,akamaized.net,选择线路
+- DOMAIN-SUFFIX,alfredapp.com,选择线路
+- DOMAIN-SUFFIX,amplitude.com,选择线路
+- DOMAIN-SUFFIX,ampproject.org,选择线路
+- DOMAIN-SUFFIX,android.com,选择线路
+- DOMAIN-SUFFIX,angularjs.org,选择线路
+- DOMAIN-SUFFIX,aolcdn.com,选择线路
+- DOMAIN-SUFFIX,apkpure.com,选择线路
+- DOMAIN-SUFFIX,appledaily.com,选择线路
+- DOMAIN-SUFFIX,appshopper.com,选择线路
+- DOMAIN-SUFFIX,appspot.com,选择线路
+- DOMAIN-SUFFIX,arcgis.com,选择线路
+- DOMAIN-SUFFIX,archive.org,选择线路
+- DOMAIN-SUFFIX,armorgames.com,选择线路
+- DOMAIN-SUFFIX,aspnetcdn.com,选择线路
+- DOMAIN-SUFFIX,att.com,选择线路
+- DOMAIN-SUFFIX,awsstatic.com,选择线路
+- DOMAIN-SUFFIX,azureedge.net,选择线路
+- DOMAIN-SUFFIX,azurewebsites.net,选择线路
+- DOMAIN-SUFFIX,bing.com,选择线路
+- DOMAIN-SUFFIX,bintray.com,选择线路
+- DOMAIN-SUFFIX,bit.com,选择线路
+- DOMAIN-SUFFIX,bit.ly,选择线路
+- DOMAIN-SUFFIX,bitbucket.org,选择线路
+- DOMAIN-SUFFIX,bjango.com,选择线路
+- DOMAIN-SUFFIX,bkrtx.com,选择线路
+- DOMAIN-SUFFIX,blog.com,选择线路
+- DOMAIN-SUFFIX,blogcdn.com,选择线路
+- DOMAIN-SUFFIX,blogger.com,选择线路
+- DOMAIN-SUFFIX,blogsmithmedia.com,选择线路
+- DOMAIN-SUFFIX,blogspot.com,选择线路
+- DOMAIN-SUFFIX,blogspot.hk,选择线路
+- DOMAIN-SUFFIX,bloomberg.com,选择线路
+- DOMAIN-SUFFIX,box.com,选择线路
+- DOMAIN-SUFFIX,box.net,选择线路
+- DOMAIN-SUFFIX,cachefly.net,选择线路
+- DOMAIN-SUFFIX,chromium.org,选择线路
+- DOMAIN-SUFFIX,cl.ly,选择线路
+- DOMAIN-SUFFIX,cloudflare.com,选择线路
+- DOMAIN-SUFFIX,cloudfront.net,选择线路
+- DOMAIN-SUFFIX,cloudmagic.com,选择线路
+- DOMAIN-SUFFIX,cmail19.com,选择线路
+- DOMAIN-SUFFIX,cnet.com,选择线路
+- DOMAIN-SUFFIX,cocoapods.org,选择线路
+- DOMAIN-SUFFIX,comodoca.com,选择线路
+- DOMAIN-SUFFIX,crashlytics.com,选择线路
+- DOMAIN-SUFFIX,culturedcode.com,选择线路
+- DOMAIN-SUFFIX,d.pr,选择线路
+- DOMAIN-SUFFIX,danilo.to,选择线路
+- DOMAIN-SUFFIX,dayone.me,选择线路
+- DOMAIN-SUFFIX,db.tt,选择线路
+- DOMAIN-SUFFIX,deskconnect.com,选择线路
+- DOMAIN-SUFFIX,disq.us,选择线路
+- DOMAIN-SUFFIX,disqus.com,选择线路
+- DOMAIN-SUFFIX,disquscdn.com,选择线路
+- DOMAIN-SUFFIX,dnsimple.com,选择线路
+- DOMAIN-SUFFIX,docker.com,选择线路
+- DOMAIN-SUFFIX,dribbble.com,选择线路
+- DOMAIN-SUFFIX,droplr.com,选择线路
+- DOMAIN-SUFFIX,duckduckgo.com,选择线路
+- DOMAIN-SUFFIX,dueapp.com,选择线路
+- DOMAIN-SUFFIX,dytt8.net,选择线路
+- DOMAIN-SUFFIX,edgecastcdn.net,选择线路
+- DOMAIN-SUFFIX,edgekey.net,选择线路
+- DOMAIN-SUFFIX,edgesuite.net,选择线路
+- DOMAIN-SUFFIX,engadget.com,选择线路
+- DOMAIN-SUFFIX,entrust.net,选择线路
+- DOMAIN-SUFFIX,eurekavpt.com,选择线路
+- DOMAIN-SUFFIX,evernote.com,选择线路
+- DOMAIN-SUFFIX,fabric.io,选择线路
+- DOMAIN-SUFFIX,fast.com,选择线路
+- DOMAIN-SUFFIX,fastly.net,选择线路
+- DOMAIN-SUFFIX,fc2.com,选择线路
+- DOMAIN-SUFFIX,feedburner.com,选择线路
+- DOMAIN-SUFFIX,feedly.com,选择线路
+- DOMAIN-SUFFIX,feedsportal.com,选择线路
+- DOMAIN-SUFFIX,fiftythree.com,选择线路
+- DOMAIN-SUFFIX,firebaseio.com,选择线路
+- DOMAIN-SUFFIX,flexibits.com,选择线路
+- DOMAIN-SUFFIX,flickr.com,选择线路
+- DOMAIN-SUFFIX,flipboard.com,选择线路
+- DOMAIN-SUFFIX,g.co,选择线路
+- DOMAIN-SUFFIX,gabia.net,选择线路
+- DOMAIN-SUFFIX,geni.us,选择线路
+- DOMAIN-SUFFIX,gfx.ms,选择线路
+- DOMAIN-SUFFIX,ggpht.com,选择线路
+- DOMAIN-SUFFIX,ghostnoteapp.com,选择线路
+- DOMAIN-SUFFIX,git.io,选择线路
+- DOMAIN-KEYWORD,github,选择线路
+- DOMAIN-SUFFIX,globalsign.com,选择线路
+- DOMAIN-SUFFIX,gmodules.com,选择线路
+- DOMAIN-SUFFIX,godaddy.com,选择线路
+- DOMAIN-SUFFIX,golang.org,选择线路
+- DOMAIN-SUFFIX,gongm.in,选择线路
+- DOMAIN-SUFFIX,goo.gl,选择线路
+- DOMAIN-SUFFIX,goodreaders.com,选择线路
+- DOMAIN-SUFFIX,goodreads.com,选择线路
+- DOMAIN-SUFFIX,gravatar.com,选择线路
+- DOMAIN-SUFFIX,gstatic.com,选择线路
+- DOMAIN-SUFFIX,gvt0.com,选择线路
+- DOMAIN-SUFFIX,hockeyapp.net,选择线路
+- DOMAIN-SUFFIX,hotmail.com,选择线路
+- DOMAIN-SUFFIX,icons8.com,选择线路
+- DOMAIN-SUFFIX,ifixit.com,选择线路
+- DOMAIN-SUFFIX,ift.tt,选择线路
+- DOMAIN-SUFFIX,ifttt.com,选择线路
+- DOMAIN-SUFFIX,iherb.com,选择线路
+- DOMAIN-SUFFIX,imageshack.us,选择线路
+- DOMAIN-SUFFIX,img.ly,选择线路
+- DOMAIN-SUFFIX,imgur.com,选择线路
+- DOMAIN-SUFFIX,imore.com,选择线路
+- DOMAIN-SUFFIX,instapaper.com,选择线路
+- DOMAIN-SUFFIX,ipn.li,选择线路
+- DOMAIN-SUFFIX,is.gd,选择线路
+- DOMAIN-SUFFIX,issuu.com,选择线路
+- DOMAIN-SUFFIX,itgonglun.com,选择线路
+- DOMAIN-SUFFIX,itun.es,选择线路
+- DOMAIN-SUFFIX,ixquick.com,选择线路
+- DOMAIN-SUFFIX,j.mp,选择线路
+- DOMAIN-SUFFIX,js.revsci.net,选择线路
+- DOMAIN-SUFFIX,jshint.com,选择线路
+- DOMAIN-SUFFIX,jtvnw.net,选择线路
+- DOMAIN-SUFFIX,justgetflux.com,选择线路
+- DOMAIN-SUFFIX,kat.cr,选择线路
+- DOMAIN-SUFFIX,klip.me,选择线路
+- DOMAIN-SUFFIX,libsyn.com,选择线路
+- DOMAIN-SUFFIX,linkedin.com,选择线路
+- DOMAIN-SUFFIX,line-apps.com,选择线路
+- DOMAIN-SUFFIX,linode.com,选择线路
+- DOMAIN-SUFFIX,lithium.com,选择线路
+- DOMAIN-SUFFIX,littlehj.com,选择线路
+- DOMAIN-SUFFIX,live.com,选择线路
+- DOMAIN-SUFFIX,live.net,选择线路
+- DOMAIN-SUFFIX,livefilestore.com,选择线路
+- DOMAIN-SUFFIX,llnwd.net,选择线路
+- DOMAIN-SUFFIX,macid.co,选择线路
+- DOMAIN-SUFFIX,macromedia.com,选择线路
+- DOMAIN-SUFFIX,macrumors.com,选择线路
+- DOMAIN-SUFFIX,mashable.com,选择线路
+- DOMAIN-SUFFIX,mathjax.org,选择线路
+- DOMAIN-SUFFIX,medium.com,选择线路
+- DOMAIN-SUFFIX,mega.co.nz,选择线路
+- DOMAIN-SUFFIX,mega.nz,选择线路
+- DOMAIN-SUFFIX,megaupload.com,选择线路
+- DOMAIN-SUFFIX,microsofttranslator.com,选择线路
+- DOMAIN-SUFFIX,mindnode.com,选择线路
+- DOMAIN-SUFFIX,mobile01.com,选择线路
+- DOMAIN-SUFFIX,modmyi.com,选择线路
+- DOMAIN-SUFFIX,msedge.net,选择线路
+- DOMAIN-SUFFIX,myfontastic.com,选择线路
+- DOMAIN-SUFFIX,name.com,选择线路
+- DOMAIN-SUFFIX,nextmedia.com,选择线路
+- DOMAIN-SUFFIX,nsstatic.net,选择线路
+- DOMAIN-SUFFIX,nssurge.com,选择线路
+- DOMAIN-SUFFIX,nyt.com,选择线路
+- DOMAIN-SUFFIX,nytimes.com,选择线路
+- DOMAIN-SUFFIX,omnigroup.com,选择线路
+- DOMAIN-SUFFIX,onedrive.com,选择线路
+- DOMAIN-SUFFIX,onenote.com,选择线路
+- DOMAIN-SUFFIX,ooyala.com,选择线路
+- DOMAIN-SUFFIX,openvpn.net,选择线路
+- DOMAIN-SUFFIX,openwrt.org,选择线路
+- DOMAIN-SUFFIX,orkut.com,选择线路
+- DOMAIN-SUFFIX,osxdaily.com,选择线路
+- DOMAIN-SUFFIX,outlook.com,选择线路
+- DOMAIN-SUFFIX,ow.ly,选择线路
+- DOMAIN-SUFFIX,paddleapi.com,选择线路
+- DOMAIN-SUFFIX,parallels.com,选择线路
+- DOMAIN-SUFFIX,parse.com,选择线路
+- DOMAIN-SUFFIX,pdfexpert.com,选择线路
+- DOMAIN-SUFFIX,periscope.tv,选择线路
+- DOMAIN-SUFFIX,pinboard.in,选择线路
+- DOMAIN-SUFFIX,pinterest.com,选择线路
+- DOMAIN-SUFFIX,pixelmator.com,选择线路
+- DOMAIN-SUFFIX,pixiv.net,选择线路
+- DOMAIN-SUFFIX,playpcesor.com,选择线路
+- DOMAIN-SUFFIX,playstation.com,选择线路
+- DOMAIN-SUFFIX,playstation.com.hk,选择线路
+- DOMAIN-SUFFIX,playstation.net,选择线路
+- DOMAIN-SUFFIX,playstationnetwork.com,选择线路
+- DOMAIN-SUFFIX,pushwoosh.com,选择线路
+- DOMAIN-SUFFIX,rime.im,选择线路
+- DOMAIN-SUFFIX,servebom.com,选择线路
+- DOMAIN-SUFFIX,sfx.ms,选择线路
+- DOMAIN-SUFFIX,shadowsocks.org,选择线路
+- DOMAIN-SUFFIX,sharethis.com,选择线路
+- DOMAIN-SUFFIX,shazam.com,选择线路
+- DOMAIN-SUFFIX,skype.com,选择线路
+- DOMAIN-SUFFIX,smartdns选择线路.com,选择线路
+- DOMAIN-SUFFIX,smartmailcloud.com,选择线路
+- DOMAIN-SUFFIX,sndcdn.com,选择线路
+- DOMAIN-SUFFIX,sony.com,选择线路
+- DOMAIN-SUFFIX,soundcloud.com,选择线路
+- DOMAIN-SUFFIX,sourceforge.net,选择线路
+- DOMAIN-SUFFIX,spotify.com,选择线路
+- DOMAIN-SUFFIX,squarespace.com,选择线路
+- DOMAIN-SUFFIX,sstatic.net,选择线路
+- DOMAIN-SUFFIX,st.luluku.pw,选择线路
+- DOMAIN-SUFFIX,stackoverflow.com,选择线路
+- DOMAIN-SUFFIX,startpage.com,选择线路
+- DOMAIN-SUFFIX,staticflickr.com,选择线路
+- DOMAIN-SUFFIX,steamcommunity.com,选择线路
+- DOMAIN-SUFFIX,symauth.com,选择线路
+- DOMAIN-SUFFIX,symcb.com,选择线路
+- DOMAIN-SUFFIX,symcd.com,选择线路
+- DOMAIN-SUFFIX,tapbots.com,选择线路
+- DOMAIN-SUFFIX,tapbots.net,选择线路
+- DOMAIN-SUFFIX,tdesktop.com,选择线路
+- DOMAIN-SUFFIX,techcrunch.com,选择线路
+- DOMAIN-SUFFIX,techsmith.com,选择线路
+- DOMAIN-SUFFIX,thepiratebay.org,选择线路
+- DOMAIN-SUFFIX,theverge.com,选择线路
+- DOMAIN-SUFFIX,time.com,选择线路
+- DOMAIN-SUFFIX,timeinc.net,选择线路
+- DOMAIN-SUFFIX,tiny.cc,选择线路
+- DOMAIN-SUFFIX,tinypic.com,选择线路
+- DOMAIN-SUFFIX,tmblr.co,选择线路
+- DOMAIN-SUFFIX,todoist.com,选择线路
+- DOMAIN-SUFFIX,trello.com,选择线路
+- DOMAIN-SUFFIX,trustasiassl.com,选择线路
+- DOMAIN-SUFFIX,tumblr.co,选择线路
+- DOMAIN-SUFFIX,tumblr.com,选择线路
+- DOMAIN-SUFFIX,tweetdeck.com,选择线路
+- DOMAIN-SUFFIX,tweetmarker.net,选择线路
+- DOMAIN-SUFFIX,twitch.tv,选择线路
+- DOMAIN-SUFFIX,txmblr.com,选择线路
+- DOMAIN-SUFFIX,typekit.net,选择线路
+- DOMAIN-SUFFIX,ubertags.com,选择线路
+- DOMAIN-SUFFIX,ublock.org,选择线路
+- DOMAIN-SUFFIX,ubnt.com,选择线路
+- DOMAIN-SUFFIX,ulyssesapp.com,选择线路
+- DOMAIN-SUFFIX,urchin.com,选择线路
+- DOMAIN-SUFFIX,usertrust.com,选择线路
+- DOMAIN-SUFFIX,v.gd,选择线路
+- DOMAIN-SUFFIX,v2ex.com,选择线路
+- DOMAIN-SUFFIX,vimeo.com,选择线路
+- DOMAIN-SUFFIX,vimeocdn.com,选择线路
+- DOMAIN-SUFFIX,vine.co,选择线路
+- DOMAIN-SUFFIX,vivaldi.com,选择线路
+- DOMAIN-SUFFIX,vox-cdn.com,选择线路
+- DOMAIN-SUFFIX,vsco.co,选择线路
+- DOMAIN-SUFFIX,vultr.com,选择线路
+- DOMAIN-SUFFIX,w.org,选择线路
+- DOMAIN-SUFFIX,w3schools.com,选择线路
+- DOMAIN-SUFFIX,webtype.com,选择线路
+- DOMAIN-SUFFIX,wikiwand.com,选择线路
+- DOMAIN-SUFFIX,wikileaks.org,选择线路
+- DOMAIN-SUFFIX,wikimedia.org,选择线路
+- DOMAIN-SUFFIX,wikipedia.com,选择线路
+- DOMAIN-SUFFIX,wikipedia.org,选择线路
+- DOMAIN-SUFFIX,windows.com,选择线路
+- DOMAIN-SUFFIX,windows.net,选择线路
+- DOMAIN-SUFFIX,wire.com,选择线路
+- DOMAIN-SUFFIX,wordpress.com,选择线路
+- DOMAIN-SUFFIX,workflowy.com,选择线路
+- DOMAIN-SUFFIX,wp.com,选择线路
+- DOMAIN-SUFFIX,wsj.com,选择线路
+- DOMAIN-SUFFIX,wsj.net,选择线路
+- DOMAIN-SUFFIX,xda-developers.com,选择线路
+- DOMAIN-SUFFIX,xeeno.com,选择线路
+- DOMAIN-SUFFIX,xiti.com,选择线路
+- DOMAIN-SUFFIX,yahoo.com,选择线路
+- DOMAIN-SUFFIX,yimg.com,选择线路
+- DOMAIN-SUFFIX,ying.com,选择线路
+- DOMAIN-SUFFIX,yoyo.org,选择线路
+- DOMAIN-SUFFIX,ytimg.com,选择线路
+- DOMAIN-SUFFIX,telegra.ph,选择线路
+- DOMAIN-SUFFIX,telegram.org,选择线路
+- IP-CIDR,91.108.4.0/22,选择线路,no-resolve
+- IP-CIDR,91.108.8.0/21,选择线路,no-resolve
+- IP-CIDR,91.108.16.0/22,选择线路,no-resolve
+- IP-CIDR,91.108.56.0/22,选择线路,no-resolve
+- IP-CIDR,149.154.160.0/20,选择线路,no-resolve
+- IP-CIDR6,2001:67c:4e8::/48,选择线路,no-resolve
+- IP-CIDR6,2001:b28:f23d::/48,选择线路,no-resolve
+- IP-CIDR6,2001:b28:f23f::/48,选择线路,no-resolve
+- IP-CIDR,120.232.181.162/32,选择线路,no-resolve
+- IP-CIDR,120.241.147.226/32,选择线路,no-resolve
+- IP-CIDR,120.253.253.226/32,选择线路,no-resolve
+- IP-CIDR,120.253.255.162/32,选择线路,no-resolve
+- IP-CIDR,120.253.255.34/32,选择线路,no-resolve
+- IP-CIDR,120.253.255.98/32,选择线路,no-resolve
+- IP-CIDR,180.163.150.162/32,选择线路,no-resolve
+- IP-CIDR,180.163.150.34/32,选择线路,no-resolve
+- IP-CIDR,180.163.151.162/32,选择线路,no-resolve
+- IP-CIDR,180.163.151.34/32,选择线路,no-resolve
+- IP-CIDR,203.208.39.0/24,选择线路,no-resolve
+- IP-CIDR,203.208.40.0/24,选择线路,no-resolve
+- IP-CIDR,203.208.41.0/24,选择线路,no-resolve
+- IP-CIDR,203.208.43.0/24,选择线路,no-resolve
+- IP-CIDR,203.208.50.0/24,选择线路,no-resolve
+- IP-CIDR,220.181.174.162/32,选择线路,no-resolve
+- IP-CIDR,220.181.174.226/32,选择线路,no-resolve
+- IP-CIDR,220.181.174.34/32,选择线路,no-resolve
+- DOMAIN,injections.adguard.org,DIRECT
+- DOMAIN,local.adguard.org,DIRECT
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- IP-CIDR,17.0.0.0/8,DIRECT
+- IP-CIDR,100.64.0.0/10,DIRECT
+- IP-CIDR,224.0.0.0/4,DIRECT
+- IP-CIDR6,fe80::/10,DIRECT
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,选择线路
