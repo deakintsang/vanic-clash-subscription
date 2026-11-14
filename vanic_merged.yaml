@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-14 06:16:20
-# 节点: 162 (去重前 169)  策略组: 8
+# 生成时间: 2026-11-14 17:58:17
+# 节点: 201 (去重前 211)  策略组: 8
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -10,189 +10,274 @@ log-level: warning
 ipv6: true
 external-controller: 127.0.0.1:9090
 proxies:
-- type: ss
+- type: anytls
+  name: 🇩🇪 DE-1 | 8EB
+  server: jp.gosthk.site
+  port: 443
+  password: b5bf323d-cccd-4e7b-9ecd-2ab4943b7396
+  udp: true
+  servername: jp.gosthk.site
+- type: vless
   name: 🇺🇸 US-1 | 8EB
+  server: 192.129.221.38
+  port: 59158
+  uuid: 715a2b0f-b2b8-41f2-93c7-b152338718d1
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.sony.co.in
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 2QZvuJ0cpnAK483GMUnOKQCMxZKc2lR5aMhB_jYdIUE
+    short-id: db4fff91103c
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-2 | 8EB
+  server: www.true.th
+  port: 80
+  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dcm4kwis2exkw.cloudfront.net
+- type: vless
+  name: 🇸🇬 SG-1 | 8EB
+  server: jp4.netease.uz
+  port: 2053
+  uuid: 9dc3aaa8-4330-4e0d-9363-b19cf6d9fc62
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: jp4.netease.uz
+  client-fingerprint: chrome
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-2 | 8EB
+  server: jp2.netease.uz
+  port: 2053
+  uuid: 20e53e28-2094-436c-a5ed-917ee60bb042
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: jp2.netease.uz
+  client-fingerprint: chrome
+  network: tcp
+- type: vless
+  name: 🇦🇱 AL-1 | 8EB
+  server: 172.64.154.3
+  port: 2087
+  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: v8-3vh.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v8-3vh.pages.dev
+- type: anytls
+  name: 🇩🇪 DE-2 | 8EB
+  server: usa1.gosthk.site
+  port: 443
+  password: 46f2efeb-4c5f-42d6-bf9d-558b8c907128
+  udp: true
+  servername: usa1.gosthk.site
+- type: anytls
+  name: 🇺🇸 US-3 | 8EB
+  server: usa69.gosthk.site
+  port: 443
+  password: 7d63393e-d64d-4dff-a154-1081dbe0e138
+  udp: true
+  servername: usa69.gosthk.site
+- type: vless
+  name: 🇬🇧 GB-1 | 8EB
+  server: 185.122.167.103
+  port: 59130
+  uuid: b771804e-a62c-429f-a56c-9f0a452d8f6e
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: nvplm.stg.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 6Lh48ni3w8oe9QW3xVzNMIE5LU-p5VPHPMCUtVMOmgo
+    short-id: '14'
+  network: tcp
+- type: ss
+  name: 🇺🇸 US-4 | 8EB
   server: 202.50.253.45
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
-  name: 🇺🇸 US-2 | 8EB
-  server: 18.234.196.186
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- type: vmess
-  name: 🇺🇸 US-3 | 8EB
-  server: US122201.ssgreen.org
-  port: 443
-  uuid: 930b4722-5d1d-4c74-a9a1-694d0e9a69af
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  tls: true
-  ws-opts:
-    path: /wes
-    headers:
-      Host: US122201.ssgreen.org
-  servername: US122201.ssgreen.org
-- type: ss
   name: 🇪🇸 ES-1 | 8EB
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🇪🇸 ES-2 | 8EB
-  server: 201.24.116.192
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-  serviceName: mobile.api.Event
-  mode: gun
-- type: ss
-  name: 🇪🇸 ES-3 | 8EB
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇪🇸 ES-4 | 8EB
   server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
+  name: 🇪🇸 ES-2 | 8EB
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-3 | 8EB
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-4 | 8EB
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
   name: 🇪🇸 ES-5 | 8EB
-  server: 202.50.253.18
+  server: 202.50.253.27
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
   name: 🇪🇸 ES-6 | 8EB
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🇩🇪 DE-1 | 8EB
-  server: 89.127.210.244
-  port: 443
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: fs.qicai99.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fs.qicai99.com
-- type: vless
-  name: 🇺🇸 US-4 | 8EB
-  server: 144.34.175.116
-  port: 8443
-  uuid: c3d4e5f6-a7b8-9012-cdef-123456789012
-  udp: true
-  network: tcp
-- type: vless
-  name: 🇪🇸 ES-7 | 8EB
-  server: 9.247.174.134
-  port: 8443
-  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  network: tcp
-- type: ss
-  name: 🇪🇸 ES-8 | 8EB
   server: 202.50.253.99
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- type: ss
+  name: 🇪🇸 ES-7 | 8EB
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-8 | 8EB
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-9 | 8EB
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇬 EG-1 | 8EB
+  server: dlc.deltapc.digital
+  port: 11133
+  cipher: xchacha20-ietf-poly1305
+  password: DIr66gXAEt0sTt2NrkDHWq3gix58BR6LdxcNPURi5xk=
+  udp: true
 - type: vless
-  name: 🇷🇺 RU-1 | 8EB
-  server: 188.225.37.43
-  port: 443
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  name: 🇺🇸 US-5 | 8EB
+  server: zfapi.zalolink.com
+  port: 30322
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 5gncThwqPFzLu23WO3mPTEhG7-KgVYlGVvveHjM2SUo
+    short-id: 6a60e7e382d6
+  network: tcp
+- type: vless
+  name: 🇮🇪 IE-1 | 8EB
+  server: assets.opensignal.com
+  port: 80
+  uuid: 0c85001b-ad48-4f43-bdc9-b2b5c626a26e
+  udp: true
+  network: ws
+  ws-opts:
+    path: /logout
+    headers:
+      Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
+- type: vless
+  name: 🇯🇵 JP-1 | 8EB
+  server: 217.217.47.140
+  port: 50769
+  uuid: 6f6318b1-3ba5-4106-9365-8a8e19f04bd3
   udp: true
   tls: true
   skip-cert-verify: false
-  servername: torvani.cyou
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/boards/live
-    headers:
-      Host: torvani.cyou
-- type: vmess
-  name: 🇮🇩 ID-1 | 8EB
-  server: 168.110.63.247
-  port: 8081
-  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /vless
+  servername: ops.gx.nvidia.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7Q09Z_KU9vXvif4-pLfVc_Zwil-X4k41Iesv-HCk4wI
+    short-id: 7f3d68ed44
+  network: tcp
 - type: vless
   name: 🇨🇦 CA-1 | 8EB
-  server: barbered-mattocks.video-streams.org
+  server: 192.204.33.19
   port: 443
-  uuid: 976bc224-0519-4b1e-859d-a487eb442508
+  uuid: e1ce77dc-8bb4-4f53-a791-a93a0ab04f54
   udp: true
   tls: true
   skip-cert-verify: false
-  servername: barbered-mattocks.video-streams.org
+  servername: us1.1am.cc.cd
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /492fbb0e1ab5996d
     headers:
-      Host: barbered-mattocks.video-streams.org
+      Host: us1.1am.cc.cd
 - type: vless
   name: 🇨🇦 CA-2 | 8EB
-  server: sparkling-gadabout.quick-cdn.net
+  server: 68.164.13.208
   port: 443
-  uuid: 976bc224-0519-4b1e-859d-a487eb442508
+  uuid: e1ce77dc-8bb4-4f53-a791-a93a0ab04f54
   udp: true
   tls: true
   skip-cert-verify: false
-  servername: sparkling-gadabout.quick-cdn.net
+  servername: us1.1am.cc.cd
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /492fbb0e1ab5996d
     headers:
-      Host: sparkling-gadabout.quick-cdn.net
+      Host: us1.1am.cc.cd
 - type: vless
   name: 🇨🇦 CA-3 | 8EB
+  server: 69.8.129.43
+  port: 443
+  uuid: e1ce77dc-8bb4-4f53-a791-a93a0ab04f54
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: us1.1am.cc.cd
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /492fbb0e1ab5996d
+    headers:
+      Host: us1.1am.cc.cd
+- type: vless
+  name: 🇨🇦 CA-4 | 8EB
   server: barbered-mattocks.video-streams.org
   port: 443
-  uuid: cbd0ff6d-2dff-4ceb-a049-388d9a8079fc
+  uuid: 8feecf33-948d-4314-84b3-f7af0d8d0493
   udp: true
   tls: true
   skip-cert-verify: false
@@ -204,10 +289,10 @@ proxies:
     headers:
       Host: barbered-mattocks.video-streams.org
 - type: vless
-  name: 🇨🇦 CA-4 | 8EB
+  name: 🇨🇦 CA-5 | 8EB
   server: sparkling-gadabout.quick-cdn.net
   port: 443
-  uuid: cbd0ff6d-2dff-4ceb-a049-388d9a8079fc
+  uuid: 8feecf33-948d-4314-84b3-f7af0d8d0493
   udp: true
   tls: true
   skip-cert-verify: false
@@ -218,26 +303,11 @@ proxies:
     path: /ws
     headers:
       Host: sparkling-gadabout.quick-cdn.net
-- type: vless
-  name: 🇨🇦 CA-5 | 8EB
-  server: guessable-turnpikes.cdn-content.com
-  port: 443
-  uuid: e01864bc-ec35-4628-b1ce-6486e5651c49
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: guessable-turnpikes.cdn-content.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: guessable-turnpikes.cdn-content.com
 - type: vless
   name: 🇨🇦 CA-6 | 8EB
   server: wryly-messiest.video-streams.org
   port: 443
-  uuid: e01864bc-ec35-4628-b1ce-6486e5651c49
+  uuid: 3622cb16-9f16-4b10-b2af-148e93d515bf
   udp: true
   tls: true
   skip-cert-verify: false
@@ -250,9 +320,54 @@ proxies:
       Host: wryly-messiest.video-streams.org
 - type: vless
   name: 🇨🇦 CA-7 | 8EB
+  server: guessable-turnpikes.cdn-content.com
+  port: 443
+  uuid: 3622cb16-9f16-4b10-b2af-148e93d515bf
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: guessable-turnpikes.cdn-content.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: guessable-turnpikes.cdn-content.com
+- type: vless
+  name: 🇨🇦 CA-8 | 8EB
+  server: barbered-mattocks.video-streams.org
+  port: 443
+  uuid: 1f74df28-f4c8-44ad-8a14-f10d003a05cc
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: barbered-mattocks.video-streams.org
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: barbered-mattocks.video-streams.org
+- type: vless
+  name: 🇨🇦 CA-9 | 8EB
+  server: sparkling-gadabout.quick-cdn.net
+  port: 443
+  uuid: 1f74df28-f4c8-44ad-8a14-f10d003a05cc
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: sparkling-gadabout.quick-cdn.net
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: sparkling-gadabout.quick-cdn.net
+- type: vless
+  name: 🇨🇦 CA-10 | 8EB
   server: wryly-messiest.video-streams.org
   port: 443
-  uuid: 30e6520c-b1a6-4a3f-864c-e39dbfe22bf4
+  uuid: 2a436524-4dd2-49bc-a5f4-3a22d313c6e8
   udp: true
   tls: true
   skip-cert-verify: false
@@ -264,10 +379,10 @@ proxies:
     headers:
       Host: wryly-messiest.video-streams.org
 - type: vless
-  name: 🇨🇦 CA-8 | 8EB
+  name: 🇨🇦 CA-11 | 8EB
   server: guessable-turnpikes.cdn-content.com
   port: 443
-  uuid: 30e6520c-b1a6-4a3f-864c-e39dbfe22bf4
+  uuid: 2a436524-4dd2-49bc-a5f4-3a22d313c6e8
   udp: true
   tls: true
   skip-cert-verify: false
@@ -619,6 +734,564 @@ proxies:
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: il-ssl.552213.xyz
+- type: anytls
+  name: 🇯🇵 JP-4 | 9PB
+  server: jpwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: jpwy-ssl.552213.xyz
+- type: vless
+  name: 🇯🇵 JP-5 | 9PB
+  server: jpwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇯🇵 JP-6 | 9PB
+  server: jpwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: jpwy-ssl.552213.xyz
+- type: anytls
+  name: 🇹🇭 TH-1 | 9PB
+  server: thwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: thwy-ssl.552213.xyz
+- type: vless
+  name: 🇹🇭 TH-2 | 9PB
+  server: thwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇹🇭 TH-3 | 9PB
+  server: thwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: thwy-ssl.552213.xyz
+- type: anytls
+  name: 🇧🇷 BR-1 | 9PB
+  server: brwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: brwy-ssl.552213.xyz
+- type: vless
+  name: 🇧🇷 BR-2 | 9PB
+  server: brwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇧🇷 BR-3 | 9PB
+  server: brwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: brwy-ssl.552213.xyz
+- type: anytls
+  name: 🇳🇬 NG-1 | 9PB
+  server: ngwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ngwy-ssl.552213.xyz
+- type: vless
+  name: 🇳🇬 NG-2 | 9PB
+  server: ngwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇳🇬 NG-3 | 9PB
+  server: ngwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: ngwy-ssl.552213.xyz
+- type: anytls
+  name: 🇰🇬 KG-1 | 9PB
+  server: kgwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: kgwy-ssl.552213.xyz
+- type: vless
+  name: 🇰🇬 KG-2 | 9PB
+  server: kgwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇰🇬 KG-3 | 9PB
+  server: kgwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: kgwy-ssl.552213.xyz
+- type: anytls
+  name: 🇷🇴 RO-1 | 9PB
+  server: rowy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: rowy-ssl.552213.xyz
+- type: vless
+  name: 🇷🇴 RO-2 | 9PB
+  server: rowy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇷🇴 RO-3 | 9PB
+  server: rowy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: rowy-ssl.552213.xyz
+- type: anytls
+  name: 🇲🇰 MK-1 | 9PB
+  server: mkwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: mkwy-ssl.552213.xyz
+- type: vless
+  name: 🇲🇰 MK-2 | 9PB
+  server: mkwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇲🇰 MK-3 | 9PB
+  server: mkwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: mkwy-ssl.552213.xyz
+- type: anytls
+  name: 🇸🇮 SI-1 | 9PB
+  server: siwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: siwy-ssl.552213.xyz
+- type: vless
+  name: 🇸🇮 SI-2 | 9PB
+  server: siwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇸🇮 SI-3 | 9PB
+  server: siwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: siwy-ssl.552213.xyz
+- type: anytls
+  name: 🇵🇱 PL-1 | 9PB
+  server: plwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: plwy-ssl.552213.xyz
+- type: vless
+  name: 🇵🇱 PL-2 | 9PB
+  server: plwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇵🇱 PL-3 | 9PB
+  server: plwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: plwy-ssl.552213.xyz
+- type: anytls
+  name: 🇺🇦 UA-1 | 9PB
+  server: uawy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: uawy-ssl.552213.xyz
+- type: vless
+  name: 🇺🇦 UA-2 | 9PB
+  server: uawy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇺🇦 UA-3 | 9PB
+  server: uawy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: uawy-ssl.552213.xyz
+- type: anytls
+  name: 🇳🇱 NL-1 | 9PB
+  server: nlwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: nlwy-ssl.552213.xyz
+- type: vless
+  name: 🇳🇱 NL-2 | 9PB
+  server: nlwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇳🇱 NL-3 | 9PB
+  server: nlwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: nlwy-ssl.552213.xyz
+- type: anytls
+  name: 🇸🇪 SE-1 | 9PB
+  server: sewy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sewy-ssl.552213.xyz
+- type: vless
+  name: 🇸🇪 SE-2 | 9PB
+  server: sewy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇸🇪 SE-3 | 9PB
+  server: sewy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: sewy-ssl.552213.xyz
+- type: anytls
+  name: 🇦🇿 AZ-1 | 9PB
+  server: azwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: azwy-ssl.552213.xyz
+- type: vless
+  name: 🇦🇿 AZ-2 | 9PB
+  server: azwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇦🇿 AZ-3 | 9PB
+  server: azwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: azwy-ssl.552213.xyz
+- type: anytls
+  name: 🇮🇩 ID-1 | 9PB
+  server: idwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: idwy-ssl.552213.xyz
+- type: vless
+  name: 🇮🇩 ID-2 | 9PB
+  server: idwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇮🇩 ID-3 | 9PB
+  server: idwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: idwy-ssl.552213.xyz
+- type: anytls
+  name: 🇫🇷 FR-4 | 9PB
+  server: frwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: frwy-ssl.552213.xyz
+- type: vless
+  name: 🇫🇷 FR-5 | 9PB
+  server: frwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇫🇷 FR-6 | 9PB
+  server: frwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: frwy-ssl.552213.xyz
+- type: anytls
+  name: 🇵🇪 PE-1 | 9PB
+  server: pewy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pewy-ssl.552213.xyz
+- type: vless
+  name: 🇵🇪 PE-2 | 9PB
+  server: pewy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇵🇪 PE-3 | 9PB
+  server: pewy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: pewy-ssl.552213.xyz
+- type: anytls
+  name: 🇮🇶 IQ-1 | 9PB
+  server: iqwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: iqwy-ssl.552213.xyz
+- type: vless
+  name: 🇮🇶 IQ-2 | 9PB
+  server: iqwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇮🇶 IQ-3 | 9PB
+  server: iqwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: iqwy-ssl.552213.xyz
+- type: anytls
+  name: 🇹🇷 TR-1 | 9PB
+  server: trwy-ssl.552213.xyz
+  port: 10000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: trwy-ssl.552213.xyz
+- type: vless
+  name: 🇹🇷 TR-2 | 9PB
+  server: trwy-ssl.552213.xyz
+  port: 20000
+  uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ragora.de
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cvWfxxOeo8Uwn9zkeYZ5Hx2DWnAxm9ahmVaioSf7bVI
+    short-id: '68214070'
+  network: tcp
+- type: hysteria2
+  name: 🇹🇷 TR-3 | 9PB
+  server: trwy-ssl.552213.xyz
+  port: 30000
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  udp: true
+  servername: trwy-ssl.552213.xyz
 - name: 🇯🇵 JP-1 | Lifetime
   server: 154.36.158.197
   port: 8388
@@ -1028,17 +1701,8 @@ proxies:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
     short-id: b390142456517acc
   network: tcp
-- type: anytls
-  name: 🇸🇬 SG-1 | Filter
-  server: hk-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: hk-ssl.552213.xyz
 - type: vless
-  name: 🇭🇰 HK-1 | Filter
+  name: 🇸🇬 SG-1 | Filter
   server: hk-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1052,55 +1716,8 @@ proxies:
     public-key: l5ojauVwrOl4iNiX9mjrn1V6s5b9roQdzMWt1XJcYmg
     short-id: 6f2adf66
   network: tcp
-- type: hysteria2
-  name: 🇭🇰 HK-2 | Filter
-  server: hk-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: hk-ssl.552213.xyz
-- type: anytls
-  name: 🇸🇬 SG-2 | Filter
-  server: sg-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sg-ssl.552213.xyz
 - type: vless
-  name: 🇸🇬 SG-3 | Filter
-  server: sg-ssl.552213.xyz
-  port: 20000
-  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: drive.a1call.me
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: msxFgfHEJh5Mc9qYmESPNONYYuq4EAnN1unq_EXFCnU
-    short-id: c048bef5
-  network: tcp
-- type: hysteria2
-  name: 🇸🇬 SG-4 | Filter
-  server: sg-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: sg-ssl.552213.xyz
-- type: anytls
   name: 🇺🇸 US-1 | Filter
-  server: usp-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: usp-ssl.552213.xyz
-- type: vless
-  name: 🇺🇸 US-2 | Filter
   server: usp-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1114,24 +1731,8 @@ proxies:
     public-key: OlWYByYGwyxzP1TrlGSL3it7jueucczyWCnJr-bC9Rk
     short-id: 264af89b
   network: tcp
-- type: hysteria2
-  name: 🇺🇸 US-3 | Filter
-  server: usp-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: usp-ssl.552213.xyz
-- type: anytls
-  name: 🇩🇪 DE-1 | Filter
-  server: de-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: de-ssl.552213.xyz
 - type: vless
-  name: 🇩🇪 DE-2 | Filter
+  name: 🇩🇪 DE-1 | Filter
   server: de-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1145,24 +1746,8 @@ proxies:
     public-key: eNxJQT_SOUXffIEYgsx7yroxEH3D89I830k6O6vRZjQ
     short-id: 2c77dc20
   network: tcp
-- type: hysteria2
-  name: 🇩🇪 DE-3 | Filter
-  server: de-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: de-ssl.552213.xyz
-- type: anytls
-  name: 🇬🇧 GB-1 | Filter
-  server: uk-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: uk-ssl.552213.xyz
 - type: vless
-  name: 🇬🇧 GB-2 | Filter
+  name: 🇬🇧 GB-1 | Filter
   server: uk-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1176,55 +1761,8 @@ proxies:
     public-key: 1-ZhUDfSxFynyxpEy8DLqf4eBzoV7rLPI-A8YaOvkWY
     short-id: 7264eb3c
   network: tcp
-- type: hysteria2
-  name: 🇬🇧 GB-3 | Filter
-  server: uk-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: uk-ssl.552213.xyz
-- type: anytls
-  name: 🇯🇵 JP-1 | Filter
-  server: jp-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: jp-ssl.552213.xyz
 - type: vless
-  name: 🇯🇵 JP-2 | Filter
-  server: jp-ssl.552213.xyz
-  port: 20000
-  uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: strim.co
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PERmAfpfkF6zOWslaWWyfPXip_-fGsAZglpv-j2n7Aw
-    short-id: e58f89fe
-  network: tcp
-- type: hysteria2
-  name: 🇯🇵 JP-3 | Filter
-  server: jp-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: jp-ssl.552213.xyz
-- type: anytls
-  name: 🇺🇸 US-4 | Filter
-  server: usc-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: usc-ssl.552213.xyz
-- type: vless
-  name: 🇺🇸 US-5 | Filter
+  name: 🇺🇸 US-2 | Filter
   server: usc-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1238,13 +1776,6 @@ proxies:
     public-key: I4uFE2i1DumC5KK4oO_3T62batIzO6zly2QFL_a9zyY
     short-id: e3f9812e
   network: tcp
-- type: hysteria2
-  name: 🇺🇸 US-6 | Filter
-  server: usc-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: usc-ssl.552213.xyz
 - type: anytls
   name: 🇫🇷 FR-1 | Filter
   server: fr-ssl.552213.xyz
@@ -1269,24 +1800,8 @@ proxies:
     public-key: TapmYxjJ1lPVRqHMHBVb_gBtpBNqQ51edaloQM1dRXs
     short-id: 8d10266c
   network: tcp
-- type: hysteria2
-  name: 🇫🇷 FR-3 | Filter
-  server: fr-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: fr-ssl.552213.xyz
-- type: anytls
-  name: 🇮🇹 IT-1 | Filter
-  server: it-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: it-ssl.552213.xyz
 - type: vless
-  name: 🇮🇹 IT-2 | Filter
+  name: 🇮🇹 IT-1 | Filter
   server: it-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1300,24 +1815,8 @@ proxies:
     public-key: ZxiJPtxDoY0HSRIdacb904ZAbNQUyIkEujamOrbE6DU
     short-id: bf978d09
   network: tcp
-- type: hysteria2
-  name: 🇮🇹 IT-3 | Filter
-  server: it-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: it-ssl.552213.xyz
-- type: anytls
-  name: 🇦🇪 AE-1 | Filter
-  server: ae-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: ae-ssl.552213.xyz
 - type: vless
-  name: 🇦🇪 AE-2 | Filter
+  name: 🇦🇪 AE-1 | Filter
   server: ae-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1331,24 +1830,8 @@ proxies:
     public-key: Pe2c_vJZx8_8lJtiyw2OTYoQm1BSVtlH8otfNhryvnQ
     short-id: 04c294ee
   network: tcp
-- type: hysteria2
-  name: 🇦🇪 AE-3 | Filter
-  server: ae-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: ae-ssl.552213.xyz
-- type: anytls
-  name: 🇮🇱 IL-1 | Filter
-  server: il-ssl.552213.xyz
-  port: 10000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: il-ssl.552213.xyz
 - type: vless
-  name: 🇮🇱 IL-2 | Filter
+  name: 🇮🇱 IL-1 | Filter
   server: il-ssl.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
@@ -1362,13 +1845,6 @@ proxies:
     public-key: zTg1FJBJw8Fm4ZAKzgXaNc94T5JZDabah-FGFX9hxxY
     short-id: 0c73e9b3
   network: tcp
-- type: hysteria2
-  name: 🇮🇱 IL-3 | Filter
-  server: il-ssl.552213.xyz
-  port: 30000
-  password: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
-  udp: true
-  servername: il-ssl.552213.xyz
 - type: vless
   name: 🇷🇺 RU-1 | Mix
   server: ru11.oshost.network
@@ -1397,13 +1873,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- type: ss
-  name: 🇮🇹 IT-1 | Mix
-  server: 202.50.253.36
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: vmess
   name: 🇸🇬 SG-1 | Mix
   server: sg-transit-3.nebulacloud.win
@@ -1648,13 +2117,6 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   network: tcp
-- type: ss
-  name: 🇮🇹 IT-3 | Mix
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: hysteria2
   name: 🇫🇷 FR-1 | Mix
   server: 195.177.94.166
@@ -1719,13 +2181,6 @@ proxies:
     public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
     short-id: 9608a9c65d315d52
   network: tcp
-- type: ss
-  name: 🇮🇹 IT-9 | Mix
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: vless
   name: 🇩🇪 DE-2 | Mix
   server: de.puflino.com
@@ -1917,21 +2372,29 @@ proxy-groups:
 - name: ⚡️ 全自动测速
   type: url-test
   proxies:
+  - 🇩🇪 DE-1 | 8EB
   - 🇺🇸 US-1 | 8EB
   - 🇺🇸 US-2 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇦🇱 AL-1 | 8EB
+  - 🇩🇪 DE-2 | 8EB
   - 🇺🇸 US-3 | 8EB
+  - 🇬🇧 GB-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
   - 🇪🇸 ES-1 | 8EB
   - 🇪🇸 ES-2 | 8EB
   - 🇪🇸 ES-3 | 8EB
   - 🇪🇸 ES-4 | 8EB
   - 🇪🇸 ES-5 | 8EB
   - 🇪🇸 ES-6 | 8EB
-  - 🇩🇪 DE-1 | 8EB
-  - 🇺🇸 US-4 | 8EB
   - 🇪🇸 ES-7 | 8EB
   - 🇪🇸 ES-8 | 8EB
-  - 🇷🇺 RU-1 | 8EB
-  - 🇮🇩 ID-1 | 8EB
+  - 🇪🇸 ES-9 | 8EB
+  - 🇪🇬 EG-1 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇮🇪 IE-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
   - 🇨🇦 CA-1 | 8EB
   - 🇨🇦 CA-2 | 8EB
   - 🇨🇦 CA-3 | 8EB
@@ -1940,6 +2403,9 @@ proxy-groups:
   - 🇨🇦 CA-6 | 8EB
   - 🇨🇦 CA-7 | 8EB
   - 🇨🇦 CA-8 | 8EB
+  - 🇨🇦 CA-9 | 8EB
+  - 🇨🇦 CA-10 | 8EB
+  - 🇨🇦 CA-11 | 8EB
   - 🇸🇬 SG-1 | 9PB
   - 🇭🇰 HK-1 | 9PB
   - 🇭🇰 HK-2 | 9PB
@@ -1973,6 +2439,60 @@ proxy-groups:
   - 🇮🇱 IL-1 | 9PB
   - 🇮🇱 IL-2 | 9PB
   - 🇮🇱 IL-3 | 9PB
+  - 🇯🇵 JP-4 | 9PB
+  - 🇯🇵 JP-5 | 9PB
+  - 🇯🇵 JP-6 | 9PB
+  - 🇹🇭 TH-1 | 9PB
+  - 🇹🇭 TH-2 | 9PB
+  - 🇹🇭 TH-3 | 9PB
+  - 🇧🇷 BR-1 | 9PB
+  - 🇧🇷 BR-2 | 9PB
+  - 🇧🇷 BR-3 | 9PB
+  - 🇳🇬 NG-1 | 9PB
+  - 🇳🇬 NG-2 | 9PB
+  - 🇳🇬 NG-3 | 9PB
+  - 🇰🇬 KG-1 | 9PB
+  - 🇰🇬 KG-2 | 9PB
+  - 🇰🇬 KG-3 | 9PB
+  - 🇷🇴 RO-1 | 9PB
+  - 🇷🇴 RO-2 | 9PB
+  - 🇷🇴 RO-3 | 9PB
+  - 🇲🇰 MK-1 | 9PB
+  - 🇲🇰 MK-2 | 9PB
+  - 🇲🇰 MK-3 | 9PB
+  - 🇸🇮 SI-1 | 9PB
+  - 🇸🇮 SI-2 | 9PB
+  - 🇸🇮 SI-3 | 9PB
+  - 🇵🇱 PL-1 | 9PB
+  - 🇵🇱 PL-2 | 9PB
+  - 🇵🇱 PL-3 | 9PB
+  - 🇺🇦 UA-1 | 9PB
+  - 🇺🇦 UA-2 | 9PB
+  - 🇺🇦 UA-3 | 9PB
+  - 🇳🇱 NL-1 | 9PB
+  - 🇳🇱 NL-2 | 9PB
+  - 🇳🇱 NL-3 | 9PB
+  - 🇸🇪 SE-1 | 9PB
+  - 🇸🇪 SE-2 | 9PB
+  - 🇸🇪 SE-3 | 9PB
+  - 🇦🇿 AZ-1 | 9PB
+  - 🇦🇿 AZ-2 | 9PB
+  - 🇦🇿 AZ-3 | 9PB
+  - 🇮🇩 ID-1 | 9PB
+  - 🇮🇩 ID-2 | 9PB
+  - 🇮🇩 ID-3 | 9PB
+  - 🇫🇷 FR-4 | 9PB
+  - 🇫🇷 FR-5 | 9PB
+  - 🇫🇷 FR-6 | 9PB
+  - 🇵🇪 PE-1 | 9PB
+  - 🇵🇪 PE-2 | 9PB
+  - 🇵🇪 PE-3 | 9PB
+  - 🇮🇶 IQ-1 | 9PB
+  - 🇮🇶 IQ-2 | 9PB
+  - 🇮🇶 IQ-3 | 9PB
+  - 🇹🇷 TR-1 | 9PB
+  - 🇹🇷 TR-2 | 9PB
+  - 🇹🇷 TR-3 | 9PB
   - 🇯🇵 JP-1 | Lifetime
   - 🇮🇹 IT-1 | Lifetime
   - 🇮🇹 IT-2 | Lifetime
@@ -2007,41 +2527,17 @@ proxy-groups:
   - 🇲🇾 MY-1 | Sub3
   - 🇩🇪 DE-1 | Sub3
   - 🇸🇬 SG-1 | Filter
-  - 🇭🇰 HK-1 | Filter
-  - 🇭🇰 HK-2 | Filter
-  - 🇸🇬 SG-2 | Filter
-  - 🇸🇬 SG-3 | Filter
-  - 🇸🇬 SG-4 | Filter
   - 🇺🇸 US-1 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇺🇸 US-3 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇩🇪 DE-2 | Filter
-  - 🇩🇪 DE-3 | Filter
   - 🇬🇧 GB-1 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇬🇧 GB-3 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇯🇵 JP-2 | Filter
-  - 🇯🇵 JP-3 | Filter
-  - 🇺🇸 US-4 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇺🇸 US-6 | Filter
+  - 🇺🇸 US-2 | Filter
   - 🇫🇷 FR-1 | Filter
   - 🇫🇷 FR-2 | Filter
-  - 🇫🇷 FR-3 | Filter
   - 🇮🇹 IT-1 | Filter
-  - 🇮🇹 IT-2 | Filter
-  - 🇮🇹 IT-3 | Filter
   - 🇦🇪 AE-1 | Filter
-  - 🇦🇪 AE-2 | Filter
-  - 🇦🇪 AE-3 | Filter
   - 🇮🇱 IL-1 | Filter
-  - 🇮🇱 IL-2 | Filter
-  - 🇮🇱 IL-3 | Filter
   - 🇷🇺 RU-1 | Mix
   - 🇺🇸 US-1 | Mix
-  - 🇮🇹 IT-1 | Mix
   - 🇸🇬 SG-1 | Mix
   - 🇺🇸 US-2 | Mix
   - 🇺🇸 US-3 | Mix
@@ -2059,13 +2555,11 @@ proxy-groups:
   - 🇺🇸 US-9 | Mix
   - 🇬🇷 GR-1 | Mix
   - 🇩🇪 DE-1 | Mix
-  - 🇮🇹 IT-3 | Mix
   - 🇫🇷 FR-1 | Mix
   - 🇷🇺 RU-3 | Mix
   - 🇮🇱 IL-1 | Mix
   - 🇷🇺 RU-4 | Mix
   - 🇷🇺 RU-5 | Mix
-  - 🇮🇹 IT-9 | Mix
   - 🇩🇪 DE-2 | Mix
   - 🇺🇸 US-10 | Mix
   - 🇮🇱 IL-2 | Mix
@@ -2085,21 +2579,29 @@ proxy-groups:
 - name: 📦 8EB
   type: select
   proxies:
+  - 🇩🇪 DE-1 | 8EB
   - 🇺🇸 US-1 | 8EB
   - 🇺🇸 US-2 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇦🇱 AL-1 | 8EB
+  - 🇩🇪 DE-2 | 8EB
   - 🇺🇸 US-3 | 8EB
+  - 🇬🇧 GB-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
   - 🇪🇸 ES-1 | 8EB
   - 🇪🇸 ES-2 | 8EB
   - 🇪🇸 ES-3 | 8EB
   - 🇪🇸 ES-4 | 8EB
   - 🇪🇸 ES-5 | 8EB
   - 🇪🇸 ES-6 | 8EB
-  - 🇩🇪 DE-1 | 8EB
-  - 🇺🇸 US-4 | 8EB
   - 🇪🇸 ES-7 | 8EB
   - 🇪🇸 ES-8 | 8EB
-  - 🇷🇺 RU-1 | 8EB
-  - 🇮🇩 ID-1 | 8EB
+  - 🇪🇸 ES-9 | 8EB
+  - 🇪🇬 EG-1 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇮🇪 IE-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
   - 🇨🇦 CA-1 | 8EB
   - 🇨🇦 CA-2 | 8EB
   - 🇨🇦 CA-3 | 8EB
@@ -2108,6 +2610,9 @@ proxy-groups:
   - 🇨🇦 CA-6 | 8EB
   - 🇨🇦 CA-7 | 8EB
   - 🇨🇦 CA-8 | 8EB
+  - 🇨🇦 CA-9 | 8EB
+  - 🇨🇦 CA-10 | 8EB
+  - 🇨🇦 CA-11 | 8EB
 - name: 📦 9PB
   type: select
   proxies:
@@ -2144,6 +2649,60 @@ proxy-groups:
   - 🇮🇱 IL-1 | 9PB
   - 🇮🇱 IL-2 | 9PB
   - 🇮🇱 IL-3 | 9PB
+  - 🇯🇵 JP-4 | 9PB
+  - 🇯🇵 JP-5 | 9PB
+  - 🇯🇵 JP-6 | 9PB
+  - 🇹🇭 TH-1 | 9PB
+  - 🇹🇭 TH-2 | 9PB
+  - 🇹🇭 TH-3 | 9PB
+  - 🇧🇷 BR-1 | 9PB
+  - 🇧🇷 BR-2 | 9PB
+  - 🇧🇷 BR-3 | 9PB
+  - 🇳🇬 NG-1 | 9PB
+  - 🇳🇬 NG-2 | 9PB
+  - 🇳🇬 NG-3 | 9PB
+  - 🇰🇬 KG-1 | 9PB
+  - 🇰🇬 KG-2 | 9PB
+  - 🇰🇬 KG-3 | 9PB
+  - 🇷🇴 RO-1 | 9PB
+  - 🇷🇴 RO-2 | 9PB
+  - 🇷🇴 RO-3 | 9PB
+  - 🇲🇰 MK-1 | 9PB
+  - 🇲🇰 MK-2 | 9PB
+  - 🇲🇰 MK-3 | 9PB
+  - 🇸🇮 SI-1 | 9PB
+  - 🇸🇮 SI-2 | 9PB
+  - 🇸🇮 SI-3 | 9PB
+  - 🇵🇱 PL-1 | 9PB
+  - 🇵🇱 PL-2 | 9PB
+  - 🇵🇱 PL-3 | 9PB
+  - 🇺🇦 UA-1 | 9PB
+  - 🇺🇦 UA-2 | 9PB
+  - 🇺🇦 UA-3 | 9PB
+  - 🇳🇱 NL-1 | 9PB
+  - 🇳🇱 NL-2 | 9PB
+  - 🇳🇱 NL-3 | 9PB
+  - 🇸🇪 SE-1 | 9PB
+  - 🇸🇪 SE-2 | 9PB
+  - 🇸🇪 SE-3 | 9PB
+  - 🇦🇿 AZ-1 | 9PB
+  - 🇦🇿 AZ-2 | 9PB
+  - 🇦🇿 AZ-3 | 9PB
+  - 🇮🇩 ID-1 | 9PB
+  - 🇮🇩 ID-2 | 9PB
+  - 🇮🇩 ID-3 | 9PB
+  - 🇫🇷 FR-4 | 9PB
+  - 🇫🇷 FR-5 | 9PB
+  - 🇫🇷 FR-6 | 9PB
+  - 🇵🇪 PE-1 | 9PB
+  - 🇵🇪 PE-2 | 9PB
+  - 🇵🇪 PE-3 | 9PB
+  - 🇮🇶 IQ-1 | 9PB
+  - 🇮🇶 IQ-2 | 9PB
+  - 🇮🇶 IQ-3 | 9PB
+  - 🇹🇷 TR-1 | 9PB
+  - 🇹🇷 TR-2 | 9PB
+  - 🇹🇷 TR-3 | 9PB
 - name: 📦 Lifetime
   type: select
   proxies:
@@ -2187,44 +2746,21 @@ proxy-groups:
   type: select
   proxies:
   - 🇸🇬 SG-1 | Filter
-  - 🇭🇰 HK-1 | Filter
-  - 🇭🇰 HK-2 | Filter
-  - 🇸🇬 SG-2 | Filter
-  - 🇸🇬 SG-3 | Filter
-  - 🇸🇬 SG-4 | Filter
   - 🇺🇸 US-1 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇺🇸 US-3 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇩🇪 DE-2 | Filter
-  - 🇩🇪 DE-3 | Filter
   - 🇬🇧 GB-1 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇬🇧 GB-3 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇯🇵 JP-2 | Filter
-  - 🇯🇵 JP-3 | Filter
-  - 🇺🇸 US-4 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇺🇸 US-6 | Filter
+  - 🇺🇸 US-2 | Filter
   - 🇫🇷 FR-1 | Filter
   - 🇫🇷 FR-2 | Filter
-  - 🇫🇷 FR-3 | Filter
   - 🇮🇹 IT-1 | Filter
-  - 🇮🇹 IT-2 | Filter
-  - 🇮🇹 IT-3 | Filter
   - 🇦🇪 AE-1 | Filter
-  - 🇦🇪 AE-2 | Filter
-  - 🇦🇪 AE-3 | Filter
   - 🇮🇱 IL-1 | Filter
-  - 🇮🇱 IL-2 | Filter
-  - 🇮🇱 IL-3 | Filter
 - name: 📦 MIX
   type: select
   proxies:
   - 🇷🇺 RU-1 | Mix
   - 🇺🇸 US-1 | Mix
-  - 🇮🇹 IT-1 | Mix
+  - 🇪🇸 ES-2 | 8EB
   - 🇸🇬 SG-1 | Mix
   - 🇺🇸 US-2 | Mix
   - 🇺🇸 US-3 | Mix
@@ -2239,24 +2775,24 @@ proxy-groups:
   - 🇺🇸 US-8 | Mix
   - 🇷🇺 RU-2 | Mix
   - 🇧🇾 BY-1 | Mix
-  - 🇪🇸 ES-1 | 8EB
+  - 🇪🇸 ES-7 | 8EB
   - 🇺🇸 US-9 | Mix
   - 🇬🇷 GR-1 | Mix
   - 🇩🇪 DE-1 | Mix
-  - 🇮🇹 IT-3 | Mix
-  - 🇪🇸 ES-4 | 8EB
+  - 🇪🇸 ES-5 | 8EB
+  - 🇪🇸 ES-1 | 8EB
   - 🇫🇷 FR-1 | Mix
   - 🇷🇺 RU-3 | Mix
   - 🇮🇱 IL-1 | Mix
   - 🇷🇺 RU-4 | Mix
-  - 🇪🇸 ES-3 | 8EB
-  - 🇺🇸 US-1 | 8EB
   - 🇪🇸 ES-8 | 8EB
+  - 🇺🇸 US-4 | 8EB
   - 🇪🇸 ES-6 | 8EB
+  - 🇪🇸 ES-4 | 8EB
   - 🇷🇺 RU-5 | Mix
-  - 🇮🇹 IT-9 | Mix
+  - 🇪🇸 ES-3 | 8EB
   - 🇩🇪 DE-2 | Mix
-  - 🇪🇸 ES-5 | 8EB
+  - 🇪🇸 ES-9 | 8EB
   - 🇺🇸 US-10 | Mix
   - 🇮🇱 IL-2 | Mix
   - 🇸🇪 SE-1 | Mix
