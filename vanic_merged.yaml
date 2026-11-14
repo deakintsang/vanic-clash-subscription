@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-14 17:58:17
-# 节点: 201 (去重前 211)  策略组: 8
+# 生成时间: 2026-11-14 22:21:02
+# 节点: 200 (去重前 210)  策略组: 8
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -393,18 +393,9 @@ proxies:
     path: /ws
     headers:
       Host: guessable-turnpikes.cdn-content.com
-- type: anytls
-  name: 🇸🇬 SG-1 | 9PB
-  server: hk-ssl.552213.xyz
-  port: 10000
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  udp: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: hk-ssl.552213.xyz
 - type: vless
-  name: 🇭🇰 HK-1 | 9PB
-  server: hk-ssl.552213.xyz
+  name: 🇸🇬 SG-1 | 9PB
+  server: 7xvwtsqze.hk-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -418,11 +409,13 @@ proxies:
     short-id: 6f2adf66
   network: tcp
 - type: hysteria2
-  name: 🇭🇰 HK-2 | 9PB
-  server: hk-ssl.552213.xyz
+  name: 🇭🇰 HK-1 | 9PB
+  server: qvzqq1j6e.hk-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
+  ports: 30000-40000
+  mport: 30000-40000
   servername: hk-ssl.552213.xyz
 - type: anytls
   name: 🇸🇬 SG-2 | 9PB
@@ -1703,7 +1696,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇸🇬 SG-1 | Filter
-  server: hk-ssl.552213.xyz
+  server: 8h8tbaspe.hk-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -2408,7 +2401,6 @@ proxy-groups:
   - 🇨🇦 CA-11 | 8EB
   - 🇸🇬 SG-1 | 9PB
   - 🇭🇰 HK-1 | 9PB
-  - 🇭🇰 HK-2 | 9PB
   - 🇸🇬 SG-2 | 9PB
   - 🇸🇬 SG-3 | 9PB
   - 🇸🇬 SG-4 | 9PB
@@ -2618,7 +2610,6 @@ proxy-groups:
   proxies:
   - 🇸🇬 SG-1 | 9PB
   - 🇭🇰 HK-1 | 9PB
-  - 🇭🇰 HK-2 | 9PB
   - 🇸🇬 SG-2 | 9PB
   - 🇸🇬 SG-3 | 9PB
   - 🇸🇬 SG-4 | 9PB
