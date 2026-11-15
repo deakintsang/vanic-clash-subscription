@@ -1,6 +1,6 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-14 22:21:02
+# 生成时间: 2026-11-15 06:24:05
 # 节点: 200 (去重前 210)  策略组: 8
 port: 7890
 socks-port: 7891
@@ -395,8 +395,8 @@ proxies:
       Host: guessable-turnpikes.cdn-content.com
 - type: vless
   name: 🇸🇬 SG-1 | 9PB
-  server: 7xvwtsqze.hk-node.552213.xyz
-  port: 20000
+  server: oc8fljy4e.hk-node.552213.xyz
+  port: 8443
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   flow: xtls-rprx-vision
@@ -410,7 +410,7 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇭🇰 HK-1 | 9PB
-  server: qvzqq1j6e.hk-node.552213.xyz
+  server: r6z8q6qie.hk-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1696,7 +1696,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇸🇬 SG-1 | Filter
-  server: 8h8tbaspe.hk-node.552213.xyz
+  server: nrol9iw2e.hk-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
