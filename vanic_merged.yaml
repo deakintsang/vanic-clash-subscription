@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅（含 MIX）
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter, MIX
-# 生成时间: 2026-11-22 19:33:28
-# 节点: 212 (去重前 221)  策略组: 8
+# 生成时间: 2026-11-23 07:31:24
+# 节点: 295 (去重前 305)  策略组: 8
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -10,43 +10,51 @@ log-level: warning
 ipv6: true
 external-controller: 127.0.0.1:9090
 proxies:
-- type: vless
+- type: socks5
+  name: 🇬🇧 GB-1 | 8EB
+  server: 94.194.166.52
+  port: 42000
+  username: dXNlckxSZ0s6S3NQQXhaR24
+- type: socks5
   name: 🇺🇸 US-1 | 8EB
-  server: 62.144.51.95
-  port: 443
-  uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
+  server: 216.132.114.27
+  port: 62000
+  username: Snp1ZmlKNjI6NzViUG9SY0I
+- type: ss
+  name: 🇪🇸 ES-1 | 8EB
+  server: 202.50.253.90
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  network: tcp
-- type: vless
-  name: 🇺🇸 US-2 | 8EB
-  server: 31.59.154.82
-  port: 8459
-  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
+- type: ss
+  name: 🇪🇸 ES-2 | 8EB
+  server: 202.50.253.36
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: nl-edge.airlinesvpn.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
-    short-id: 0f0e381ec0c4690d
-  network: tcp
-- type: vless
-  name: 🇺🇸 US-3 | 8EB
-  server: 43.161.194.94
-  port: 443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+- type: ss
+  name: 🇪🇸 ES-3 | 8EB
+  server: 202.50.253.72
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: 260509.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 260509.pages.dev
+- type: ss
+  name: 🇪🇸 ES-4 | 8EB
+  server: 202.50.253.27
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-5 | 8EB
+  server: 202.50.253.18
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇷🇺 RU-1 | 8EB
   server: 178.248.236.229
@@ -62,437 +70,6 @@ proxies:
     public-key: _3mkK8SY6YVqws73SUVPKL77tzxDVNUt4ag9J9ec-D0
     short-id: d05a120d3506d2cc
   network: tcp
-- type: vless
-  name: 🇷🇺 RU-2 | 8EB
-  server: 176.57.218.50
-  port: 443
-  uuid: f7331345-aac5-4e81-b8ac-8b8aa3ee2068
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: cdn.lite64.site
-  client-fingerprint: firefox
-  network: tcp
-- type: vless
-  name: 🇷🇺 RU-3 | 8EB
-  server: 91.206.14.204
-  port: 443
-  uuid: 25dcbe15-3d70-4f24-a8f2-3156e68f783e
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: xriqal5yq.calveron-edge73.cyou
-  client-fingerprint: edge
-  reality-opts:
-    public-key: xJZgy1PaEukFZ06H3VV64iLhA8nlAj2MYwC68BKA5Sc
-    short-id: 6ba85179e30d4fc2
-  network: tcp
-  spx: /
-- type: vless
-  name: 🇵🇱 PL-1 | 8EB
-  server: 45.140.204.17
-  port: 22444
-  uuid: a9ff24d3-f308-4e72-acb9-a76062583837
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: fontanka.ru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8
-    short-id: 6ad3c0f1e9b2478a
-  network: tcp
-- type: vless
-  name: 🇳🇱 NL-1 | 8EB
-  server: 13.141.51.100
-  port: 25700
-  uuid: 62995b2a-8f82-41f8-ac80-dfdfc1253e76
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: 5dc396r.pl9.h1clayd.click
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: w698in_6eoH8y_C5jY3cpScMyaRaPpmPQEQhzw8QMUM
-    short-id: 54c9c22217db5c86
-  network: xhttp
-- type: vless
-  name: 🇳🇱 NL-2 | 8EB
-  server: 104.18.35.75
-  port: 443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: 260509.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 260509.pages.dev
-- type: vless
-  name: 🇲🇾 MY-1 | 8EB
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: szqbx-ru-77dc.my-fade.cloud
-  client-fingerprint: qq
-  network: tcp
-  alpn:
-  - h2
-  - http/1.1
-- type: vless
-  name: 🇯🇵 JP-1 | 8EB
-  server: 2.27.134.67
-  port: 443
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: 260509.pages.dev
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: 260509.pages.dev
-- type: ss
-  name: 🇮🇹 IT-1 | 8EB
-  server: 202.50.253.54
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🇬🇧 GB-1 | 8EB
-  server: 31.76.246.65
-  port: 706
-  uuid: 9780207b-d02a-493a-9bf1-ebc1a4486b34
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: www.amd.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6ABNRK-j4hVgo-DwsX3zxMSjMOuudrVZRxLde3XB530
-  network: grpc
-- type: vless
-  name: 🇬🇧 GB-2 | 8EB
-  server: 31.76.246.25
-  port: 706
-  uuid: 9780207b-d02a-493a-9bf1-ebc1a4486b34
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: www.amd.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6ABNRK-j4hVgo-DwsX3zxMSjMOuudrVZRxLde3XB530
-  network: grpc
-- type: vless
-  name: 🇫🇷 FR-1 | 8EB
-  server: 2.56.127.202
-  port: 17101
-  uuid: 7d77e8fc-07d9-46e3-bf70-66531011fed3
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: it.nvidia.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: td00T39muH83FZFqpyfgfYYQLjT860DLdrCcnKr2_FE
-    short-id: b08ccd
-  network: grpc
-- type: vless
-  name: 🇫🇷 FR-2 | 8EB
-  server: ct.877774.xyz
-  port: 443
-  uuid: 7e16ecac-232f-42e1-9e81-6fdcb5b9b5d1
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: jp-osa.862400.xyz
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: jp-osa.862400.xyz
-- type: vless
-  name: 🇫🇮 FI-1 | 8EB
-  server: 45.144.52.205
-  port: 4243
-  uuid: 78a2cdf1-22e5-4ad7-bf89-91aa13d8b76c
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: fi.convert-cloud.guru
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: vCHucdoD_m-TKVHS7si1akKgP6r4dvTLUX8y1TTZQG4
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ns
-  serviceName: ns
-  mode: gun
-- type: vless
-  name: 🇫🇮 FI-2 | 8EB
-  server: 144.31.90.152
-  port: 443
-  uuid: 53d95125-a38b-4a51-8155-66d3d00b1832
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: live.cdnguard.org
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6nZacX6g09t3m4dVrNOAG0IsiRwEICVT8Qq-wd7G2H8
-    short-id: 9b2e20557aa8f88a
-  network: tcp
-- type: ss
-  name: 🇪🇸 ES-1 | 8EB
-  server: 202.50.253.72
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇪🇸 ES-2 | 8EB
-  server: 202.50.253.18
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇪🇸 ES-3 | 8EB
-  server: 202.50.253.81
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: vless
-  name: 🇩🇪 DE-1 | 8EB
-  server: mamad.ang-el.ir
-  port: 2085
-  uuid: fbe735da-3a62-4b98-844b-8db9e2ebaf95
-  udp: true
-  tls: true
-  skip-cert-verify: false
-  servername: angelvpn.angelmh.cv
-  network: xhttp
-  mode: stream-one
-  extra: '{"mode":"stream-one","xPaddingBytes":"100-1000"}'
-- type: vless
-  name: 🇩🇪 DE-2 | 8EB
-  server: 109.106.15.99
-  port: 443
-  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: key-master-saver.com
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  network: tcp
-- type: vless
-  name: 🇩🇪 DE-3 | 8EB
-  server: 109.106.15.99
-  port: 443
-  uuid: bc93a03d-13b5-0004-8ee7-d50c11459dab
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: key-master-saver.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  network: tcp
-- type: vless
-  name: 🇨🇭 CH-1 | 8EB
-  server: 136.176.75.174
-  port: 53443
-  uuid: b8318808-1193-4879-b2c2-6fc638e4101d
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: ch.nuvio.ink
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: YvlWGguQktrE_wPwSX81SVj9CBaCEe38PlcJLm1q0jc
-    short-id: f30d7b13beb4fda3
-  network: tcp
-- type: vless
-  name: 🇨🇦 CA-1 | 8EB
-  server: 31.59.154.82
-  port: 8459
-  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  servername: nl-edge.airlinesvpn.com
-  client-fingerprint: edge
-  reality-opts:
-    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
-    short-id: 0f0e381ec0c4690d
-  network: tcp
-- type: socks5
-  name: 🇭🇰 HK-1 | 8EB
-  server: 47.242.19.215
-  port: 8899
-  username: YWRtaW46YWRtaW4
-- type: vmess
-  name: 🇺🇸 US-4 | 8EB
-  server: d1eyz.xiaoyan.io
-  port: 16648
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: vmess
-  name: 🇺🇸 US-5 | 8EB
-  server: afzuv.xiaoyan.io
-  port: 16648
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: socks5
-  name: 🇺🇸 US-6 | 8EB
-  server: 23.230.200.176
-  port: 62000
-  username: dTFmMGNpamo6cHB5ZWZlM2s
-- type: socks5
-  name: 🇹🇭 TH-1 | 8EB
-  server: 192.204.15.192
-  port: 42000
-  username: WDNzM0p0ZUQ6bXBiSzAwUGw
-- type: socks5
-  name: 🇹🇭 TH-2 | 8EB
-  server: 192.204.14.58
-  port: 42000
-  username: MkZZYkF4OEg6M2FoV1g3bDE
-- type: vmess
-  name: 🇸🇬 SG-1 | 8EB
-  server: afzuv.xiaoyan.io
-  port: 16618
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: socks5
-  name: 🇲🇽 MX-1 | 8EB
-  server: 144.225.47.158
-  port: 42000
-  username: REp5MVQwZHQ6c1puRDhHVHo
-- type: socks5
-  name: 🇲🇽 MX-2 | 8EB
-  server: 66.80.2.252
-  port: 62000
-  username: dXNlcmViN2Q6YzBhMzRh
-- type: socks5
-  name: 🇲🇽 MX-3 | 8EB
-  server: 94.194.164.203
-  port: 62000
-  username: clZra3JhcVQ6Mmo3Q0NaUWI
-- type: vmess
-  name: 🇯🇵 JP-2 | 8EB
-  server: afzuv.xiaoyan.io
-  port: 16617
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: vmess
-  name: 🇯🇵 JP-3 | 8EB
-  server: d1eyz.xiaoyan.io
-  port: 16617
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: ss
-  name: 🇮🇹 IT-2 | 8EB
-  server: 202.50.253.45
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: anytls
-  name: 🇮🇳 IN-1 | 8EB
-  server: signal.frnhk.xyz
-  port: 443
-  password: 9e34ee67-c4dd-4c49-8e33-bbfac6efbc33
-  udp: true
-  servername: signal.frnhk.xyz
-- type: socks5
-  name: 🇭🇰 HK-2 | 8EB
-  server: 47.243.225.10
-  port: 8888
-  username: MTIzOjEyMw
-- type: socks5
-  name: 🇬🇧 GB-3 | 8EB
-  server: 82.47.154.22
-  port: 42000
-  username: dXNlck1HRWo6S3N5U3ZDQVA
-- type: socks5
-  name: 🇬🇧 GB-4 | 8EB
-  server: 82.47.154.48
-  port: 42000
-  username: dXNlck1HRWo6S3N5U3ZDQVA
-- type: ss
-  name: 🇪🇸 ES-4 | 8EB
-  server: 202.50.253.63
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
-- type: ss
-  name: 🇪🇸 ES-5 | 8EB
-  server: 202.50.253.90
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: ss
   name: 🇪🇸 ES-6 | 8EB
   server: 202.50.253.99
@@ -502,71 +79,1128 @@ proxies:
   udp: true
 - type: ss
   name: 🇪🇸 ES-7 | 8EB
-  server: 202.50.253.36
+  server: 202.50.253.54
   port: 19999
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
   name: 🇪🇸 ES-8 | 8EB
+  server: 202.50.253.63
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-9 | 8EB
+  server: 202.50.253.45
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: ss
+  name: 🇪🇸 ES-10 | 8EB
   server: 47.254.128.109
   port: 443
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   udp: true
-- type: vmess
-  name: 🇨🇳 CN-1 | 8EB
-  server: afzuv.xiaoyan.io
-  port: 16616
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  network: ws
-  udp: true
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- type: anytls
-  name: 🇨🇦 CA-2 | 8EB
-  server: im.frnhk.xyz
+- type: vless
+  name: 🇺🇸 US-2 | 8EB
+  server: jp2static.jumpernode.site
   port: 443
-  password: e2413369-16de-4c90-97c5-b39b8d6b71cd
+  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
   udp: true
-  servername: im.frnhk.xyz
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amzn.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
+    short-id: 6281f3ef81187ad8
+  network: tcp
+- type: socks5
+  name: 🇧🇷 BR-1 | 8EB
+  server: 87.81.70.239
+  port: 42000
+  username: dXNlcjI1MjM6S3NuZXJ2dzI
+- type: socks5
+  name: 🇻🇳 VN-1 | 8EB
+  server: 103.184.113.190
+  port: 62000
+  username: cVQ0NkRaTHY6akhzSzJncXM
+- type: ss
+  name: 🇷🇺 RU-2 | 8EB
+  server: 48.103.218.77
+  port: 18443
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+  udp: true
+- type: ss
+  name: 🇩🇪 DE-1 | 8EB
+  server: 47.254.167.157
+  port: 443
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  udp: true
+- type: socks5
+  name: 🇹🇭 TH-1 | 8EB
+  server: 192.204.15.138
+  port: 42000
+  username: WDNzM0p0ZUQ6bXBiSzAwUGw
+- type: vless
+  name: 🇺🇸 US-3 | 8EB
+  server: 13.143.187.220
+  port: 443
+  uuid: 66c78912-4e2d-41dc-8742-aaae2590804e
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: fi-s1.kadrhub.tech
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: eDzVz3bxkv3IoN3BUCa_aA-RicoeG7ACylYSnmS2Pgg
+  network: tcp
+- type: socks5
+  name: 🇬🇷 GR-1 | 8EB
+  server: 149.210.44.175
+  port: 1080
+  username: Og
+- type: socks5
+  name: 🇷🇴 RO-1 | 8EB
+  server: 45.201.36.125
+  port: 62000
+  username: eTJzdFRRbmY6d2oyc052RHU
+- type: vless
+  name: 🇷🇺 RU-3 | 8EB
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: szqbx-ru-77dc.my-fade.cloud
+  client-fingerprint: qq
+  network: tcp
+- type: vless
+  name: 🇮🇷 IR-1 | 8EB
+  server: 87.82.59.60
+  port: 837
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+  udp: true
+  network: tcp
+- type: vless
+  name: 🇪🇸 ES-11 | 8EB
+  server: api.ferrin.uk
+  port: 443
+  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 7d1a74fd.ferrin.uk
+  client-fingerprint: chrome
+  network: xhttp
+  alpn:
+  - h2
+  mode: stream-one
+- type: vless
+  name: 🇩🇪 DE-2 | 8EB
+  server: 2.26.251.236
+  port: 443
+  uuid: c16e8cdb-65dd-4049-bc65-14c051b8a6c6
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: mental-deprivation.ru
+  reality-opts:
+    public-key: 1iVMMhJZgXHRY7tRlR-1kypF0YeaBcB7EjcfHRsYZX4
+    short-id: 4ff31b18d1bd8227
+  network: tcp
+- type: vless
+  name: 🇹🇼 TW-1 | 8EB
+  server: free.fugui.lol
+  port: 19482
+  uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: swdist.apple.com
+  client-fingerprint: ios
+  reality-opts:
+    public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
+    short-id: fa514b83
+  network: tcp
+- type: socks5
+  name: 🇯🇵 JP-1 | 8EB
+  server: 103.248.150.238
+  port: 42000
+  username: dEI0dk43cVA6SjVyTTJ4TDk
+- type: ss
+  name: 🇮🇹 IT-1 | 8EB
+  server: 202.50.253.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- type: vless
+  name: 🇺🇸 US-4 | 8EB
+  server: 162.35.101.177
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  tls: true
+  skip-cert-verify: false
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: edge
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+  serviceName: 99f2107b03f8
+  mode: gun
+- type: anytls
+  name: 🇯🇵 JP-2 | 8EB
+  server: 45.192.203.110
+  port: 36835
+  password: czxPueuXQB1wUfMU
+  udp: true
+  skip-cert-verify: true
+  servername: www.bing.com
+- type: hysteria2
+  name: 🇩🇪 DE-3 | 8EB
+  server: a3de.supertoolify.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  obfs: salamander
+  obfs-password: ivnbamaxvp0dqblk
+  servername: a3de.supertoolify.com
+- type: hysteria2
+  name: 🇯🇵 JP-3 | 8EB
+  server: nb5rb.hikigo.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  obfs: salamander
+  obfs-password: yhlbhcysaba0wtn1
+  servername: nb5rb.hikigo.com
+- type: hysteria2
+  name: 🇸🇬 SG-1 | 8EB
+  server: hkzfsg2.mateflora.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  obfs: salamander
+  obfs-password: fcfqz5o4znnjqtrp
+  servername: hkzfsg2.mateflora.com
+- type: hysteria2
+  name: 🇸🇬 SG-2 | 8EB
+  server: bgsg2.hikigo.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  obfs: salamander
+  obfs-password: sj1awrdwnn5lbuno
+  servername: bgsg2.hikigo.com
+- type: trojan
+  name: 🇺🇸 US-5 | 8EB
+  server: a2dgus.supertoolify.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  skip-cert-verify: false
+  security: tls
+  servername: a2dgus.supertoolify.com
+  network: tcp
+- type: hysteria2
+  name: 🇺🇸 US-6 | 8EB
+  server: dg2us.supertoolify.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  obfs: salamander
+  obfs-password: oxaanqnluias3s61
+  servername: dg2us.supertoolify.com
+- type: trojan
+  name: 🇻🇳 VN-2 | 8EB
+  server: xvxn1hkzf.mateflora.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  skip-cert-verify: false
+  security: tls
+  servername: xvxn1hkzf.mateflora.com
+  network: tcp
+- type: trojan
+  name: 🇮🇩 ID-1 | 8EB
+  server: i1tr.mateflora.com
+  port: 443
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  skip-cert-verify: false
+  security: tls
+  servername: i1tr.mateflora.com
+  network: tcp
+- type: vless
+  name: 🇦🇺 AU-1 | 8EB
+  server: 85.189.89.172
+  port: 20086
+  uuid: 469e41b2-ffb2-4ab3-ad4d-fd00ac69af75
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: n1_yHUrlljxT_VL8HX0ALz8JKAYHJb5e2sQ8tMdBp2A
+  network: tcp
+- type: vless
+  name: 🇦🇺 AU-2 | 8EB
+  server: 38.180.95.95
+  port: 20086
+  uuid: ba8ae5e6-835d-44f0-95fd-5d1291b2f599
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 18kWhBUWGBC9R9_535uTkJWXyC79QrA4fqJgKa4tBQ0
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-4 | 8EB
+  server: 38.180.95.176
+  port: 20086
+  uuid: 8d5b4bc5-2355-4a43-a386-ea8d20f6c3b8
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.ebay.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: TpDfpHz7Lj4-Itv0ShybMhUrPChNXoexCGaOHtRjoD8
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-5 | 8EB
+  server: 68.64.181.197
+  port: 20086
+  uuid: cfa9310e-0083-4e06-a664-0381098c148f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 78TG1qYh_ShLeQszkvn8Fzv9fItRD5uqNbldKeejFTI
+  network: tcp
+- type: vless
+  name: 🇩🇪 DE-6 | 8EB
+  server: 85.189.89.165
+  port: 20086
+  uuid: e3808bf4-a0db-4828-93d5-ad534d302f1d
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lVwVzyeyX0aRVzkOYY-MRJQuZgqaqLJZQL0mVlYqORI
+  network: tcp
+- type: vless
+  name: 🇫🇷 FR-1 | 8EB
+  server: 38.180.150.151
+  port: 20086
+  uuid: 71d89729-0d1f-4133-80f8-ff7c5a6ca6d1
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 2hwx5m-M7_gZcJgWzpH8Dbae9xQ-IQWdCcs2HREkfko
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-1 | 8EB
+  server: 38.180.149.71
+  port: 20086
+  uuid: 31020df0-6aed-40a6-a84f-25296c07f80a
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7RIUTTFMeW_Jag3aT-XmbJipce7w3COFC0CQ1qiIZmk
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-2 | 8EB
+  server: 45.144.136.202
+  port: 20086
+  uuid: 16eb939a-75c3-4b59-bfc3-ff07316c7a80
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZMKSZGONIVWum7Ut-O7JIKJ6gUBfURgrNOiMrblUBxk
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-3 | 8EB
+  server: 45.136.15.212
+  port: 20086
+  uuid: 5a66e6cf-ba9f-41c5-8590-036890654e58
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: z_EU3XzU2TmXkInPLf0GWdFEfx6ZcpVSxnS9BFJ1hGE
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-4 | 8EB
+  server: 38.180.95.2
+  port: 20086
+  uuid: ffc912cc-45da-4ece-86d2-fe340c9ed1fc
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MyWImK76KPf3T75mEf5vIA8eNQR_7mKEK_mOP0HlclI
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-5 | 8EB
+  server: 83.229.127.243
+  port: 20086
+  uuid: f8b1df1f-3f83-43c6-af8e-588d11bb5374
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: i3TyUPQs67R7GH0UnLegIvefbV_At0GsPEkDqA4TwWw
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-6 | 8EB
+  server: 85.189.67.107
+  port: 20086
+  uuid: 01b87800-396e-4d79-8eaf-c023deeccf7c
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: N60X1fq3w78e_eDHwgyrbgdplTgq1oyTnICTAKy7RjY
+  network: tcp
+- type: vless
+  name: 🇭🇰 HK-7 | 8EB
+  server: 103.143.81.24
+  port: 20086
+  uuid: 4125878c-8cd5-4e2e-8e07-eca469c03e85
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lT0Tq10qFAJItnnPw9RjOizcHeAA0JZl_wC1DsqEKj0
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-4 | 8EB
+  server: 85.189.89.182
+  port: 20086
+  uuid: 24bc6f99-bb3c-405b-9f99-e27c5012cf45
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: p6xwBXTFkq8nzeO8zjPTSHANvS2DfstuG-Vp134hBGs
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-5 | 8EB
+  server: 38.180.95.96
+  port: 20086
+  uuid: af18b465-6f56-4a35-8932-fe9ce8c079b7
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gMbm2Kom7Njm5Vh1Eycw7s9hH0x84csLzC21eYEI9QY
+  network: tcp
+- type: vless
+  name: 🇯🇵 JP-6 | 8EB
+  server: 45.136.14.140
+  port: 20086
+  uuid: 367e69b0-5781-45ad-83bc-94013729532d
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: hfJpGSf-nFizW5PjVNk0W5ZoTc81diTMjurFm3FT9j4
+  network: tcp
+- type: vless
+  name: 🇰🇷 KR-1 | 8EB
+  server: 85.189.89.183
+  port: 20086
+  uuid: 35b08a76-2a3e-4371-8748-2ef9ce27103f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ij8p9EwemwRh-0Hbg6OTNUMZGVeklZXrX534z3qoiGY
+  network: tcp
+- type: vless
+  name: 🇰🇷 KR-2 | 8EB
+  server: 38.180.149.224
+  port: 20086
+  uuid: c3f8154e-e6d3-40ce-b53e-7215fd96de5d
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: q7cUSh9cmnxEDBTz2eQQF7b3luX0YZi9jp7CHgOVFS0
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-3 | 8EB
+  server: 85.189.89.170
+  port: 20086
+  uuid: b5e8a15a-e134-4493-9073-be79eab9cda8
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MqEVrXrgUtPf9WYkZyUfVtJQDAssCV79bad4F4LlWGA
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-4 | 8EB
+  server: 85.189.89.190
+  port: 20086
+  uuid: f72b7be4-9030-4b35-bc6c-2a202200fcab
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 4J4GxkNymYvPekhC_g8-Fns5frLOueOLdB4C-_BKWjY
+  network: tcp
+- type: vless
+  name: 🇸🇬 SG-5 | 8EB
+  server: 38.207.178.28
+  port: 20086
+  uuid: 11a2709f-a1aa-4b97-9212-4d5cb0c83e53
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.paypal.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: fSVnXtIce23KOtqQjDuwRkNCM3mvWlva7bPNMfODv04
+  network: tcp
 - type: vless
   name: 🇺🇸 US-7 | 8EB
-  server: barbered-mattocks.video-streams.org
-  port: 443
-  uuid: ff3117a2-f6d6-45a5-b82a-9df9b24a1426
+  server: 38.207.178.113
+  port: 20086
+  uuid: 82db522b-8f2b-45e1-a984-e199a3d3a6db
   udp: true
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: barbered-mattocks.video-streams.org
+  servername: aws.amazon.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: barbered-mattocks.video-streams.org
+  reality-opts:
+    public-key: IdYIcbajO4njkNrsWpYriaYW9fF0YQAKjICgl0ynWDs
+  network: tcp
 - type: vless
   name: 🇺🇸 US-8 | 8EB
-  server: sparkling-gadabout.quick-cdn.net
-  port: 443
-  uuid: ff3117a2-f6d6-45a5-b82a-9df9b24a1426
+  server: 38.244.198.105
+  port: 20086
+  uuid: f261bc8c-d2f2-43da-83e7-06ef41ef8aa5
   udp: true
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: sparkling-gadabout.quick-cdn.net
+  servername: aws.amazon.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: sparkling-gadabout.quick-cdn.net
+  reality-opts:
+    public-key: -cQ8O3f7-PUJ_RGl_QM106ivhH_ClMUMxZtnVczV0Vs
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-9 | 8EB
+  server: 85.189.89.169
+  port: 20086
+  uuid: 6618c37f-edd7-4ff0-b9d6-26f1cc4945ab
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: H3CK3gN9HfMONI7aYoSxOUqc5EYPgOVWfLOU3ygaIjw
+  network: tcp
+- type: vless
+  name: 🇺🇸 US-10 | 8EB
+  server: 38.207.178.137
+  port: 20086
+  uuid: e4e11486-cef7-488a-8b4c-ac51f106383f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  servername: www.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: t7qRcxR85PGhMJngfejgN01UsAmFZHxgIUVU36cCUhk
+  network: tcp
+- type: ss
+  name: 🇰🇷 KR-3 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 44592
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-1 | 8EB
+  server: tw01zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: NmY4NTI2YWNmZDgzMDRjMTQ4MWVmNWU2ZmJhYjYyMjM=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-2 | 8EB
+  server: tw02zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: MzkzYWIxZGUyYzg0NzU2ZjJlOTc3NzEyNDM2ZTU5ZGI=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-3 | 8EB
+  server: tw03zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: MWRhNjIzOWIwYmNlZjA0NjgwZTBiMzA3ODQ3MzhmM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-4 | 8EB
+  server: tw04zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: ZjdiOWI4Yjc2MmE2OWM1Y2E4MDliZjViMzUwNjQxMzk=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-5 | 8EB
+  server: tw05zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: MWUxNjY1ZGNkMDA1NDM3NjFhOGRmYWQwMjM5MDAyZmQ=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-6 | 8EB
+  server: tw06zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: ODM3MjBjNDViMmU4Y2FiYzQyOGU2YjZhZTk1M2YzNWI=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-7 | 8EB
+  server: tw07zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: YjgwZDgzM2Y2ZGRjZTVhMDA2NjdlMTZlZTY4MzNkMjA=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-8 | 8EB
+  server: tw08zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-128-gcm
+  password: MDVlYzFlNDExN2FkZThkNg==:ODM5MzM0MjMtMzQxNS00Yw==
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-9 | 8EB
+  server: tw09zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: MGM3NWE2ZTY4NjJlOGY0ZjNhNzRkOGViYTdjYWUwN2U=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-10 | 8EB
+  server: tw10zl.lovetutujiejie.com
+  port: 443
+  cipher: 2022-blake3-aes-256-gcm
+  password: MDIwN2VjYzNlZjczZWRmYmYwMTQ1OTMyZGRkOTI3YWI=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-8 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18001
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-9 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18002
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-10 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18003
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-11 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18004
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-12 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18005
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-13 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18006
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-14 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18007
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-15 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18008
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-16 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18009
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇭🇰 HK-17 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 18010
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-6 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29001
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-7 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29002
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-8 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29003
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-9 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29004
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-10 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29005
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-11 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29006
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-12 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29007
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-13 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29008
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-14 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29009
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇸🇬 SG-15 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 29010
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-7 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39001
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-8 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39002
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-9 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39003
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-10 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39004
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-11 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39005
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-12 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39006
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-13 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39007
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-14 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39008
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-15 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39009
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇯🇵 JP-16 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 39010
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-11 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49001
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-12 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49002
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-13 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49003
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-14 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49004
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-15 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49005
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-16 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49006
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-17 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49007
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-18 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49008
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-19 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49009
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇺🇸 US-20 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 49010
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-11 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 59001
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-12 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 59002
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-13 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 59003
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-14 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 59004
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇼🇸 WS-15 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 59005
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇬🇧 GB-2 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60010
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇩🇪 DE-7 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60012
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇲🇾 MY-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60013
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇰🇷 KR-4 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60014
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇵🇭 PH-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60015
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇷🇺 RU-4 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60016
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇮🇩 ID-2 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60017
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇿🇦 ZA-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60018
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇰🇭 KH-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60019
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇻🇳 VN-3 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60020
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇦🇷 AR-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60021
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇹🇷 TR-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60022
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇪🇬 EG-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60023
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇹🇭 TH-2 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60024
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇦🇪 AE-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60025
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
+- type: ss
+  name: 🇨🇦 CA-1 | 8EB
+  server: ft-ss.ftnode369.com
+  port: 60026
+  cipher: 2022-blake3-aes-256-gcm
+  password: OGMxN2IwNzVkMTA0OWU4ZDU4YWE2YmRmNjkzYjMwM2I=:ODM5MzM0MjMtMzQxNS00YzRmLWEwNDgtZTAwNDc4Yjg=
+  udp: true
 - type: anytls
   name: 🇸🇬 SG-1 | 9PB
-  server: 8kp1w4a2e.hk-node.552213.xyz
+  server: 880m5an5e.hk-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -575,7 +1209,7 @@ proxies:
   servername: hk-ssl.552213.xyz
 - type: vless
   name: 🇭🇰 HK-1 | 9PB
-  server: fup7vlsee.hk-node.552213.xyz
+  server: bkwh9z4ve.hk-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -590,14 +1224,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇭🇰 HK-2 | 9PB
-  server: vmlwfmi0e.hk-node.552213.xyz
+  server: fd3l8x5ae.hk-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: hk-ssl.552213.xyz
 - type: vless
   name: 🇺🇸 US-1 | 9PB
-  server: z06x1nr1e.cloudflare.182682.xyz
+  server: weaa2kuie.cloudflare.182682.xyz
   port: 443
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -613,7 +1247,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: vless
   name: 🇺🇸 US-2 | 9PB
-  server: fgg5awo1e.cloudflare.182682.xyz
+  server: byvib5h9e.cloudflare.182682.xyz
   port: 443
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -629,7 +1263,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: vless
   name: 🇨🇦 CA-1 | 9PB
-  server: ouf78813e.cloudflare.182682.xyz
+  server: hykqc3yze.cloudflare.182682.xyz
   port: 443
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -645,7 +1279,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: anytls
   name: 🇸🇬 SG-2 | 9PB
-  server: img6em0qe.sg-node.552213.xyz
+  server: fr5tzbhse.sg-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -654,7 +1288,7 @@ proxies:
   servername: sg-ssl.552213.xyz
 - type: vless
   name: 🇸🇬 SG-3 | 9PB
-  server: dm95r0bve.sg-node.552213.xyz
+  server: dvs7zg6fe.sg-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -669,14 +1303,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇸🇬 SG-4 | 9PB
-  server: qit561w2e.sg-node.552213.xyz
+  server: d7e3b5vbe.sg-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: sg-ssl.552213.xyz
 - type: anytls
   name: 🇺🇸 US-3 | 9PB
-  server: cbwssw77e.usp-node.552213.xyz
+  server: o81rgatbe.usp-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -685,7 +1319,7 @@ proxies:
   servername: usp-ssl.552213.xyz
 - type: vless
   name: 🇺🇸 US-4 | 9PB
-  server: f2kagwbhe.usp-node.552213.xyz
+  server: buk7s5w0e.usp-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -700,14 +1334,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇺🇸 US-5 | 9PB
-  server: b3mselohe.usp-node.552213.xyz
+  server: fer4h6zbe.usp-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: usp-ssl.552213.xyz
 - type: anytls
   name: 🇩🇪 DE-1 | 9PB
-  server: 161jxggee.de-node.552213.xyz
+  server: tb2723eae.de-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -716,7 +1350,7 @@ proxies:
   servername: de-ssl.552213.xyz
 - type: vless
   name: 🇩🇪 DE-2 | 9PB
-  server: 8630yj9ge.de-node.552213.xyz
+  server: 2vzwfg7be.de-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -731,14 +1365,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇩🇪 DE-3 | 9PB
-  server: 86z9k6j9e.de-node.552213.xyz
+  server: 8rku7game.de-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: de-ssl.552213.xyz
 - type: anytls
   name: 🇬🇧 GB-1 | 9PB
-  server: zj2pautfe.uk-node.552213.xyz
+  server: tcagub6ke.uk-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -747,7 +1381,7 @@ proxies:
   servername: uk-ssl.552213.xyz
 - type: vless
   name: 🇬🇧 GB-2 | 9PB
-  server: h5u8kt37e.uk-node.552213.xyz
+  server: 72c424mze.uk-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -762,14 +1396,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇬🇧 GB-3 | 9PB
-  server: 1hvaiv6he.uk-node.552213.xyz
+  server: s2hirtede.uk-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: uk-ssl.552213.xyz
 - type: anytls
   name: 🇯🇵 JP-1 | 9PB
-  server: 3602gjole.jp-node.552213.xyz
+  server: 04fqdtbde.jp-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -778,7 +1412,7 @@ proxies:
   servername: jp-ssl.552213.xyz
 - type: vless
   name: 🇯🇵 JP-2 | 9PB
-  server: ameaa5kve.jp-node.552213.xyz
+  server: 3ohbxvwle.jp-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -793,14 +1427,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇯🇵 JP-3 | 9PB
-  server: cm2bp7q1e.jp-node.552213.xyz
+  server: 6tp63jnqe.jp-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: jp-ssl.552213.xyz
 - type: anytls
   name: 🇺🇸 US-6 | 9PB
-  server: nw9waugle.usc-node.552213.xyz
+  server: o3r7k9bje.usc-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -809,7 +1443,7 @@ proxies:
   servername: usc-ssl.552213.xyz
 - type: vless
   name: 🇺🇸 US-7 | 9PB
-  server: yzg8d64ye.usc-node.552213.xyz
+  server: cdvo5nble.usc-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -824,14 +1458,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇺🇸 US-8 | 9PB
-  server: ftf6u7h1e.usc-node.552213.xyz
+  server: yvv1hor0e.usc-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: usc-ssl.552213.xyz
 - type: anytls
   name: 🇫🇷 FR-1 | 9PB
-  server: ykhmiy93e.fr-node.552213.xyz
+  server: zaj6dizme.fr-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -840,7 +1474,7 @@ proxies:
   servername: fr-ssl.552213.xyz
 - type: vless
   name: 🇫🇷 FR-2 | 9PB
-  server: vv6ysiuge.fr-node.552213.xyz
+  server: we9gg8cwe.fr-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -855,14 +1489,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇫🇷 FR-3 | 9PB
-  server: 2cmyd3nke.fr-node.552213.xyz
+  server: db19uqsve.fr-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: fr-ssl.552213.xyz
 - type: anytls
   name: 🇮🇹 IT-1 | 9PB
-  server: x91cpzbpe.it-node.552213.xyz
+  server: pw3t2or4e.it-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -871,7 +1505,7 @@ proxies:
   servername: it-ssl.552213.xyz
 - type: vless
   name: 🇮🇹 IT-2 | 9PB
-  server: q6o5i0zee.it-node.552213.xyz
+  server: nmjvmcu9e.it-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -886,14 +1520,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇮🇹 IT-3 | 9PB
-  server: 561mwgine.it-node.552213.xyz
+  server: 17obqzdue.it-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: it-ssl.552213.xyz
 - type: anytls
   name: 🇦🇪 AE-1 | 9PB
-  server: 49ku6waxe.ae-node.552213.xyz
+  server: ipilzk49e.ae-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -902,7 +1536,7 @@ proxies:
   servername: ae-ssl.552213.xyz
 - type: vless
   name: 🇦🇪 AE-2 | 9PB
-  server: bxbmnis5e.ae-node.552213.xyz
+  server: 5xzsfbmoe.ae-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -917,14 +1551,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇦🇪 AE-3 | 9PB
-  server: yikh6uxce.ae-node.552213.xyz
+  server: xcirn5f6e.ae-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: ae-ssl.552213.xyz
 - type: anytls
   name: 🇮🇱 IL-1 | 9PB
-  server: 7k1tei79e.il-node.552213.xyz
+  server: gzg3h1g8e.il-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -933,7 +1567,7 @@ proxies:
   servername: il-ssl.552213.xyz
 - type: vless
   name: 🇮🇱 IL-2 | 9PB
-  server: mofjcx51e.il-node.552213.xyz
+  server: tyuu6fvse.il-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -948,14 +1582,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇮🇱 IL-3 | 9PB
-  server: 8xujt2uue.il-node.552213.xyz
+  server: 7s6sjg7te.il-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: il-ssl.552213.xyz
 - type: anytls
   name: 🇯🇵 JP-4 | 9PB
-  server: 8g9t6mqie.jpwy-node.552213.xyz
+  server: 4vgsl56ne.jpwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -964,7 +1598,7 @@ proxies:
   servername: jpwy-ssl.552213.xyz
 - type: vless
   name: 🇯🇵 JP-5 | 9PB
-  server: l1yjs7i3e.jpwy-node.552213.xyz
+  server: p4il9ptle.jpwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -979,14 +1613,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇯🇵 JP-6 | 9PB
-  server: ygl9plike.jpwy-node.552213.xyz
+  server: 15a1ap2ke.jpwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: jpwy-ssl.552213.xyz
 - type: anytls
   name: 🇹🇭 TH-1 | 9PB
-  server: bhe0fl6be.thwy-node.552213.xyz
+  server: vems8oxbe.thwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -995,7 +1629,7 @@ proxies:
   servername: thwy-ssl.552213.xyz
 - type: vless
   name: 🇹🇭 TH-2 | 9PB
-  server: xx0kaw0fe.thwy-node.552213.xyz
+  server: 3erb5wc3e.thwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1010,14 +1644,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇹🇭 TH-3 | 9PB
-  server: kye5cmjxe.thwy-node.552213.xyz
+  server: 7q8g0arme.thwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: thwy-ssl.552213.xyz
 - type: anytls
   name: 🇧🇷 BR-1 | 9PB
-  server: k4jbeqdue.brwy-node.552213.xyz
+  server: 85xqh202e.brwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1026,7 +1660,7 @@ proxies:
   servername: brwy-ssl.552213.xyz
 - type: vless
   name: 🇧🇷 BR-2 | 9PB
-  server: n2zzjqxne.brwy-node.552213.xyz
+  server: 3ypvh2xre.brwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1041,14 +1675,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇧🇷 BR-3 | 9PB
-  server: a7lwq5lte.brwy-node.552213.xyz
+  server: 4ng50u2ge.brwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: brwy-ssl.552213.xyz
 - type: anytls
   name: 🇳🇬 NG-1 | 9PB
-  server: i2w3mbkge.ngwy-node.552213.xyz
+  server: egpx4j71e.ngwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1057,7 +1691,7 @@ proxies:
   servername: ngwy-ssl.552213.xyz
 - type: vless
   name: 🇳🇬 NG-2 | 9PB
-  server: kick4kc2e.ngwy-node.552213.xyz
+  server: 0yjw0s7he.ngwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1072,14 +1706,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇳🇬 NG-3 | 9PB
-  server: a7jsa3ime.ngwy-node.552213.xyz
+  server: bigs4655e.ngwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: ngwy-ssl.552213.xyz
 - type: anytls
   name: 🇰🇬 KG-1 | 9PB
-  server: ncsi842me.kgwy-node.552213.xyz
+  server: 0cnj398je.kgwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1088,7 +1722,7 @@ proxies:
   servername: kgwy-ssl.552213.xyz
 - type: vless
   name: 🇰🇬 KG-2 | 9PB
-  server: iaa8xhake.kgwy-node.552213.xyz
+  server: 6urw1e5ee.kgwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1103,14 +1737,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇰🇬 KG-3 | 9PB
-  server: zi7edoi1e.kgwy-node.552213.xyz
+  server: fw4sbkuie.kgwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: kgwy-ssl.552213.xyz
 - type: anytls
   name: 🇷🇴 RO-1 | 9PB
-  server: 1bx7rrmie.rowy-node.552213.xyz
+  server: zf0ynmipe.rowy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1119,7 +1753,7 @@ proxies:
   servername: rowy-ssl.552213.xyz
 - type: vless
   name: 🇷🇴 RO-2 | 9PB
-  server: j3y0wy0pe.rowy-node.552213.xyz
+  server: vkjfno0je.rowy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1134,14 +1768,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇷🇴 RO-3 | 9PB
-  server: k99oizr4e.rowy-node.552213.xyz
+  server: kjvzwo4ee.rowy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: rowy-ssl.552213.xyz
 - type: anytls
   name: 🇲🇰 MK-1 | 9PB
-  server: gwo031p0e.mkwy-node.552213.xyz
+  server: s2wgrwbae.mkwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1150,7 +1784,7 @@ proxies:
   servername: mkwy-ssl.552213.xyz
 - type: vless
   name: 🇲🇰 MK-2 | 9PB
-  server: tcwzja1pe.mkwy-node.552213.xyz
+  server: 1vlib1w4e.mkwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1165,14 +1799,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇲🇰 MK-3 | 9PB
-  server: 2s0fv8wae.mkwy-node.552213.xyz
+  server: 8c8dpquue.mkwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: mkwy-ssl.552213.xyz
 - type: anytls
   name: 🇸🇮 SI-1 | 9PB
-  server: 731zjy5ie.siwy-node.552213.xyz
+  server: 0m4vm4eoe.siwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1181,7 +1815,7 @@ proxies:
   servername: siwy-ssl.552213.xyz
 - type: vless
   name: 🇸🇮 SI-2 | 9PB
-  server: al28iak1e.siwy-node.552213.xyz
+  server: txiui2ute.siwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1196,14 +1830,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇸🇮 SI-3 | 9PB
-  server: 3x0dm83fe.siwy-node.552213.xyz
+  server: 5t2d4m70e.siwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: siwy-ssl.552213.xyz
 - type: anytls
   name: 🇵🇱 PL-1 | 9PB
-  server: g9g3dj3le.plwy-node.552213.xyz
+  server: p5xfuwj6e.plwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1212,7 +1846,7 @@ proxies:
   servername: plwy-ssl.552213.xyz
 - type: vless
   name: 🇵🇱 PL-2 | 9PB
-  server: t6e155nbe.plwy-node.552213.xyz
+  server: ai78dxt4e.plwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1227,14 +1861,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇵🇱 PL-3 | 9PB
-  server: pilqgl3oe.plwy-node.552213.xyz
+  server: co0k6spfe.plwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: plwy-ssl.552213.xyz
 - type: anytls
   name: 🇺🇦 UA-1 | 9PB
-  server: recbi7tte.uawy-node.552213.xyz
+  server: 29lv0exwe.uawy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1243,7 +1877,7 @@ proxies:
   servername: uawy-ssl.552213.xyz
 - type: vless
   name: 🇺🇦 UA-2 | 9PB
-  server: 5fwyan4de.uawy-node.552213.xyz
+  server: dlfk6mcle.uawy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1258,14 +1892,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇺🇦 UA-3 | 9PB
-  server: ifc1mf2je.uawy-node.552213.xyz
+  server: wxc5mf7ze.uawy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: uawy-ssl.552213.xyz
 - type: anytls
   name: 🇳🇱 NL-1 | 9PB
-  server: lscajn3ge.nlwy-node.552213.xyz
+  server: pch93ab3e.nlwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1274,7 +1908,7 @@ proxies:
   servername: nlwy-ssl.552213.xyz
 - type: vless
   name: 🇳🇱 NL-2 | 9PB
-  server: gbmt6rg9e.nlwy-node.552213.xyz
+  server: lpdi2tpre.nlwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1289,14 +1923,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇳🇱 NL-3 | 9PB
-  server: ysou450ze.nlwy-node.552213.xyz
+  server: y26pfyb6e.nlwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: nlwy-ssl.552213.xyz
 - type: anytls
   name: 🇸🇪 SE-1 | 9PB
-  server: nsjkzs6he.sewy-node.552213.xyz
+  server: j795pfe4e.sewy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1305,7 +1939,7 @@ proxies:
   servername: sewy-ssl.552213.xyz
 - type: vless
   name: 🇸🇪 SE-2 | 9PB
-  server: in5n70ige.sewy-node.552213.xyz
+  server: oiji8znne.sewy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1320,14 +1954,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇸🇪 SE-3 | 9PB
-  server: l7u8w4kje.sewy-node.552213.xyz
+  server: d2a36cqfe.sewy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: sewy-ssl.552213.xyz
 - type: anytls
   name: 🇦🇿 AZ-1 | 9PB
-  server: wee8i25be.azwy-node.552213.xyz
+  server: y1m0yh0ge.azwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1336,7 +1970,7 @@ proxies:
   servername: azwy-ssl.552213.xyz
 - type: vless
   name: 🇦🇿 AZ-2 | 9PB
-  server: 1g929ve2e.azwy-node.552213.xyz
+  server: jsb18gcue.azwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1351,14 +1985,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇦🇿 AZ-3 | 9PB
-  server: zfnqgp4ae.azwy-node.552213.xyz
+  server: k1fryl2me.azwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: azwy-ssl.552213.xyz
 - type: anytls
   name: 🇮🇩 ID-1 | 9PB
-  server: noedk68be.idwy-node.552213.xyz
+  server: q8wwd48we.idwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1367,7 +2001,7 @@ proxies:
   servername: idwy-ssl.552213.xyz
 - type: vless
   name: 🇮🇩 ID-2 | 9PB
-  server: mawk8u5oe.idwy-node.552213.xyz
+  server: bpllr5eae.idwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1382,14 +2016,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇮🇩 ID-3 | 9PB
-  server: 1l3ckilze.idwy-node.552213.xyz
+  server: nuslnv0xe.idwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: idwy-ssl.552213.xyz
 - type: anytls
   name: 🇫🇷 FR-4 | 9PB
-  server: w9msp06ne.frwy-node.552213.xyz
+  server: k2sj8jd1e.frwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1398,7 +2032,7 @@ proxies:
   servername: frwy-ssl.552213.xyz
 - type: vless
   name: 🇫🇷 FR-5 | 9PB
-  server: qt3ve99ye.frwy-node.552213.xyz
+  server: rt8rth5ce.frwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1413,14 +2047,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇫🇷 FR-6 | 9PB
-  server: tefre0u1e.frwy-node.552213.xyz
+  server: 1v2qqpwte.frwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: frwy-ssl.552213.xyz
 - type: anytls
   name: 🇵🇪 PE-1 | 9PB
-  server: nhcp3toze.pewy-node.552213.xyz
+  server: avu83bdxe.pewy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1429,7 +2063,7 @@ proxies:
   servername: pewy-ssl.552213.xyz
 - type: vless
   name: 🇵🇪 PE-2 | 9PB
-  server: zn7jmwk1e.pewy-node.552213.xyz
+  server: 9w3gjh1ke.pewy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1444,14 +2078,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇵🇪 PE-3 | 9PB
-  server: wzen1fkle.pewy-node.552213.xyz
+  server: g54ubk6xe.pewy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: pewy-ssl.552213.xyz
 - type: anytls
   name: 🇮🇶 IQ-1 | 9PB
-  server: 5m3ryi9de.iqwy-node.552213.xyz
+  server: lbc3iqyze.iqwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1460,7 +2094,7 @@ proxies:
   servername: iqwy-ssl.552213.xyz
 - type: vless
   name: 🇮🇶 IQ-2 | 9PB
-  server: sabren75e.iqwy-node.552213.xyz
+  server: fn33wedfe.iqwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1475,14 +2109,14 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇮🇶 IQ-3 | 9PB
-  server: ug3k9l1ae.iqwy-node.552213.xyz
+  server: peqtbu51e.iqwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
   servername: iqwy-ssl.552213.xyz
 - type: anytls
   name: 🇹🇷 TR-1 | 9PB
-  server: u39uivffe.trwy-node.552213.xyz
+  server: 9k3z57x0e.trwy-node.552213.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1491,7 +2125,7 @@ proxies:
   servername: trwy-ssl.552213.xyz
 - type: vless
   name: 🇹🇷 TR-2 | 9PB
-  server: 8npfol0ie.trwy-node.552213.xyz
+  server: j72m2iywe.trwy-node.552213.xyz
   port: 20000
   uuid: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1506,7 +2140,7 @@ proxies:
   network: tcp
 - type: hysteria2
   name: 🇹🇷 TR-3 | 9PB
-  server: wqrepc8re.trwy-node.552213.xyz
+  server: k2j87715e.trwy-node.552213.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
   udp: true
@@ -1762,7 +2396,7 @@ proxies:
     short-id: 6281f3ef81187ad8
 - type: vless
   name: 🇸🇬 SG-1 | Filter
-  server: c0jj5sb7e.hk-node.552213.xyz
+  server: xcdxu9mxe.hk-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1777,7 +2411,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇺🇸 US-1 | Filter
-  server: e7i8bsjqe.cloudflare.182682.xyz
+  server: lsk50186e.cloudflare.182682.xyz
   port: 443
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1793,7 +2427,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: vless
   name: 🇺🇸 US-2 | Filter
-  server: j8hn4a7ie.cloudflare.182682.xyz
+  server: eljdan2ie.cloudflare.182682.xyz
   port: 443
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1809,7 +2443,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: vless
   name: 🇨🇦 CA-1 | Filter
-  server: pfg050lhe.cloudflare.182682.xyz
+  server: jbfs4ojqe.cloudflare.182682.xyz
   port: 443
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1825,7 +2459,7 @@ proxies:
   ech: cloudflare-ech.com+https://doh.pub/dns-query
 - type: vless
   name: 🇺🇸 US-3 | Filter
-  server: q8xgec76e.usp-node.552213.xyz
+  server: rx7wox09e.usp-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1840,7 +2474,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇩🇪 DE-1 | Filter
-  server: itqm4dawe.de-node.552213.xyz
+  server: f1ilhme1e.de-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1855,7 +2489,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇬🇧 GB-1 | Filter
-  server: 85dzley7e.uk-node.552213.xyz
+  server: ffrp0b2ce.uk-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1870,7 +2504,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇺🇸 US-4 | Filter
-  server: 0ukw80uxe.usc-node.552213.xyz
+  server: cyaz02e0e.usc-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1885,7 +2519,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇫🇷 FR-1 | Filter
-  server: vrdp02ble.fr-node.552213.xyz
+  server: pa2ohf2fe.fr-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -1900,7 +2534,7 @@ proxies:
   network: tcp
 - type: vless
   name: 🇮🇹 IT-1 | Filter
-  server: vq0telj0e.it-node.552213.xyz
+  server: hn164h7ze.it-node.552213.xyz
   port: 20000
   uuid: 6cdc1a00-e9e7-4ef2-8d53-541688f9324c
   udp: true
@@ -2185,13 +2819,6 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   network: tcp
-- type: ss
-  name: 🇮🇹 IT-3 | Mix
-  server: 202.50.253.27
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - type: hysteria2
   name: 🇫🇷 FR-1 | Mix
   server: 195.177.94.166
@@ -2447,58 +3074,142 @@ proxy-groups:
 - name: ⚡️ 全自动测速
   type: url-test
   proxies:
-  - 🇺🇸 US-1 | 8EB
-  - 🇺🇸 US-2 | 8EB
-  - 🇺🇸 US-3 | 8EB
-  - 🇷🇺 RU-1 | 8EB
-  - 🇷🇺 RU-2 | 8EB
-  - 🇷🇺 RU-3 | 8EB
-  - 🇵🇱 PL-1 | 8EB
-  - 🇳🇱 NL-1 | 8EB
-  - 🇳🇱 NL-2 | 8EB
-  - 🇲🇾 MY-1 | 8EB
-  - 🇯🇵 JP-1 | 8EB
-  - 🇮🇹 IT-1 | 8EB
   - 🇬🇧 GB-1 | 8EB
-  - 🇬🇧 GB-2 | 8EB
-  - 🇫🇷 FR-1 | 8EB
-  - 🇫🇷 FR-2 | 8EB
-  - 🇫🇮 FI-1 | 8EB
-  - 🇫🇮 FI-2 | 8EB
+  - 🇺🇸 US-1 | 8EB
   - 🇪🇸 ES-1 | 8EB
   - 🇪🇸 ES-2 | 8EB
   - 🇪🇸 ES-3 | 8EB
-  - 🇩🇪 DE-1 | 8EB
-  - 🇩🇪 DE-2 | 8EB
-  - 🇩🇪 DE-3 | 8EB
-  - 🇨🇭 CH-1 | 8EB
-  - 🇨🇦 CA-1 | 8EB
-  - 🇭🇰 HK-1 | 8EB
-  - 🇺🇸 US-4 | 8EB
-  - 🇺🇸 US-5 | 8EB
-  - 🇺🇸 US-6 | 8EB
-  - 🇹🇭 TH-1 | 8EB
-  - 🇹🇭 TH-2 | 8EB
-  - 🇸🇬 SG-1 | 8EB
-  - 🇲🇽 MX-1 | 8EB
-  - 🇲🇽 MX-2 | 8EB
-  - 🇲🇽 MX-3 | 8EB
-  - 🇯🇵 JP-2 | 8EB
-  - 🇯🇵 JP-3 | 8EB
-  - 🇮🇹 IT-2 | 8EB
-  - 🇮🇳 IN-1 | 8EB
-  - 🇭🇰 HK-2 | 8EB
-  - 🇬🇧 GB-3 | 8EB
-  - 🇬🇧 GB-4 | 8EB
   - 🇪🇸 ES-4 | 8EB
   - 🇪🇸 ES-5 | 8EB
+  - 🇷🇺 RU-1 | 8EB
   - 🇪🇸 ES-6 | 8EB
   - 🇪🇸 ES-7 | 8EB
   - 🇪🇸 ES-8 | 8EB
-  - 🇨🇳 CN-1 | 8EB
-  - 🇨🇦 CA-2 | 8EB
+  - 🇪🇸 ES-9 | 8EB
+  - 🇪🇸 ES-10 | 8EB
+  - 🇺🇸 US-2 | 8EB
+  - 🇧🇷 BR-1 | 8EB
+  - 🇻🇳 VN-1 | 8EB
+  - 🇷🇺 RU-2 | 8EB
+  - 🇩🇪 DE-1 | 8EB
+  - 🇹🇭 TH-1 | 8EB
+  - 🇺🇸 US-3 | 8EB
+  - 🇬🇷 GR-1 | 8EB
+  - 🇷🇴 RO-1 | 8EB
+  - 🇷🇺 RU-3 | 8EB
+  - 🇮🇷 IR-1 | 8EB
+  - 🇪🇸 ES-11 | 8EB
+  - 🇩🇪 DE-2 | 8EB
+  - 🇹🇼 TW-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
+  - 🇮🇹 IT-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
+  - 🇯🇵 JP-2 | 8EB
+  - 🇩🇪 DE-3 | 8EB
+  - 🇯🇵 JP-3 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇺🇸 US-6 | 8EB
+  - 🇻🇳 VN-2 | 8EB
+  - 🇮🇩 ID-1 | 8EB
+  - 🇦🇺 AU-1 | 8EB
+  - 🇦🇺 AU-2 | 8EB
+  - 🇩🇪 DE-4 | 8EB
+  - 🇩🇪 DE-5 | 8EB
+  - 🇩🇪 DE-6 | 8EB
+  - 🇫🇷 FR-1 | 8EB
+  - 🇭🇰 HK-1 | 8EB
+  - 🇭🇰 HK-2 | 8EB
+  - 🇭🇰 HK-3 | 8EB
+  - 🇭🇰 HK-4 | 8EB
+  - 🇭🇰 HK-5 | 8EB
+  - 🇭🇰 HK-6 | 8EB
+  - 🇭🇰 HK-7 | 8EB
+  - 🇯🇵 JP-4 | 8EB
+  - 🇯🇵 JP-5 | 8EB
+  - 🇯🇵 JP-6 | 8EB
+  - 🇰🇷 KR-1 | 8EB
+  - 🇰🇷 KR-2 | 8EB
+  - 🇸🇬 SG-3 | 8EB
+  - 🇸🇬 SG-4 | 8EB
+  - 🇸🇬 SG-5 | 8EB
   - 🇺🇸 US-7 | 8EB
   - 🇺🇸 US-8 | 8EB
+  - 🇺🇸 US-9 | 8EB
+  - 🇺🇸 US-10 | 8EB
+  - 🇰🇷 KR-3 | 8EB
+  - 🇼🇸 WS-1 | 8EB
+  - 🇼🇸 WS-2 | 8EB
+  - 🇼🇸 WS-3 | 8EB
+  - 🇼🇸 WS-4 | 8EB
+  - 🇼🇸 WS-5 | 8EB
+  - 🇼🇸 WS-6 | 8EB
+  - 🇼🇸 WS-7 | 8EB
+  - 🇼🇸 WS-8 | 8EB
+  - 🇼🇸 WS-9 | 8EB
+  - 🇼🇸 WS-10 | 8EB
+  - 🇭🇰 HK-8 | 8EB
+  - 🇭🇰 HK-9 | 8EB
+  - 🇭🇰 HK-10 | 8EB
+  - 🇭🇰 HK-11 | 8EB
+  - 🇭🇰 HK-12 | 8EB
+  - 🇭🇰 HK-13 | 8EB
+  - 🇭🇰 HK-14 | 8EB
+  - 🇭🇰 HK-15 | 8EB
+  - 🇭🇰 HK-16 | 8EB
+  - 🇭🇰 HK-17 | 8EB
+  - 🇸🇬 SG-6 | 8EB
+  - 🇸🇬 SG-7 | 8EB
+  - 🇸🇬 SG-8 | 8EB
+  - 🇸🇬 SG-9 | 8EB
+  - 🇸🇬 SG-10 | 8EB
+  - 🇸🇬 SG-11 | 8EB
+  - 🇸🇬 SG-12 | 8EB
+  - 🇸🇬 SG-13 | 8EB
+  - 🇸🇬 SG-14 | 8EB
+  - 🇸🇬 SG-15 | 8EB
+  - 🇯🇵 JP-7 | 8EB
+  - 🇯🇵 JP-8 | 8EB
+  - 🇯🇵 JP-9 | 8EB
+  - 🇯🇵 JP-10 | 8EB
+  - 🇯🇵 JP-11 | 8EB
+  - 🇯🇵 JP-12 | 8EB
+  - 🇯🇵 JP-13 | 8EB
+  - 🇯🇵 JP-14 | 8EB
+  - 🇯🇵 JP-15 | 8EB
+  - 🇯🇵 JP-16 | 8EB
+  - 🇺🇸 US-11 | 8EB
+  - 🇺🇸 US-12 | 8EB
+  - 🇺🇸 US-13 | 8EB
+  - 🇺🇸 US-14 | 8EB
+  - 🇺🇸 US-15 | 8EB
+  - 🇺🇸 US-16 | 8EB
+  - 🇺🇸 US-17 | 8EB
+  - 🇺🇸 US-18 | 8EB
+  - 🇺🇸 US-19 | 8EB
+  - 🇺🇸 US-20 | 8EB
+  - 🇼🇸 WS-11 | 8EB
+  - 🇼🇸 WS-12 | 8EB
+  - 🇼🇸 WS-13 | 8EB
+  - 🇼🇸 WS-14 | 8EB
+  - 🇼🇸 WS-15 | 8EB
+  - 🇬🇧 GB-2 | 8EB
+  - 🇩🇪 DE-7 | 8EB
+  - 🇲🇾 MY-1 | 8EB
+  - 🇰🇷 KR-4 | 8EB
+  - 🇵🇭 PH-1 | 8EB
+  - 🇷🇺 RU-4 | 8EB
+  - 🇮🇩 ID-2 | 8EB
+  - 🇿🇦 ZA-1 | 8EB
+  - 🇰🇭 KH-1 | 8EB
+  - 🇻🇳 VN-3 | 8EB
+  - 🇦🇷 AR-1 | 8EB
+  - 🇹🇷 TR-1 | 8EB
+  - 🇪🇬 EG-1 | 8EB
+  - 🇹🇭 TH-2 | 8EB
+  - 🇦🇪 AE-1 | 8EB
+  - 🇨🇦 CA-1 | 8EB
   - 🇸🇬 SG-1 | 9PB
   - 🇭🇰 HK-1 | 9PB
   - 🇭🇰 HK-2 | 9PB
@@ -2640,7 +3351,6 @@ proxy-groups:
   - 🇺🇸 US-9 | Mix
   - 🇬🇷 GR-1 | Mix
   - 🇩🇪 DE-1 | Mix
-  - 🇮🇹 IT-3 | Mix
   - 🇫🇷 FR-1 | Mix
   - 🇷🇺 RU-3 | Mix
   - 🇮🇱 IL-1 | Mix
@@ -2665,58 +3375,142 @@ proxy-groups:
 - name: 📦 8EB
   type: select
   proxies:
-  - 🇺🇸 US-1 | 8EB
-  - 🇺🇸 US-2 | 8EB
-  - 🇺🇸 US-3 | 8EB
-  - 🇷🇺 RU-1 | 8EB
-  - 🇷🇺 RU-2 | 8EB
-  - 🇷🇺 RU-3 | 8EB
-  - 🇵🇱 PL-1 | 8EB
-  - 🇳🇱 NL-1 | 8EB
-  - 🇳🇱 NL-2 | 8EB
-  - 🇲🇾 MY-1 | 8EB
-  - 🇯🇵 JP-1 | 8EB
-  - 🇮🇹 IT-1 | 8EB
   - 🇬🇧 GB-1 | 8EB
-  - 🇬🇧 GB-2 | 8EB
-  - 🇫🇷 FR-1 | 8EB
-  - 🇫🇷 FR-2 | 8EB
-  - 🇫🇮 FI-1 | 8EB
-  - 🇫🇮 FI-2 | 8EB
+  - 🇺🇸 US-1 | 8EB
   - 🇪🇸 ES-1 | 8EB
   - 🇪🇸 ES-2 | 8EB
   - 🇪🇸 ES-3 | 8EB
-  - 🇩🇪 DE-1 | 8EB
-  - 🇩🇪 DE-2 | 8EB
-  - 🇩🇪 DE-3 | 8EB
-  - 🇨🇭 CH-1 | 8EB
-  - 🇨🇦 CA-1 | 8EB
-  - 🇭🇰 HK-1 | 8EB
-  - 🇺🇸 US-4 | 8EB
-  - 🇺🇸 US-5 | 8EB
-  - 🇺🇸 US-6 | 8EB
-  - 🇹🇭 TH-1 | 8EB
-  - 🇹🇭 TH-2 | 8EB
-  - 🇸🇬 SG-1 | 8EB
-  - 🇲🇽 MX-1 | 8EB
-  - 🇲🇽 MX-2 | 8EB
-  - 🇲🇽 MX-3 | 8EB
-  - 🇯🇵 JP-2 | 8EB
-  - 🇯🇵 JP-3 | 8EB
-  - 🇮🇹 IT-2 | 8EB
-  - 🇮🇳 IN-1 | 8EB
-  - 🇭🇰 HK-2 | 8EB
-  - 🇬🇧 GB-3 | 8EB
-  - 🇬🇧 GB-4 | 8EB
   - 🇪🇸 ES-4 | 8EB
   - 🇪🇸 ES-5 | 8EB
+  - 🇷🇺 RU-1 | 8EB
   - 🇪🇸 ES-6 | 8EB
   - 🇪🇸 ES-7 | 8EB
   - 🇪🇸 ES-8 | 8EB
-  - 🇨🇳 CN-1 | 8EB
-  - 🇨🇦 CA-2 | 8EB
+  - 🇪🇸 ES-9 | 8EB
+  - 🇪🇸 ES-10 | 8EB
+  - 🇺🇸 US-2 | 8EB
+  - 🇧🇷 BR-1 | 8EB
+  - 🇻🇳 VN-1 | 8EB
+  - 🇷🇺 RU-2 | 8EB
+  - 🇩🇪 DE-1 | 8EB
+  - 🇹🇭 TH-1 | 8EB
+  - 🇺🇸 US-3 | 8EB
+  - 🇬🇷 GR-1 | 8EB
+  - 🇷🇴 RO-1 | 8EB
+  - 🇷🇺 RU-3 | 8EB
+  - 🇮🇷 IR-1 | 8EB
+  - 🇪🇸 ES-11 | 8EB
+  - 🇩🇪 DE-2 | 8EB
+  - 🇹🇼 TW-1 | 8EB
+  - 🇯🇵 JP-1 | 8EB
+  - 🇮🇹 IT-1 | 8EB
+  - 🇺🇸 US-4 | 8EB
+  - 🇯🇵 JP-2 | 8EB
+  - 🇩🇪 DE-3 | 8EB
+  - 🇯🇵 JP-3 | 8EB
+  - 🇸🇬 SG-1 | 8EB
+  - 🇸🇬 SG-2 | 8EB
+  - 🇺🇸 US-5 | 8EB
+  - 🇺🇸 US-6 | 8EB
+  - 🇻🇳 VN-2 | 8EB
+  - 🇮🇩 ID-1 | 8EB
+  - 🇦🇺 AU-1 | 8EB
+  - 🇦🇺 AU-2 | 8EB
+  - 🇩🇪 DE-4 | 8EB
+  - 🇩🇪 DE-5 | 8EB
+  - 🇩🇪 DE-6 | 8EB
+  - 🇫🇷 FR-1 | 8EB
+  - 🇭🇰 HK-1 | 8EB
+  - 🇭🇰 HK-2 | 8EB
+  - 🇭🇰 HK-3 | 8EB
+  - 🇭🇰 HK-4 | 8EB
+  - 🇭🇰 HK-5 | 8EB
+  - 🇭🇰 HK-6 | 8EB
+  - 🇭🇰 HK-7 | 8EB
+  - 🇯🇵 JP-4 | 8EB
+  - 🇯🇵 JP-5 | 8EB
+  - 🇯🇵 JP-6 | 8EB
+  - 🇰🇷 KR-1 | 8EB
+  - 🇰🇷 KR-2 | 8EB
+  - 🇸🇬 SG-3 | 8EB
+  - 🇸🇬 SG-4 | 8EB
+  - 🇸🇬 SG-5 | 8EB
   - 🇺🇸 US-7 | 8EB
   - 🇺🇸 US-8 | 8EB
+  - 🇺🇸 US-9 | 8EB
+  - 🇺🇸 US-10 | 8EB
+  - 🇰🇷 KR-3 | 8EB
+  - 🇼🇸 WS-1 | 8EB
+  - 🇼🇸 WS-2 | 8EB
+  - 🇼🇸 WS-3 | 8EB
+  - 🇼🇸 WS-4 | 8EB
+  - 🇼🇸 WS-5 | 8EB
+  - 🇼🇸 WS-6 | 8EB
+  - 🇼🇸 WS-7 | 8EB
+  - 🇼🇸 WS-8 | 8EB
+  - 🇼🇸 WS-9 | 8EB
+  - 🇼🇸 WS-10 | 8EB
+  - 🇭🇰 HK-8 | 8EB
+  - 🇭🇰 HK-9 | 8EB
+  - 🇭🇰 HK-10 | 8EB
+  - 🇭🇰 HK-11 | 8EB
+  - 🇭🇰 HK-12 | 8EB
+  - 🇭🇰 HK-13 | 8EB
+  - 🇭🇰 HK-14 | 8EB
+  - 🇭🇰 HK-15 | 8EB
+  - 🇭🇰 HK-16 | 8EB
+  - 🇭🇰 HK-17 | 8EB
+  - 🇸🇬 SG-6 | 8EB
+  - 🇸🇬 SG-7 | 8EB
+  - 🇸🇬 SG-8 | 8EB
+  - 🇸🇬 SG-9 | 8EB
+  - 🇸🇬 SG-10 | 8EB
+  - 🇸🇬 SG-11 | 8EB
+  - 🇸🇬 SG-12 | 8EB
+  - 🇸🇬 SG-13 | 8EB
+  - 🇸🇬 SG-14 | 8EB
+  - 🇸🇬 SG-15 | 8EB
+  - 🇯🇵 JP-7 | 8EB
+  - 🇯🇵 JP-8 | 8EB
+  - 🇯🇵 JP-9 | 8EB
+  - 🇯🇵 JP-10 | 8EB
+  - 🇯🇵 JP-11 | 8EB
+  - 🇯🇵 JP-12 | 8EB
+  - 🇯🇵 JP-13 | 8EB
+  - 🇯🇵 JP-14 | 8EB
+  - 🇯🇵 JP-15 | 8EB
+  - 🇯🇵 JP-16 | 8EB
+  - 🇺🇸 US-11 | 8EB
+  - 🇺🇸 US-12 | 8EB
+  - 🇺🇸 US-13 | 8EB
+  - 🇺🇸 US-14 | 8EB
+  - 🇺🇸 US-15 | 8EB
+  - 🇺🇸 US-16 | 8EB
+  - 🇺🇸 US-17 | 8EB
+  - 🇺🇸 US-18 | 8EB
+  - 🇺🇸 US-19 | 8EB
+  - 🇺🇸 US-20 | 8EB
+  - 🇼🇸 WS-11 | 8EB
+  - 🇼🇸 WS-12 | 8EB
+  - 🇼🇸 WS-13 | 8EB
+  - 🇼🇸 WS-14 | 8EB
+  - 🇼🇸 WS-15 | 8EB
+  - 🇬🇧 GB-2 | 8EB
+  - 🇩🇪 DE-7 | 8EB
+  - 🇲🇾 MY-1 | 8EB
+  - 🇰🇷 KR-4 | 8EB
+  - 🇵🇭 PH-1 | 8EB
+  - 🇷🇺 RU-4 | 8EB
+  - 🇮🇩 ID-2 | 8EB
+  - 🇿🇦 ZA-1 | 8EB
+  - 🇰🇭 KH-1 | 8EB
+  - 🇻🇳 VN-3 | 8EB
+  - 🇦🇷 AR-1 | 8EB
+  - 🇹🇷 TR-1 | 8EB
+  - 🇪🇬 EG-1 | 8EB
+  - 🇹🇭 TH-2 | 8EB
+  - 🇦🇪 AE-1 | 8EB
+  - 🇨🇦 CA-1 | 8EB
 - name: 📦 9PB
   type: select
   proxies:
@@ -2856,7 +3650,7 @@ proxy-groups:
   proxies:
   - 🇷🇺 RU-1 | Mix
   - 🇺🇸 US-1 | Mix
-  - 🇪🇸 ES-7 | 8EB
+  - 🇪🇸 ES-2 | 8EB
   - 🇸🇬 SG-1 | Mix
   - 🇺🇸 US-2 | Mix
   - 🇺🇸 US-3 | Mix
@@ -2871,24 +3665,24 @@ proxy-groups:
   - 🇺🇸 US-8 | Mix
   - 🇷🇺 RU-2 | Mix
   - 🇧🇾 BY-1 | Mix
-  - 🇪🇸 ES-4 | 8EB
+  - 🇪🇸 ES-8 | 8EB
   - 🇺🇸 US-9 | Mix
   - 🇬🇷 GR-1 | Mix
   - 🇩🇪 DE-1 | Mix
-  - 🇮🇹 IT-3 | Mix
-  - 🇮🇹 IT-1 | 8EB
+  - 🇪🇸 ES-4 | 8EB
+  - 🇪🇸 ES-7 | 8EB
   - 🇫🇷 FR-1 | Mix
   - 🇷🇺 RU-3 | Mix
   - 🇮🇱 IL-1 | Mix
   - 🇷🇺 RU-4 | Mix
-  - 🇪🇸 ES-5 | 8EB
-  - 🇮🇹 IT-2 | 8EB
-  - 🇪🇸 ES-6 | 8EB
   - 🇪🇸 ES-1 | 8EB
-  - 🇷🇺 RU-5 | Mix
+  - 🇪🇸 ES-9 | 8EB
+  - 🇪🇸 ES-6 | 8EB
   - 🇪🇸 ES-3 | 8EB
+  - 🇷🇺 RU-5 | Mix
+  - 🇮🇹 IT-1 | 8EB
   - 🇩🇪 DE-2 | Mix
-  - 🇪🇸 ES-2 | 8EB
+  - 🇪🇸 ES-5 | 8EB
   - 🇺🇸 US-10 | Mix
   - 🇮🇱 IL-2 | Mix
   - 🇸🇪 SE-1 | Mix
